@@ -11,7 +11,7 @@ import {
   useDialogStore,
 } from '@/shared/ui/components/atoms';
 
-import { contactFormSchema } from '../model';
+import { contactFormSchema } from '../lib';
 
 const ThankYouDialog = dynamic(
   () => import('./thank-you-dialog').then(mod => mod.ThankYouDialog),
