@@ -1,12 +1,20 @@
 import type { Metadata } from 'next';
-import { Ledger } from 'next/font/google';
+import { Ledger, Lexend } from 'next/font/google';
 
 import { cn } from '@/shared/lib/utils';
+import { Dialog } from '@/shared/ui/components/atoms';
+import { Footer, Header } from '@/shared/ui/components/organisms';
 
 import './globals.css';
 
+const lexend = Lexend({
+  weight: ['300', '400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-lexend',
+});
+
 const ledger = Ledger({
-  weight: '400',
+  weight: ['400'],
   subsets: ['latin'],
   variable: '--font-ledger',
 });
@@ -23,7 +31,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn('antialiased', ledger.variable)}>{children}</body>
+      <body className={cn('antialiased', lexend.variable, ledger.variable)}>
+        <Header />
+        {children}
+        <Footer />
+        <Dialog />
+      </body>
     </html>
   );
 }
