@@ -15,16 +15,16 @@ import {
 import { navigation } from '@/shared/config/routes';
 import { Button, Text } from '@/shared/ui/components/atoms';
 import { MenuButton } from '@/shared/ui/components/molecules';
-import { BasketIcon, BurgerIcon } from '@/shared/ui/icons/fill';
-import { ChevronDown } from '@/shared/ui/icons/outline';
+import { BasketIcon, BurgerIcon, CloseIcon } from '@/shared/ui/icons/fill';
 
 export const BurgerMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const [openedSubmenus, setOpenedSubmenus] = useState<string[]>([]);
 
   return (
-    <Root>
+    <Root open={isOpen} onOpenChange={setIsOpen}>
       <Trigger className="hidden max-lg:block">
-        <BurgerIcon />
+        {isOpen ? <CloseIcon /> : <BurgerIcon />}
       </Trigger>
       <Portal>
         <Overlay className="fixed inset-0 top-[55px] animate-[overlayShow_150ms_cubic-bezier(0.16,1,0.3,1)] bg-black/80" />
@@ -46,8 +46,9 @@ export const BurgerMenu = () => {
                         )
                       }
                     >
-                      <Text>{n.label}</Text>
-                      <ChevronDown />
+                      <Text size="base" weight={400}>
+                        {n.label}
+                      </Text>
                     </MenuButton>
                     {openedSubmenus.includes(n.label) && (
                       <section className="flex flex-col">
