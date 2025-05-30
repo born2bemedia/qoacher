@@ -19,7 +19,7 @@ const BurgerMenu = dynamic(
 
 export const Header = () => {
   return (
-    <header className="border-light-gray relative z-50 flex items-center justify-between border-b px-[100px] py-3 max-md:px-4 max-md:py-3">
+    <header className="border-light-gray sticky top-0 z-50 flex items-center justify-between border-b bg-white px-[100px] py-3 max-md:px-4 max-md:py-3">
       <section className="flex items-center gap-16">
         <Image src="/logo.svg" alt="logo" width={134} height={30} />
         <ul className="flex items-center gap-6 max-lg:hidden">
