@@ -13,6 +13,7 @@ const buttonVariants = cva(
         dark: 'text-white bg-black border border-black hover:border-jet-black hover:bg-jet-black',
         light:
           'text-black bg-white border border-black hover:bg-light-gray hover:border-light-gray',
+        grey: 'text-black bg-light-gray border border-light-gray hover:bg-gray hover:border-gray',
       },
     },
     defaultVariants: {

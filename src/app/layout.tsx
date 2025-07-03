@@ -4,6 +4,7 @@ import { Ledger, Lexend } from 'next/font/google';
 import { cn } from '@/shared/lib/utils';
 import { Dialog } from '@/shared/ui/components/atoms';
 import { Footer, Header } from '@/shared/ui/components/organisms';
+import { CookieConsent } from '@/shared/ui/components/organisms/cookie-consent';
 
 import './globals.css';
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Dialog />
+        <CookieConsent />
       </body>
     </html>
   );
