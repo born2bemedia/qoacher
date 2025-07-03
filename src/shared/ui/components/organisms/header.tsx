@@ -6,7 +6,6 @@ import Link from 'next/link';
 
 import { navigation } from '@/shared/config/routes';
 import { Button, Dropdown, Text } from '@/shared/ui/components/atoms';
-import { MenuButton } from '@/shared/ui/components/molecules';
 import { BasketIcon } from '@/shared/ui/icons/fill';
 import { ChevronDown } from '@/shared/ui/icons/outline';
 
@@ -28,10 +27,10 @@ export const Header = () => {
               <Dropdown
                 key={item.label}
                 trigger={
-                  <MenuButton>
+                  <button className="flex cursor-pointer items-center gap-1 py-4 outline-none">
                     <Text>{item.label}</Text>
                     <ChevronDown />
-                  </MenuButton>
+                  </button>
                 }
                 values={item.list.map(v => ({
                   label: <Link href={v.href}>{v.label}</Link>,
@@ -40,11 +39,20 @@ export const Header = () => {
               />
             ) : (
               <Link key={item.label} href={item.href}>
-                {item.label}
+                <Text>{item.label}</Text>
               </Link>
             ),
           )}
         </ul>
+        <Dropdown
+          trigger={<button>Test</button>}
+          values={[
+            {
+              label: <Link href="/services">Services</Link>,
+              value: '/services',
+            },
+          ]}
+        />
       </section>
       <section className="flex items-center gap-6 max-lg:hidden">
         <BasketIcon />
