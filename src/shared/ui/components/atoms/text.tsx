@@ -3,6 +3,8 @@
 import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
 
+import { cn } from '@/shared/lib/utils';
+
 const textVariants = cva('transition duration-300 ease-in-out', {
   variants: {
     size: {
@@ -28,11 +30,20 @@ const textVariants = cva('transition duration-300 ease-in-out', {
       light: 'text-white',
       danger: 'text-danger',
     },
+    zIndex: {
+      0: 'z-0',
+      1: 'z-10',
+      2: 'z-20',
+      3: 'z-30',
+      4: 'z-40',
+      5: 'z-50',
+    },
   },
   defaultVariants: {
     size: 'sm',
     weight: 300,
     color: 'dark',
+    zIndex: 0,
   },
 });
 
@@ -43,6 +54,12 @@ export const Text = ({
   size,
   weight,
   color,
-}: { children: React.ReactNode } & TextVariants) => {
-  return <p className={textVariants({ size, weight, color })}>{children}</p>;
+  zIndex,
+  className,
+}: { children: React.ReactNode; className?: string } & TextVariants) => {
+  return (
+    <p className={cn(textVariants({ size, weight, color, zIndex }), className)}>
+      {children}
+    </p>
+  );
 };

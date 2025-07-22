@@ -43,7 +43,7 @@ export const BecauseLifeRunYou = () => {
   return (
     <SectionLayout className="gap-12">
       <FadeIn className="mx-auto flex w-[508px] flex-col gap-3 text-center max-md:w-full">
-        <Title as="h2" size="3xl" align="center">
+        <Title as="h2" size="3xl" className="text-center">
           Because Life Shouldn’t Run You
         </Title>
         <Text>

@@ -43,7 +43,7 @@ export const Dialog = () => {
         <Overlay className="fixed inset-0 z-[50] animate-[overlayShow_150ms_cubic-bezier(0.16,1,0.3,1)] bg-black/80" />
         <Content className="fixed top-1/2 left-1/2 z-[60] flex w-[90vw] max-w-md -translate-x-1/2 -translate-y-1/2 flex-col gap-3 bg-white p-6 focus:outline-none">
           <DialogTitle />
-          <Title as="h3" size="3xl" align="center">
+          <Title as="h3" size="3xl" className="text-center">
             {children?.title}
           </Title>
           <Description asChild>{children?.content}</Description>

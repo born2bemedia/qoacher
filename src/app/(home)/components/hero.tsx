@@ -11,7 +11,7 @@ export const Hero = () => {
   return (
     <SectionLayout className="gap-24 py-[165px] max-md:gap-8">
       <FadeIn className="flex flex-col items-center justify-between gap-3 text-center">
-        <Title align="center">Life Doesn’t Rule You. You Do.</Title>
+        <Title className="text-center">Life Doesn’t Rule You. You Do.</Title>
         <Text size="sm">
           Personal. Relationships. Career. Emotional well-being.
         </Text>

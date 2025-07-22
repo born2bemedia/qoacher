@@ -9,7 +9,7 @@ import { useDialogStore } from '@/shared/ui/components/atoms/dialog';
 import { TextArea } from '@/shared/ui/components/atoms/text-area';
 import { TextField } from '@/shared/ui/components/atoms/text-field';
 
-import { contactFormSchema } from '../lib';
+import { contactFormSchema } from '../schema';
 
 const ThankYouDialog = dynamic(
   () => import('./thank-you-dialog').then(mod => mod.ThankYouDialog),
