@@ -11,18 +11,19 @@ export const Hero = ({
   imgUrl,
   title,
 }: {
-  title: ReactNode;
+  title: string;
   description: ReactNode;
   imgUrl: string;
 }) => {
   return (
-    <section className="relative flex h-[850px] flex-col items-center justify-center gap-3 p-[165px] max-md:h-[700px] max-md:px-4">
-      <Title color="light" size="5xl" zIndex={1} className="text-center">
-        {title}
+    <section className="relative flex h-[850px] flex-col items-center justify-center gap-3 p-[165px] max-md:h-[700px] max-md:px-4 relative">
+      <Title color="light" size="5xl" zIndex={2} className="text-center">
+        <span dangerouslySetInnerHTML={{ __html: title }} />
       </Title>
-      <Text zIndex={1} color="light" className="text-center">
+      <Text zIndex={2} color="light" className="text-center">
         {description}
       </Text>
+      <div className="absolute inset-0 z-10 bg-black/50"></div>
       <Image
         className="z-0 object-cover"
         src={imgUrl}
