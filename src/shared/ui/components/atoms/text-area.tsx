@@ -4,7 +4,7 @@ import type { TextareaHTMLAttributes } from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
 
 import { cn } from '@/shared/lib/utils';
-import { Text } from '@/shared/ui/components/atoms';
+import { Text } from '@/shared/ui/components/atoms/text';
 
 const textAreaVariants = cva(
   'p-4 text-sm font-thin text-[#6B6B6B] h-[150px] resize-none transition-all duration-300 focus:outline-none',

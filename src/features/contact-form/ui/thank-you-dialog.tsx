@@ -1,6 +1,7 @@
 'use client';
 
-import { Button, Text } from '@/shared/ui/components/atoms';
+import { Button } from '@/shared/ui/components/atoms/button';
+import { Text } from '@/shared/ui/components/atoms/text';
 
 export const ThankYouDialog = ({ onClose }: { onClose: () => void }) => {
   return (

@@ -1,7 +1,10 @@
 'use client';
 
-import { Button, Text, Title } from '@/shared/ui/components/atoms';
-import { FadeIn, SectionLayout } from '@/shared/ui/components/templates';
+import { Button } from '@/shared/ui/components/atoms/button';
+import { Text } from '@/shared/ui/components/atoms/text';
+import { Title } from '@/shared/ui/components/atoms/title';
+import { FadeIn } from '@/shared/ui/components/templates/fade-in';
+import { SectionLayout } from '@/shared/ui/components/templates/section-layout';
 
 const items = [
   {

@@ -12,7 +12,7 @@ import {
 } from '@radix-ui/react-dialog';
 import { create } from 'zustand';
 
-import { Title } from '@/shared/ui/components/atoms';
+import { Title } from '@/shared/ui/components/atoms/title';
 
 type DialogStore = {
   isOpen: boolean;

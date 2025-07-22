@@ -3,7 +3,8 @@
 import Link from 'next/link';
 
 import { footerNavigation, policyNavigation } from '@/shared/config/routes';
-import { Divider, Text } from '@/shared/ui/components/atoms';
+import { Divider } from '@/shared/ui/components/atoms/divider';
+import { Text } from '@/shared/ui/components/atoms/text';
 
 export const Footer = () => {
   return (

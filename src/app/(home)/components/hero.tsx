@@ -2,8 +2,10 @@
 
 import Image from 'next/image';
 
-import { Text, Title } from '@/shared/ui/components/atoms';
-import { FadeIn, SectionLayout } from '@/shared/ui/components/templates';
+import { Text } from '@/shared/ui/components/atoms/text';
+import { Title } from '@/shared/ui/components/atoms/title';
+import { FadeIn } from '@/shared/ui/components/templates/fade-in';
+import { SectionLayout } from '@/shared/ui/components/templates/section-layout';
 
 export const Hero = () => {
   return (
