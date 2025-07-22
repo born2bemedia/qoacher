@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Ledger, Lexend } from 'next/font/google';
+import { NextIntlClientProvider } from 'next-intl';
 
 import { cn } from '@/shared/lib/utils';
 import { Dialog } from '@/shared/ui/components/atoms/dialog';
@@ -34,11 +35,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn('antialiased', lexend.variable, ledger.variable)}>
-        <Header />
-        {children}
-        <Footer />
-        <Dialog />
-        <CookieConsent />
+        <NextIntlClientProvider>
+          <Header />
+          {children}
+          <Footer />
+          <Dialog />
+          <CookieConsent />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

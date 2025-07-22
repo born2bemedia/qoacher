@@ -1,0 +1,143 @@
+{
+  "becauseLifeRunYou": {
+    "lifeMovesTooFast": "Life moves too fast",
+    "lifeMovesTooFastDescription": "People are overwhelmed by constant demands, decisions, and pressure.",
+    "mostFeelLikeTheyAreJustReacting": "Most feel like they’re just reacting",
+    "mostFeelLikeTheyAreJustReactingDescription": "There’s no time to think, plan, or choose — only to respond to what’s urgent.",
+    "growthGetsPushedAside": "Growth gets pushed aside",
+    "growthGetsPushedAsideDescription": "Personal priorities are delayed. Real needs are ignored. Nothing changes.",
+    "adviceIsntEnough": "Advice isn’t enough",
+    "adviceIsntEnoughDescription": "Information is everywhere. What’s missing is structure, support, and accountability.",
+    "progressNeedsASystem": "Progress needs a system",
+    "progressNeedsASystemDescription": "Without clarity and consistency, motivation fades and problems repeat.",
+    "thatsWhyWeBuiltThisProject": "That’s why we built this project",
+    "thatsWhyWeBuiltThisProjectDescription": "To help people grow, act, and take control — with expert support at every step.",
+    "becauseLifeShouldntRunYou": "Because Life Shouldn’t Run You",
+    "becauseLifeShouldntRunYouDescription": "We didn’t build this project just to offer coaching. We built it to give people a way to take back control — with real tools and real support.",
+    "learnMore": "Learn More"
+  },
+  "coachingThatFits": {
+    "careerCoaching": "Career Coaching",
+    "careerCoachingQuestion": "Feel stuck, lost, or unsure what to do next in your work life?",
+    "careerCoachingAnswer": "We help you make clear decisions about your job, direction, or next step.",
+    "personalCoaching": "Personal Coaching",
+    "personalCoachingQuestion": "Tired, overwhelmed, or unable to focus on yourself?",
+    "personalCoachingAnswer": "We help you reduce pressure, regain energy, and handle daily challenges.",
+    "relationshipAndCommunicationCoaching": "Relationship & Communication Coaching",
+    "relationshipAndCommunicationCoachingQuestion": "Struggling with conflict, unclear boundaries, or feeling misunderstood? ",
+    "relationshipAndCommunicationCoachingAnswer": "We help you improve how you talk, listen, and connect with others.",
+    "growthAndLongTermSupport": "Growth & Long-Term Support",
+    "growthAndLongTermSupportQuestion": "You’ve tried on your own — but the change doesn’t last?",
+    "growthAndLongTermSupportAnswer": "We help you stay consistent, build better habits, and move forward step by step.",
+    "coachingThatFitsYourLife": "Coaching That Fits Your Life",
+    "explore": "Explore"
+  },
+  "forOngoingWorks": {
+    "forOngoingWorksTitle": "For Ongoing Work and Bigger Goals",
+    "forOngoingWorksDescription": "If your situation touches multiple areas — work, relationships, personal direction — our packages are built to support you with a structured, ongoing approach.",
+    "checkPackages": "Check Packages"
+  },
+  "hero": {
+    "heroTitle": "Life Doesn’t Rule You. You Do.",
+    "heroDescription": "Personal. Relationships. Career. Emotional well-being."
+  },
+  "needExtraSupport": {
+    "needExtraSupportTitle": "Need Extra Support?",
+    "needExtraSupportDescription": "Don’t hesitate to contact us. We’re available 24/7 to help you move forward, overcome obstacles, and choose the right path for your growth."
+  },
+  "programsThatHelp": {
+    "programsThatHelpTitle": "Programs That Help You Start Without the Pressure",
+    "programsThatHelpDescription": "Not ready for individual coaching? Start with a program.",
+    "programsThatHelpDescription2": "Our programs are short, structured, and focused on specific topics. You receive step-by-step guidance by email and can request support during the program. It’s a simple way to see how we work — and how much real change is possible.",
+    "checkPackages": "Check Packages"
+  },
+  "startSmall": {
+    "startSmallTitle": "Start Small. Grow Steady.",
+    "notReadyForCoaching": "Not ready for coaching?",
+    "startWithOurFreeGuides": "Start with our free guides.",
+    "readPracticalOnSiteArticles": "Read practical, on-site articles with tools, reflection exercises, and simple step-by-step methods to help you improve on your own.",
+    "learnMore": "Learn More"
+  },
+  "services": {
+    "chooseTheCoaching": "Choose the Coaching <br /> That Fits Your Situation",
+    "careerPersonalLifeRelationshipsLongTermGrowth": "Career. Personal life. Relationships. Long-term growth.",
+    "careerCoaching": "Career Coaching",
+    "careerCoachingDescription": "If you",
+    "personalCoaching": "Personal Coaching",
+    "personalCoachingDescription": "For people who feel drained, overwhelmed, or disconnected from themselves. We help you rebuild focus, stability, and personal clarity.",
+    "communicationAndRelationshipCoaching": "Communication and Relationship Coaching",
+    "communicationAndRelationshipCoachingDescription": "Support for handling conflict, setting boundaries, and improving connection — whether at home, work, or anywhere between.",
+    "growthAndLongTermPlanning": "Growth and Long-Term Planning",
+    "growthAndLongTermPlanningDescription": "For those who want structure over time. We help you build habits, maintain progress, and stay aligned with where you\\'re going.",
+    "needHelpChoosingACoachingPath": "Need Help Choosing a Coaching Path?",
+    "needHelpChoosingACoachingPathDescription": "Don’t hesitate to reach out. We’re available 24/7 to help you understand your options and find the right coaching for your situation."
+  },
+  "contactForm": {
+    "name_error": "Please enter your name",
+    "email_error": "Please provide your email",
+    "phone_error": "Please enter a valid phone number",
+    "message_error": "Please write a short message",
+    "success": "Success!",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "message": "Message",
+    "sending": "Sending...",
+    "send": "Send",
+    "success_description": "Your request has been sent. Our coaches will get back to you shortly.",
+    "continue": "Continue"
+  },
+  "footerNavigation": {
+    "careerCoaching": "Career Coaching",
+    "personalCoaching": "Personal Coaching",
+    "communicationAndRelationshipCoaching": "Communication and Relationship Coaching",
+    "growthAndLongTermPlanning": "Growth and Long-Term Planning",
+    "programs": "Programs",
+    "packages": "Packages",
+    "selfImprovement": "Self Improvement",
+    "aboutTheProject": "About the Project",
+    "account": "Account",
+    "contacts": "Contacts"
+  },
+  "navigation": {
+    "services": "Services",
+    "careerCoaching": "Career Coaching",
+    "personalCoaching": "Personal Coaching",
+    "communicationAndRelationshipCoaching": "Communication and Relationship Coaching",
+    "growthAndLongTermPlanning": "Growth and Long-Term Planning",
+    "packages": "Packages",
+    "programs": "Programs",
+    "menu": "Menu",
+    "aboutTheProject": "About the Project",
+    "selfImprovement": "Self Improvement",
+    "contacts": "Contacts"
+  },
+  "policyNavigation": {
+    "termsOfUse": "Terms of Use",
+    "privacyNotice": "Privacy Notice",
+    "refundPolicy": "Refund Policy",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "burgerMenu": {
+    "cart": "Cart",
+    "signIn": "Sign in"
+  },
+  "cookieConsent": {
+    "cookieSettings": "Cookie settings",
+    "cookieDescription": "Cookies help us improve our website. By clicking &apos;Accept,&apos; you agree to our use of cookies for functionality, analytics, and personalized content. Learn more in our",
+    "cookiePolicy": "Cookie Policy",
+    "cookieDescriptionEnd": ".",
+    "decline": "Decline",
+    "accept": "Accept"
+  },
+  "footer": {
+    "companyDescription": "Expert support for personal growth, relationships, and career development in today’s demanding world.",
+    "registeredAddress": "Registered address:",
+    "registeredNumber": "Registered number:",
+    "officeAddress": "Office address:",
+    "allRightsReserved": "All rights reserved."
+  },
+  "header": {
+    "signIn": "Sign in"
+  }
+}

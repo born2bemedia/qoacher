@@ -1,6 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
+import { useTranslations } from 'next-intl';
 
 import { useForm } from '@/shared/lib/forms';
 import { cn } from '@/shared/lib/utils';
@@ -9,7 +10,7 @@ import { useDialogStore } from '@/shared/ui/components/atoms/dialog';
 import { TextArea } from '@/shared/ui/components/atoms/text-area';
 import { TextField } from '@/shared/ui/components/atoms/text-field';
 
-import { contactFormSchema } from '../schema';
+import { ContactFormSchema } from '../schema/schemas';
 
 const ThankYouDialog = dynamic(
   () => import('./thank-you-dialog').then(mod => mod.ThankYouDialog),
@@ -23,6 +24,7 @@ export const ContactForm = ({
 }: {
   layoutClassName?: string;
 }) => {
+  const t = useTranslations('contactForm');
   const { registerContent, setIsOpen } = useDialogStore();
 
   const { Field, Subscribe, handleSubmit } = useForm({
@@ -33,12 +35,13 @@ export const ContactForm = ({
       message: '',
     },
     validators: {
-      onChange: contactFormSchema,
+      onChange: ContactFormSchema(),
     },
     onSubmit: data => {
       console.log(data);
+
       registerContent({
-        title: 'Success!',
+        title: t('success', { fallback: 'Success!' }),
         content: <ThankYouDialog onClose={() => setIsOpen(false)} />,
       });
       setIsOpen(true);
@@ -50,62 +53,76 @@ export const ContactForm = ({
       onSubmit={e => {
         e.preventDefault();
         e.stopPropagation();
-        handleSubmit().catch(console.error);
+        handleSubmit().catch(err => console.error(err));
       }}
       className={cn('flex flex-col gap-6', layoutClassName)}
     >
       <Field name="name">
-        {field => (
-          <TextField
-            name={field.name}
-            placeholder="Name"
-            value={String(field.state.value)}
-            onBlur={field.handleBlur}
-            onChange={e => field.handleChange(e.target.value)}
-            hint={field.state.meta.errors.map(err => err?.message).join(', ')}
-          />
-        )}
+        {field => {
+          console.log('Name errors:', field.state.meta.errors);
+          return (
+            <TextField
+              name={field.name}
+              placeholder={t('name', { fallback: 'Name' })}
+              value={String(field.state.value)}
+              onBlur={field.handleBlur}
+              onChange={e => field.handleChange(e.target.value)}
+              hint={field.state.meta.errors.map(err => err?.message).join(', ')}
+            />
+          );
+        }}
       </Field>
       <Field name="phone">
-        {field => (
-          <TextField
-            name={field.name}
-            placeholder="Name"
-            value={String(field.state.value)}
-            onBlur={field.handleBlur}
-            onChange={e => field.handleChange(e.target.value)}
-            hint={field.state.meta.errors.map(err => err?.message).join(', ')}
-          />
-        )}
+        {field => {
+          console.log('Phone errors:', field.state.meta.errors);
+          return (
+            <TextField
+              name={field.name}
+              placeholder={t('phone', { fallback: 'Phone' })}
+              value={String(field.state.value)}
+              onBlur={field.handleBlur}
+              onChange={e => field.handleChange(e.target.value)}
+              hint={field.state.meta.errors.map(err => err?.message).join(', ')}
+            />
+          );
+        }}
       </Field>
       <Field name="email">
-        {field => (
-          <TextField
-            name={field.name}
-            placeholder="Email"
-            value={String(field.state.value)}
-            onBlur={field.handleBlur}
-            onChange={e => field.handleChange(e.target.value)}
-            hint={field.state.meta.errors.map(err => err?.message).join(', ')}
-          />
-        )}
+        {field => {
+          console.log('Email errors:', field.state.meta.errors);
+          return (
+            <TextField
+              name={field.name}
+              placeholder={t('email', { fallback: 'Email' })}
+              value={String(field.state.value)}
+              onBlur={field.handleBlur}
+              onChange={e => field.handleChange(e.target.value)}
+              hint={field.state.meta.errors.map(err => err?.message).join(', ')}
+            />
+          );
+        }}
       </Field>
       <Field name="message">
-        {field => (
-          <TextArea
-            name={field.name}
-            placeholder="Message"
-            value={String(field.state.value)}
-            onBlur={field.handleBlur}
-            onChange={e => field.handleChange(e.target.value)}
-            hint={field.state.meta.errors.map(err => err?.message).join(', ')}
-          />
-        )}
+        {field => {
+          console.log('Message errors:', field.state.meta.errors);
+          return (
+            <TextArea
+              name={field.name}
+              placeholder={t('message', { fallback: 'Message' })}
+              value={String(field.state.value)}
+              onBlur={field.handleBlur}
+              onChange={e => field.handleChange(e.target.value)}
+              hint={field.state.meta.errors.map(err => err?.message).join(', ')}
+            />
+          );
+        }}
       </Field>
       <Subscribe selector={state => [state.canSubmit, state.isSubmitting]}>
         {([canSubmit, isSubmitting]) => (
           <Button type="submit" fullWidth disabled={!canSubmit}>
-            {isSubmitting ? 'Sending...' : 'Send'}
+            {isSubmitting
+              ? t('sending', { fallback: 'Sending...' })
+              : t('send', { fallback: 'Send' })}
           </Button>
         )}
       </Subscribe>

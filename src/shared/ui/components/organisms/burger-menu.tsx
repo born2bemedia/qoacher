@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import {
   Content,
   Description,
@@ -12,13 +13,14 @@ import {
   Trigger,
 } from '@radix-ui/react-dialog';
 
-import { navigation } from '@/shared/config/routes';
+import { Navigation } from '@/shared/config/navigation';
 import { Button } from '@/shared/ui/components/atoms/button';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { MenuButton } from '@/shared/ui/components/molecules/menu-button';
 import { BasketIcon, BurgerIcon, CloseIcon } from '@/shared/ui/icons/fill';
 
 export const BurgerMenu = () => {
+  const t = useTranslations('burgerMenu');
   const [isOpen, setIsOpen] = useState(false);
   const [openedSubmenus, setOpenedSubmenus] = useState<string[]>([]);
 
@@ -34,7 +36,7 @@ export const BurgerMenu = () => {
           <Description />
           <section className="flex flex-col gap-4 p-6">
             <ul className="flex flex-col gap-4">
-              {navigation.map(n =>
+              {Navigation().map(n =>
                 n.list ? (
                   <section key={n.label}>
                     <MenuButton
@@ -71,12 +73,12 @@ export const BurgerMenu = () => {
             <section className="flex items-center gap-6">
               <Link href="/cart" className="w-full">
                 <Button variant="light" fullWidth>
-                  Cart
+                  {t('cart', { fallback: 'Cart' })}
                   <BasketIcon />
                 </Button>
               </Link>
               <Link href="/sign-in" className="w-full">
-                <Button fullWidth>Sign in</Button>
+                <Button fullWidth>{t('signIn', { fallback: 'Sign in' })}</Button>
               </Link>
             </section>
           </section>

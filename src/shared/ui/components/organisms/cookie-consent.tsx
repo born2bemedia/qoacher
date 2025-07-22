@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { lsRead, lsWrite } from '@/shared/lib/utils/browser';
 import { cn } from '@/shared/lib/utils/styles';
@@ -9,6 +10,7 @@ import { Button } from '@/shared/ui/components/atoms/button';
 import { Text } from '@/shared/ui/components/atoms/text';
 
 export const CookieConsent = () => {
+  const t = useTranslations('cookieConsent');
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -33,16 +35,19 @@ export const CookieConsent = () => {
       )}
     >
       <Text color="dark" weight={500} size="2xl">
-        Cookie settings
+        {t('cookieSettings', { fallback: 'Cookie settings' })}
       </Text>
       <Text size="sm">
-        Cookies help us improve our website. By clicking &apos;Accept,&apos; you
-        agree to our use of cookies for functionality, analytics, and
-        personalized content. Learn more in our{' '}
+        {t('cookieDescription', {
+          fallback:
+            'Cookies help us improve our website. By clicking &apos;Accept,&apos; you agree to our use of cookies for functionality, analytics, and personalized content. Learn more in our',
+        })}
         <Link href="/legal/cookie-policy" className="underline">
-          Cookie Policy
+          {t('cookiePolicy', { fallback: 'Cookie Policy' })}
         </Link>
-        .
+        {t('cookieDescriptionEnd', {
+          fallback: '.',
+        })}
       </Text>
       <div className="flex items-center gap-6">
         <Button
@@ -51,10 +56,10 @@ export const CookieConsent = () => {
           variant="grey"
           fullWidth
         >
-          Decline
+          {t('decline', { fallback: 'Decline' })}
         </Button>
         <Button onClick={handleAccept} className="text-sm" fullWidth>
-          Accept
+          {t('accept', { fallback: 'Accept' })}
         </Button>
       </div>
     </div>
