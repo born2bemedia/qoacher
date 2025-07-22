@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { Text } from '@/shared/ui/components/atoms/text';
 import { Title } from '@/shared/ui/components/atoms/title';
@@ -8,12 +9,19 @@ import { FadeIn } from '@/shared/ui/components/templates/fade-in';
 import { SectionLayout } from '@/shared/ui/components/templates/section-layout';
 
 export const Hero = () => {
+  const t = useTranslations('hero');
   return (
     <SectionLayout className="gap-24 py-[165px] max-md:gap-8">
       <FadeIn className="flex flex-col items-center justify-between gap-3 text-center">
-        <Title className="text-center">Life Doesn’t Rule You. You Do.</Title>
+        <Title className="text-center">
+          {t('heroTitle', {
+            fallback: 'Life Doesn’t Rule You. You Do.',
+          })}
+        </Title>
         <Text size="sm">
-          Personal. Relationships. Career. Emotional well-being.
+          {t('heroDescription', {
+            fallback: 'Personal. Relationships. Career. Emotional well-being.',
+          })}
         </Text>
       </FadeIn>
       <FadeIn className="flex items-end gap-3 max-md:hidden">
