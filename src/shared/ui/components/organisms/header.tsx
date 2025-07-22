@@ -5,7 +5,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { navigation } from '@/shared/config/routes';
-import { Button, Dropdown, Text } from '@/shared/ui/components/atoms';
+import { Button } from '@/shared/ui/components/atoms/button';
+import { Dropdown } from '@/shared/ui/components/atoms/dropdown';
+import { Text } from '@/shared/ui/components/atoms/text';
 import { BasketIcon } from '@/shared/ui/icons/fill';
 import { ChevronDown } from '@/shared/ui/icons/outline';
 
@@ -44,15 +46,6 @@ export const Header = () => {
             ),
           )}
         </ul>
-        <Dropdown
-          trigger={<button>Test</button>}
-          values={[
-            {
-              label: <Link href="/services">Services</Link>,
-              value: '/services',
-            },
-          ]}
-        />
       </section>
       <section className="flex items-center gap-6 max-lg:hidden">
         <BasketIcon />

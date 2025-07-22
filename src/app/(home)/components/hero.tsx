@@ -2,14 +2,16 @@
 
 import Image from 'next/image';
 
-import { Text, Title } from '@/shared/ui/components/atoms';
-import { FadeIn, SectionLayout } from '@/shared/ui/components/templates';
+import { Text } from '@/shared/ui/components/atoms/text';
+import { Title } from '@/shared/ui/components/atoms/title';
+import { FadeIn } from '@/shared/ui/components/templates/fade-in';
+import { SectionLayout } from '@/shared/ui/components/templates/section-layout';
 
 export const Hero = () => {
   return (
     <SectionLayout className="gap-24 py-[165px] max-md:gap-8">
       <FadeIn className="flex flex-col items-center justify-between gap-3 text-center">
-        <Title align="center">Life Doesn’t Rule You. You Do.</Title>
+        <Title className="text-center">Life Doesn’t Rule You. You Do.</Title>
         <Text size="sm">
           Personal. Relationships. Career. Emotional well-being.
         </Text>

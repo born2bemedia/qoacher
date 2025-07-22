@@ -13,8 +13,9 @@ import {
 } from '@radix-ui/react-dialog';
 
 import { navigation } from '@/shared/config/routes';
-import { Button, Text } from '@/shared/ui/components/atoms';
-import { MenuButton } from '@/shared/ui/components/molecules';
+import { Button } from '@/shared/ui/components/atoms/button';
+import { Text } from '@/shared/ui/components/atoms/text';
+import { MenuButton } from '@/shared/ui/components/molecules/menu-button';
 import { BasketIcon, BurgerIcon, CloseIcon } from '@/shared/ui/icons/fill';
 
 export const BurgerMenu = () => {

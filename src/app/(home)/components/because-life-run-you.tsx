@@ -1,7 +1,10 @@
 'use client';
 
-import { Button, Text, Title } from '@/shared/ui/components/atoms';
-import { FadeIn, SectionLayout } from '@/shared/ui/components/templates';
+import { Button } from '@/shared/ui/components/atoms/button';
+import { Text } from '@/shared/ui/components/atoms/text';
+import { Title } from '@/shared/ui/components/atoms/title';
+import { FadeIn } from '@/shared/ui/components/templates/fade-in';
+import { SectionLayout } from '@/shared/ui/components/templates/section-layout';
 
 const items = [
   {
@@ -40,7 +43,7 @@ export const BecauseLifeRunYou = () => {
   return (
     <SectionLayout className="gap-12">
       <FadeIn className="mx-auto flex w-[508px] flex-col gap-3 text-center max-md:w-full">
-        <Title as="h2" size="3xl" align="center">
+        <Title as="h2" size="3xl" className="text-center">
           Because Life Shouldn’t Run You
         </Title>
         <Text>

@@ -3,7 +3,8 @@
 import Link from 'next/link';
 
 import { footerNavigation, policyNavigation } from '@/shared/config/routes';
-import { Divider, Text } from '@/shared/ui/components/atoms';
+import { Divider } from '@/shared/ui/components/atoms/divider';
+import { Text } from '@/shared/ui/components/atoms/text';
 
 export const Footer = () => {
   return (
@@ -11,7 +12,7 @@ export const Footer = () => {
       <section className="flex items-center justify-between max-md:flex-col max-md:gap-12">
         <nav className="flex gap-6 max-md:flex-col max-md:items-center max-md:gap-12 max-md:text-center">
           <section className="flex gap-6">
-            <div className="flex max-w-[150px] flex-col gap-6">
+            <div className="flex max-w-[150px] flex-col gap-6 max-md:text-center">
               {footerNavigation.slice(0, 4).map(item => (
                 <Link key={item.label} href={item.href}>
                   <Text size="sm" weight={300}>
@@ -20,7 +21,7 @@ export const Footer = () => {
                 </Link>
               ))}
             </div>
-            <div className="flex max-w-[150px] flex-col gap-6">
+            <div className="flex max-w-[150px] flex-col gap-6 max-md:text-center">
               {footerNavigation.slice(4, 7).map(item => (
                 <Link key={item.label} href={item.href}>
                   <Text size="sm" weight={300}>
@@ -30,7 +31,7 @@ export const Footer = () => {
               ))}
             </div>
           </section>
-          <div className="flex max-w-[150px] flex-col gap-6">
+          <div className="flex max-w-[150px] flex-col gap-6 max-md:text-center">
             {footerNavigation.slice(7, 10).map(item => (
               <Link key={item.label} href={item.href}>
                 <Text size="sm" weight={300}>

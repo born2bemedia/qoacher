@@ -2,13 +2,16 @@
 
 import Image from 'next/image';
 
-import { Button, Text, Title } from '@/shared/ui/components/atoms';
-import { FadeIn, SectionLayout } from '@/shared/ui/components/templates';
+import { Button } from '@/shared/ui/components/atoms/button';
+import { Text } from '@/shared/ui/components/atoms/text';
+import { Title } from '@/shared/ui/components/atoms/title';
+import { FadeIn } from '@/shared/ui/components/templates/fade-in';
+import { SectionLayout } from '@/shared/ui/components/templates/section-layout';
 
 export const StartSmall = () => {
   return (
     <SectionLayout className="gap-12">
-      <Title as="h2" size="3xl" align="center">
+      <Title as="h2" size="3xl" className="text-center">
         Start Small. Grow Steady.
       </Title>
       <FadeIn className="relative flex flex-col items-center justify-center gap-6 p-12 text-center max-md:px-4 max-md:py-12">

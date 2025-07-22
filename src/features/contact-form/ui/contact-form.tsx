@@ -4,14 +4,12 @@ import dynamic from 'next/dynamic';
 
 import { useForm } from '@/shared/lib/forms';
 import { cn } from '@/shared/lib/utils';
-import {
-  Button,
-  TextArea,
-  TextField,
-  useDialogStore,
-} from '@/shared/ui/components/atoms';
+import { Button } from '@/shared/ui/components/atoms/button';
+import { useDialogStore } from '@/shared/ui/components/atoms/dialog';
+import { TextArea } from '@/shared/ui/components/atoms/text-area';
+import { TextField } from '@/shared/ui/components/atoms/text-field';
 
-import { contactFormSchema } from '../lib';
+import { contactFormSchema } from '../schema';
 
 const ThankYouDialog = dynamic(
   () => import('./thank-you-dialog').then(mod => mod.ThankYouDialog),

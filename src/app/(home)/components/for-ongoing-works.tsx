@@ -2,12 +2,12 @@
 
 import Image from 'next/image';
 
-import { Button, Text, Title } from '@/shared/ui/components/atoms';
-import {
-  FadeIn,
-  HorizontalLayout,
-  SectionLayout,
-} from '@/shared/ui/components/templates';
+import { Button } from '@/shared/ui/components/atoms/button';
+import { Text } from '@/shared/ui/components/atoms/text';
+import { Title } from '@/shared/ui/components/atoms/title';
+import { FadeIn } from '@/shared/ui/components/templates/fade-in';
+import { HorizontalLayout } from '@/shared/ui/components/templates/horizontal-layout';
+import { SectionLayout } from '@/shared/ui/components/templates/section-layout';
 
 export const ForOngoingWorks = () => {
   return (
