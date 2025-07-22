@@ -58,6 +58,33 @@
     "readPracticalOnSiteArticles": "Read practical, on-site articles with tools, reflection exercises, and simple step-by-step methods to help you improve on your own.",
     "learnMore": "Learn More"
   },
+  "wantToGear": {
+    "wantToGearTitle": "Want to Go Deer?",
+    "wantToGearDescription": "If you&apos;re not ready for individual coaching, try one of our structured career-focused programs. If you already know your needs are broader, explore our complete coaching packages.",
+    "careerPrograms": "Career Programs",
+    "packages": "Packages"
+  },
+  "whyYouNeed": {
+    "without1": "Repeating cycles of effort followed by burnout and quitting",
+    "without2": "Years lost to vague goals and inconsistent action",
+    "without3": "Good intentions that never turn into habits or results",
+    "without4": "Personal growth delayed by distractions, pressure, and lack of focus",
+    "without5": "Frustration from knowing what to do but not following through",
+    "with1": "Steady progress through realistic structure and long-term guidance",
+    "with2": "Clear direction with consistent steps toward defined outcomes",
+    "with3": "Tangible routines and systems that hold over time",
+    "with4": "Sustained improvement through accountability and priority alignment",
+    "with5": "Long-term behavioral change reinforced by expert coaching",
+    "becauseLifeShouldntRunYou": "Why You Need Coacher",
+    "without": "Without Support",
+    "with": "With Coacher"
+  },
+  "growthAndLongTermPlanning": {
+    "title": "Coaching for Growth That Lasts",
+    "description": "Habits. Direction. Long-term focus. We help you stay aligned and keep moving forward.",
+    "needExtraSupport": "Need Extra Support?",
+    "needExtraSupportDescription": "Don’t hesitate to contact us. We’re available 24/7 to help you choose the right service and take the next step with confidence."
+  },
   "services": {
     "chooseTheCoaching": "Choose the Coaching <br /> That Fits Your Situation",
     "careerPersonalLifeRelationshipsLongTermGrowth": "Career. Personal life. Relationships. Long-term growth.",

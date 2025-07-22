@@ -12,11 +12,9 @@ export default async function ServicesPage() {
     <main>
       <Hero
         title={
-          <>
-            {t('chooseTheCoaching', {
-              fallback: 'Choose the Coaching <br /> That Fits Your Situation',
-            })}
-          </>
+          t('chooseTheCoaching', {
+            fallback: 'Choose the Coaching <br /> That Fits Your Situation',
+          })
         }
         description={t('careerPersonalLifeRelationshipsLongTermGrowth', {
           fallback:
