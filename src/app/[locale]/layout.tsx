@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Ledger, Lexend } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 import { cn } from '@/shared/lib/utils';
 import { Dialog } from '@/shared/ui/components/atoms/dialog';
@@ -34,6 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleAnalytics gaId="G-M2QJY5QBW1" />
       <body className={cn('antialiased', lexend.variable, ledger.variable)}>
         <NextIntlClientProvider>
           <Header />
