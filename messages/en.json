@@ -166,8 +166,22 @@
   "growthAndLongTermPlanning": {
     "title": "Coaching for Growth That Lasts",
     "description": "Habits. Direction. Long-term focus. We help you stay aligned and keep moving forward.",
+    "habitSystemsAndDailyStructureTitle": "Habit Systems & Daily Structure",
+    "longTermPersonalPlanningTitle": "Long-Term Personal Planning",
+    "accountabilityAndConsistencyTitle": "Accountability & Consistency",
+    "identityPurposeAndGrowthAlignmentTitle": "Identity, Purpose & Growth Alignment",
     "needExtraSupport": "Need Extra Support?",
     "needExtraSupportDescription": "Don’t hesitate to contact us. We’re available 24/7 to help you choose the right service and take the next step with confidence."
+  },
+  "packageMore": {
+    "title": "Need Something More?",
+    "wantToGearDescription": "If you&apos;re not ready for individual coaching, try one of our structured career-focused programs. If you already know your needs are broader, explore our complete coaching packages.",
+    "button1": "Programs",
+    "button2": "Contact Us"
+  },
+  "packages": {
+    "title": "Complete Packages for <br/>Life’s Biggest Challenges",
+    "description": "Career. Balance. Relationships. Long-term change — in one structured plan."
   },
   "whyYouNeedPersonal": {
     "without1": "Health decline caused by prolonged stress and emotional overload",
@@ -325,6 +339,99 @@
     "success_description": "Your request has been sent. Our coaches will get back to you shortly.",
     "continue": "Continue"
   },
+  "accountabilityAndConsistencyProducts": {
+    "longTermExecutionCoaching": "Long-Term Execution Coaching",
+    "longTermExecutionCoachingDescription": "Support and review sessions to keep momentum and make continuous progress.",
+    "personalAccountabilityProtocol": "Personal Accountability Protocol",
+    "personalAccountabilityProtocolDescription": "Create structured check-ins, feedback loops, and scorecards for your goals.",
+    "motivationMaintenancePlan": "Motivation Maintenance Plan",
+    "motivationMaintenancePlanDescription": "Keep your drive alive through mental reframing and deep motivational anchoring.",
+    "procrastinationEliminationSystem": "Procrastination Elimination System",
+    "procrastinationEliminationSystemDescription": "Root-cause coaching and behavioral correction for chronic avoidance and delay.",
+    "sustainableGoalManagement": "Sustainable Goal Management",
+    "sustainableGoalManagementDescription": "Turn large goals into realistic stages with checkpoints, buffers, and review triggers.",
+    "highStakesGoalAccountability": "High-Stakes Goal Accountability",
+    "highStakesGoalAccountabilityDescription": "Dedicated coaching to keep you on track with your most critical goals"
+  },
+  "habitSystemsAndDailyStructureProducts": {
+    "habitArchitectureIntensive": "Habit Architecture Intensive",
+    "habitArchitectureIntensiveDescription": "Build a high-retention habit structure tailored to your lifestyle and long-term goals.",
+    "dailyRoutineEngineering": "Daily Routine Engineering",
+    "dailyRoutineEngineeringDescription": "Design a high-functioning day structure based on your energy and workload.",
+    "morningEveningProtocolSetup": "Morning and Evening Protocol Setup",
+    "morningEveningProtocolSetupDescription": "Develop consistent opening and closing routines to anchor productivity.",
+    "timeOwnershipStrategy": "Time Ownership Strategy",
+    "timeOwnershipStrategyDescription": "Shift from time pressure to control — structure your day-to-day for clarity.",
+    "distractionEliminationCoaching": "Distraction Elimination Coaching",
+    "distractionEliminationCoachingDescription": "Target digital, emotional, and behavioral distractions with personalized reduction tools.",
+    "habitFailureRecoveryPlan": "Habit Failure Recovery Plan",
+    "habitFailureRecoveryPlanDescription": "Address the causes behind inconsistency, self-sabotage, and unproductive patterns."
+  },
+  "identityPurposeAndGrowthAlignmentProducts": {
+    "personalAlignmentStrategy": "Personal Alignment Strategy",
+    "personalAlignmentStrategyDescription": "Define who you are becoming and ensure your daily actions reflect that path.",
+    "deepPurposeExploration": "Deep Purpose Exploration",
+    "deepPurposeExplorationDescription": "Clarify your purpose beyond performance, roles, or achievements.",
+    "identityIntegrationCoaching": "Identity Integration Coaching",
+    "identityIntegrationCoachingDescription": "Resolve internal contradictions and unify the roles, values, and vision.",
+    "growthTrackingReflectionSystem": "Growth Tracking & Reflection System",
+    "growthTrackingReflectionSystemDescription": "Design a personal review process to track improvement across all key areas.",
+    "emotionalMaturityResponsibilityCoaching": "Emotional Maturity & Responsibility Coaching",
+    "emotionalMaturityResponsibilityCoachingDescription": "Shift from reactive to grounded action in personal and professional life.",
+    "lifeDirectionReset": "Life Direction Reset",
+    "lifeDirectionResetDescription": "A deep, structured process to redefine who you are, what you stand for."
+  },
+  "longTermPersonalPlanningProducts": {
+    "personalGrowthRoadmap": "Personal Growth Roadmap",
+    "personalGrowthRoadmapDescription": "Develop a 12-month action plan based on your goals, values, and intentions.",
+    "fiveYearVisionExecutionStrategy": "Five-Year Vision & Execution Strategy",
+    "fiveYearVisionExecutionStrategyDescription": "Clarify your five-year direction with practical planning and accountability.",
+    "lifeStructureDesign": "Life Structure Design",
+    "lifeStructureDesignDescription": "Organize your life by domains (career, personal, health, etc.) for ongoing balance.",
+    "lifestyleAlignmentCoaching": "Lifestyle Alignment Coaching",
+    "lifestyleAlignmentCoachingDescription": "Bridge the gap between how you\\'re living and what you actually value.",
+    "valuesBasedDecisionFramework": "Values-Based Decision Framework",
+    "valuesBasedDecisionFrameworkDescription": "Build a filter to make all future decisions in line with your principles and purpose.",
+    "majorLifeTransitionBlueprint": "Major Life Transition Blueprint",
+    "majorLifeTransitionBlueprintDescription": "Comprehensive plan for handling big changes — career shifts, relocation…"
+  },
+  "packagesProducts": {
+    "burnoutRecoveryBalanceReset": "Burnout Recovery & Balance Reset",
+    "burnoutRecoveryBalanceResetWhoItsFor": "Professionals and parents who are exhausted, stressed, and struggling to regain stability.",
+    "burnoutRecoveryBalanceResetIncludes1": "Burnout Recovery Planning",
+    "burnoutRecoveryBalanceResetIncludes2": "Stress Exposure Review",
+    "burnoutRecoveryBalanceResetIncludes3": "Energy Management Strategy",
+    "burnoutRecoveryBalanceResetIncludes4": "Work-Life Rebalancing Plan",
+    "burnoutRecoveryBalanceResetIncludes5": "Habit Overhaul Program",
+    "careerReinventionBlueprint": "Career Reinvention Blueprint",
+    "careerReinventionBlueprintWhoItsFor": "People looking for a complete career transformation or pivot.",
+    "careerReinventionBlueprintIncludes1": "Career Diagnostic Session",
+    "careerReinventionBlueprintIncludes2": "Career Change Strategy",
+    "careerReinventionBlueprintIncludes3": "Midlife Career Reinvention Plan",
+    "careerReinventionBlueprintIncludes4": "Purpose & Strengths Alignment Session",
+    "careerReinventionBlueprintIncludes5": "Salary Negotiation Coaching",
+    "relationshipResetBoundariesMastery": "Relationship Reset & Boundaries Mastery",
+    "relationshipResetBoundariesMasteryWhoItsFor": "Individuals and couples facing communication struggles, conflict, or poor boundaries.",
+    "relationshipResetBoundariesMasteryIncludes1": "Personal Relationship Coaching (Relationship Clarity Session)",
+    "relationshipResetBoundariesMasteryIncludes2": "Couples Coaching (Conflict Resolution Coaching)",
+    "relationshipResetBoundariesMasteryIncludes3": "Setting Boundaries (Saying No Without Guilt)",
+    "relationshipResetBoundariesMasteryIncludes4": "Difficult Conversations Coaching",
+    "relationshipResetBoundariesMasteryIncludes5": "Emotional Safety",
+    "identityPurposeDeepDive": "Identity & Purpose Deep Dive",
+    "identityPurposeDeepDiveWhoItsFor": "People feeling lost, disconnected, or unsure of who they are or what they want.",
+    "identityPurposeDeepDiveIncludes1": "Deep Purpose Exploration – €7,500",
+    "identityPurposeDeepDiveIncludes2": "Identity Integration Coaching – €6,400",
+    "identityPurposeDeepDiveIncludes3": "Personal Alignment Strategy – €6,800",
+    "identityPurposeDeepDiveIncludes4": "Emotional Baggage Processing – €6,800",
+    "identityPurposeDeepDiveIncludes5": "Values-Based Decision Framework – €5,900",
+    "fullGrowthAccountabilitySystem": "Full Growth & Accountability System",
+    "fullGrowthAccountabilitySystemWhoItsFor": "Clients who want sustained, guided transformation across all areas of life.",
+    "fullGrowthAccountabilitySystemIncludes1": "Deep Purpose Exploration – €7,500",
+    "fullGrowthAccountabilitySystemIncludes2": "Identity Integration Coaching – €6,400",
+    "fullGrowthAccountabilitySystemIncludes3": "Personal Alignment Strategy – €6,800",
+    "fullGrowthAccountabilitySystemIncludes4": "Emotional Baggage Processing – €6,800",
+    "fullGrowthAccountabilitySystemIncludes5": "Values-Based Decision Framework – €5,900"
+  },
   "personalCoachingProducts": {
     "personalSystemDesign": "Personal System Design",
     "personalSystemDesignDescription": "Build a sustainable, tailored system for your time, energy, and commitments.",
@@ -427,6 +534,14 @@
   },
   "header": {
     "signIn": "Sign in"
+  },
+  "packagesLayout": {
+    "description": "This happens. One service won’t fix it all — that’s why we built discounted packages for the biggest challenges.",
+    "whoItsFor": "Who it’s for:",
+    "includes": "Includes:",
+    "separately": "Total if booked separately:",
+    "price": "Your price:",
+    "order": "Order Now"
   },
   "products": {
     "order": "Order Now"
