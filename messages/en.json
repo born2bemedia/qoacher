@@ -58,6 +58,38 @@
     "readPracticalOnSiteArticles": "Read practical, on-site articles with tools, reflection exercises, and simple step-by-step methods to help you improve on your own.",
     "learnMore": "Learn More"
   },
+  "aboutTheProjectDetails": {
+    "title1": "The Facts You Can’t Ignore",
+    "text1": "Stress levels have tripled in the last 30 months.",
+    "text2": "The ability of individuals to influence their own lives has dropped by 46% since 2022.",
+    "text3": "The average time it takes someone to make a major life shift on their own is 5 years.",
+    "title2": "The truth is harsh",
+    "text4": "The modern pace of life is not slowing down. Without deliberate, structured coaching, you’re not just standing still — you’re falling behind."
+  },
+  "aboutTheProjectDiplomas": {
+    "title1": "47 diplomas & certifications"
+  },
+  "aboutTheProjectOurTeam": {
+    "title1": "Our team includes specialists in:",
+    "text1": "Career transitions",
+    "text2": "Emotional resilience",
+    "text3": "Communication",
+    "text4": "etc:)",
+    "text5": "So no matter what area of life is in focus, you’ll work with someone who truly understands it."
+  },
+  "weHere": {
+    "title": "We’re here to reinvent your life — it’s up to you where to start.",
+    "button1": "Services",
+    "button2": "Contact Us"
+  },
+  "aboutTheProjectWhoWeAre": {
+    "text1": "Qoacher is a team of 11 professionals with decades of combined experience in psychology, executive coaching, relationship dynamics, and personal development.",
+    "title1": "Who We Are"
+  },
+  "aboutTheProject": {
+    "title": "Because Life Won’t  <br/>Wait for You to Catch Up",
+    "description": "Clarity. Direction. Strength. The support modern life demands."
+  },
   "wantToGear": {
     "wantToGearTitle": "Want to Go Deer?",
     "wantToGearDescription": "If you&apos;re not ready for individual coaching, try one of our structured career-focused programs. If you already know your needs are broader, explore our complete coaching packages.",
