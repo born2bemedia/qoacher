@@ -28,8 +28,8 @@ export const PackagesProducts = async () => {
           fallback: 'Habit Overhaul Program',
         }),
       ],
-      separately: '27,400',
-      price: '22,500',
+      separately: 27400,
+      price: 22500,
     },
     {
       id: 'career-reinvention-blueprint',
@@ -54,8 +54,8 @@ export const PackagesProducts = async () => {
           fallback: 'Salary Negotiation Coaching',
         }),
       ],
-      separately: '33,300',
-      price: '27,500',
+      separately: 33300,
+      price: 27500,
     },
     {
       id: 'relationship-reset-boundaries-mastery',
@@ -83,8 +83,8 @@ export const PackagesProducts = async () => {
           fallback: 'Emotional Safety',
         }),
       ],
-      separately: '30,900',
-      price: '25,600',
+      separately: 30900,
+      price: 25600,
     },
     {
       id: 'identity-purpose-deep-dive',
@@ -111,8 +111,8 @@ export const PackagesProducts = async () => {
           fallback: 'Values-Based Decision Framework – €5,900',
         }),
       ],
-      separately: '33,600',
-      price: '28,300',
+      separately: 33600,
+      price: 28300,
     },
     {
       id: 'full-growth-accountability-system',
@@ -139,8 +139,8 @@ export const PackagesProducts = async () => {
           fallback: 'Values-Based Decision Framework – €5,900',
         }),
       ],
-      separately: '33,400',
-      price: '28,000',
+      separately: 33400,
+      price: 28000,
     },
   ];
 };

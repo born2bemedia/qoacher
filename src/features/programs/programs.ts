@@ -45,8 +45,8 @@ export const ProgramsProducts = async () => {
           fallback: 'Making Boundaries a Habit',
         }),
       ],
-      price: '4,200',
-    },
+      price: 4200,
+    },  
     {
       id: 'breakingTheCycleOfOverthinking',
       title: t('breakingTheCycleOfOverthinkingTitle', {
@@ -88,7 +88,7 @@ export const ProgramsProducts = async () => {
           fallback: 'Living Beyond Overthinking',
         }),
       ],
-      price: '3,500',
+      price: 3500,
     },
   ];
 };
