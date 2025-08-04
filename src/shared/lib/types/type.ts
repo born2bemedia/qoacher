@@ -1,6 +1,15 @@
 export type CareerProduct = {
-    id: string;
-    title: string;
-    description: string;
-    price: number;
-  }
+  id: string;
+  title: string;
+  description: string;
+  price: number;
+};
+
+export type Package = {
+  id: string;
+  title: string;
+  whoItsFor: string;
+  includes: string[];
+  separately: string;
+  price: string;
+};
