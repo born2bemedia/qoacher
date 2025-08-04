@@ -28,7 +28,7 @@ export default async function ServicesPage() {
         })}
         text={t('careerCoachingDescription', {
           fallback:
-            "If you're stuck, lost, or thinking about changing direction, we help you make clear decisions, prepare for the next step, and take control of your work life.",
+            "If you’re stuck, lost, or thinking about changing direction, we help you make clear decisions, prepare for the next step, and take control of your work life.",
         })}
         buttonUrl="/career-coaching"
         imgUrl="/images/services/1.png"
