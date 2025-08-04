@@ -208,6 +208,30 @@
     "needExtraSupport": "Need Extra Support?",
     "needExtraSupportDescription": "Don’t hesitate to contact us. We’re available 24/7 to help you choose the right service and take the next step with confidence."
   },
+  "programsHowToStart": {
+    "programsHowToStartTitle": "How to Start",
+    "title": "That’s it. No apps. No accounts. <br/>Just coaching that fits your life.",
+    "text1": "Choose a program",
+    "text2": "– pick the topic you need most right now.",
+    "text3": "Pay",
+    "text4": "– one simple, upfront payment.",
+    "text5": "Get the emails",
+    "text6": "– lessons land in your inbox, no platforms or logins.",
+    "text7": "Ask for help anytime",
+    "text8": "– every email includes a link to reach your coach."
+  },
+  "programsWhatOffers": {
+    "title": "What Qoacher Offers",
+    "title2": "A Qoacher Program is a self‑paced coaching course sent by email.",
+    "text1": "Join anytime, and receive 10 lessons you can read when it suits you.",
+    "text2": "You can ask questions while in the program. If we see that your challenge goes beyond the program, we’ll suggest a personalized solution."
+  },
+  "programs": {
+    "title": "Programs That <br/>Start Your Change",
+    "description": "Boundaries. Balance. Focus. Step-by-step guidance.",
+    "needExtraSupport": "Need Extra Support?",
+    "needExtraSupportDescription": "Don’t hesitate to contact us. We’re available 24/7 to help you choose the right service and take the next step with confidence."
+  },
   "services": {
     "chooseTheCoaching": "Choose the Coaching <br /> That Fits Your Situation",
     "careerPersonalLifeRelationshipsLongTermGrowth": "Career. Personal life. Relationships. Long-term growth.",
@@ -482,6 +506,32 @@
     "publicPersonaAlignment": "Public Persona Alignment",
     "publicPersonaAlignmentDescription": "Coaching for aligning how you\\'re seen with who you are — online and in life."
   },
+  "programsProducts": {
+    "buildingUnshakableBoundariesTitle": "Building Unshakable Boundaries: 10 Days to Take Back Your Life",
+    "buildingUnshakableBoundariesDescription": "Weak or missing boundaries drain energy, create resentment, and leave you feeling out of control. This 10‑day program helps you set clear limits, say “no” without guilt, and take back control of your time, energy, and relationships — at your own pace.",
+    "buildingUnshakableBoundariesIncludes1": "Why Boundaries Matter More Than Ever",
+    "buildingUnshakableBoundariesIncludes2": "Spotting Boundary Violations",
+    "buildingUnshakableBoundariesIncludes3": "The Cost of Saying “Yes” Too Much",
+    "buildingUnshakableBoundariesIncludes4": "Defining Your Personal Non‑Negotiables",
+    "buildingUnshakableBoundariesIncludes5": "The Language of Boundaries",
+    "buildingUnshakableBoundariesIncludes6": "Handling Pushback and Manipulation",
+    "buildingUnshakableBoundariesIncludes7": "Emotional Boundaries",
+    "buildingUnshakableBoundariesIncludes8": "Boundaries at Work",
+    "buildingUnshakableBoundariesIncludes9": "Boundaries in Relationships",
+    "buildingUnshakableBoundariesIncludes10": "Making Boundaries a Habit",
+    "breakingTheCycleOfOverthinkingTitle": "Breaking the Cycle of Overthinking: 10 Days to Clearer Decisions",
+    "breakingTheCycleOfOverthinkingDescription": "Overthinking steals time, energy, and peace of mind — and it keeps people stuck. This 10‑day program helps you break the mental loops, make decisions faster, and free yourself from the constant “what ifs” that drain your life.",
+    "breakingTheCycleOfOverthinkingIncludes1": "What Overthinking Really Is",
+    "breakingTheCycleOfOverthinkingIncludes2": "Spotting the Triggers",
+    "breakingTheCycleOfOverthinkingIncludes3": "Decision Paralysis Explained",
+    "breakingTheCycleOfOverthinkingIncludes4": "The Cost of Endless “What Ifs”",
+    "breakingTheCycleOfOverthinkingIncludes5": "Interrupting the Thought Loop",
+    "breakingTheCycleOfOverthinkingIncludes6": "Separating Facts from Stories",
+    "breakingTheCycleOfOverthinkingIncludes7": "Setting Thinking Limits",
+    "breakingTheCycleOfOverthinkingIncludes8": "Replacing Rumination with Action",
+    "breakingTheCycleOfOverthinkingIncludes9": "Making Peace with Imperfect Decisions",
+    "breakingTheCycleOfOverthinkingIncludes10": "Living Beyond Overthinking"
+  },
   "footerNavigation": {
     "careerCoaching": "Career Coaching",
     "personalCoaching": "Personal Coaching",
@@ -545,5 +595,9 @@
   },
   "products": {
     "order": "Order Now"
+  },
+  "programsLayout": {
+    "whatsInside": "What’s Inside",
+    "joinProgram": "Join Program"
   }
 }
