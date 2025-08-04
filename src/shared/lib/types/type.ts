@@ -13,3 +13,11 @@ export type Package = {
   separately: string;
   price: string;
 };
+
+export type Program = {
+  id: string;
+  title: string;
+  description: string;
+  includes: string[];
+  price: string;
+};
