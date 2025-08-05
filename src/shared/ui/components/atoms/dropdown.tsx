@@ -1,6 +1,6 @@
 'use client';
 
-import { type ReactNode, useState } from 'react';
+import { type ReactNode, useEffect, useState } from 'react';
 import {
   Content,
   Item,
@@ -12,11 +12,18 @@ import {
 export const Dropdown = ({
   trigger,
   values,
+  pathname,
 }: {
   trigger: ReactNode;
   values: { label: ReactNode; value?: string }[];
+  pathname: string;
 }) => {
+
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   return (
     <Root open={open} onOpenChange={setOpen}>

@@ -3,6 +3,7 @@
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
 import { Navigation } from '@/shared/config/navigation';
@@ -12,6 +13,7 @@ import { Text } from '@/shared/ui/components/atoms/text';
 import { BasketIcon } from '@/shared/ui/icons/fill';
 import { ChevronDown } from '@/shared/ui/icons/outline';
 
+
 const BurgerMenu = dynamic(
   () => import('./burger-menu').then(mod => mod.BurgerMenu),
   {
@@ -20,6 +22,7 @@ const BurgerMenu = dynamic(
 );
 
 export const Header = () => {
+  const pathname = usePathname();
   const t = useTranslations('header');
 
   return (
@@ -30,6 +33,7 @@ export const Header = () => {
           {Navigation().map(item =>
             item.list ? (
               <Dropdown
+                pathname={pathname}
                 key={item.label}
                 trigger={
                   <button className="flex cursor-pointer items-center gap-1 py-4 outline-none">
