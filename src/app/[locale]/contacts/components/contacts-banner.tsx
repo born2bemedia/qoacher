@@ -15,18 +15,19 @@ export const ContactsBanner = () => {
           fallback: 'Because Life Shouldn’t Run You',
         })}
       </Title>
-      <Text zIndex={2} color="light" className="w-[344px] text-center max-md:w-full">
+      <Text zIndex={2} color="light" className=" text-center ">
         <span
-          className="text-center underline"
+          className="text-center uppercase"
           dangerouslySetInnerHTML={{
             __html: t('text1', {
-              fallback: 'Because Life Shouldn’t Run You',
+              fallback: 'You’re not stuck. You’re just one message away from change.',
             }),
           }}
         />
         <br />
+        <br />
         <span
-          className="text-center"
+          className="text-center w-[344px] block mx-auto max-md:w-full"
           dangerouslySetInnerHTML={{
             __html: t('text2', {
               fallback:
