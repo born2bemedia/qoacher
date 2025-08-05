@@ -93,7 +93,7 @@
   "wantToGear": {
     "wantToGearTitle": "Want to Go Deer?",
     "wantToGearDescription": "If you&apos;re not ready for individual coaching, try one of our structured career-focused programs. If you already know your needs are broader, explore our complete coaching packages.",
-    "careerPrograms": "Career Programs",
+    "careerPrograms": "Programs",
     "packages": "Packages"
   },
   "whyYouNeedCoaching": {
@@ -259,6 +259,13 @@
     "description": "Boundaries. Balance. Focus. Step-by-step guidance.",
     "needExtraSupport": "Need Extra Support?",
     "needExtraSupportDescription": "Don’t hesitate to contact us. We’re available 24/7 to help you choose the right service and take the next step with confidence."
+  },
+  "selfImprovement": {
+    "title": "Self‑Improvement <br/>Starts Here",
+    "description": "Articles. Guides. Insights. Practical steps for a stronger, clearer you.",
+    "needExtraSupport": "Need Extra Support?",
+    "needExtraSupportDescription": "Don’t hesitate to contact us. We’re available 24/7 to help you choose the right service and take the next step with confidence.",
+    "readMore": "Read"
   },
   "services": {
     "chooseTheCoaching": "Choose the Coaching <br /> That Fits Your Situation",
