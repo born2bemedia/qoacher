@@ -13,6 +13,13 @@ import { Button } from '../atoms/button';
 
 export const ProgramsLayout = ({ programs }: { programs: Program[] }) => {
   const t = useTranslations('programsLayout');
+  const priceFormatted = (price: number) => {
+    return price.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'EUR',
+      minimumFractionDigits: 0,
+    });
+  };
 
   return (
     <SectionLayout className="gap-12">
@@ -46,7 +53,7 @@ export const ProgramsLayout = ({ programs }: { programs: Program[] }) => {
               </ul>
             </div>
             <div className="flex flex-col gap-[40px]">
-              <Title className="text-[24px]">€{program.price}</Title>
+              <Title className="text-[24px]">{priceFormatted(program.price)}</Title>
               <Button className="w-full text-center justify-center">
                 {t('joinProgram', {
                   fallback: 'Join Program',

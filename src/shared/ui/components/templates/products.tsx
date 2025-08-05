@@ -12,6 +12,13 @@ import { Button } from '../atoms/button';
 
 export const Products = ({ title, products }: { title: string; products: CareerProduct[] }) => {
   const t = useTranslations('products');
+  const priceFormatted = (price: number) => {
+    return price.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'EUR',
+      minimumFractionDigits: 0,
+    });
+  };
 
   return (
     <SectionLayout className="gap-12">
@@ -22,13 +29,16 @@ export const Products = ({ title, products }: { title: string; products: CareerP
       </FadeIn>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {products.map((product) => (
-          <FadeIn key={product.id} className="flex flex-col justify-between gap-12 p-6 border-1 border-[#E9E9E9]">
+          <FadeIn
+            key={product.id}
+            className="flex flex-col justify-between gap-12 p-6 border-1 border-[#E9E9E9]"
+          >
             <div className="flex flex-col gap-6">
               <Title as="h3" size="2xl" className="text-left text-[18px] ">
                 {product.title}
               </Title>
               <Text>{product.description}</Text>
-              <Title className="text-[24px] mt-6">€{product.price}</Title>
+              <Title className="text-[24px] mt-6">{priceFormatted(product.price)}</Title>
             </div>
             <Button className="w-full text-center justify-center">
               {t('order', {

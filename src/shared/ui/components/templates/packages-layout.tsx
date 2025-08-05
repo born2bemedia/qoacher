@@ -13,6 +13,13 @@ import { Button } from '../atoms/button';
 
 export const PackagesLayout = ({ packages }: { packages: Package[] }) => {
   const t = useTranslations('packagesLayout');
+  const priceFormatted = (price: number) => {
+    return price.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'EUR',
+      minimumFractionDigits: 0,
+    });
+  };
 
   return (
     <SectionLayout className="gap-12">
@@ -67,7 +74,7 @@ export const PackagesLayout = ({ packages }: { packages: Package[] }) => {
                       fallback: 'Total if booked separately:',
                     })}
                   </Text>
-                  <Title className="text-[24px]">€{pack.separately}</Title>
+                  <Title className="text-[24px]">{priceFormatted(pack.separately)}</Title>
                 </div>
                 <div className="flex flex-col gap-3 w-[50%] max-md:w-full">
                   <Text className="text-[14px]">
@@ -75,7 +82,7 @@ export const PackagesLayout = ({ packages }: { packages: Package[] }) => {
                       fallback: 'Your price:',
                     })}
                   </Text>
-                  <Title className="text-[24px]">€{pack.price}</Title>
+                  <Title className="text-[24px]">{priceFormatted(pack.price)}</Title>
                 </div>
               </div>
               <Button className="w-full text-center justify-center">

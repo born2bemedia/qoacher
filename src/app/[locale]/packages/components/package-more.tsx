@@ -37,7 +37,7 @@ export const PackageMore = () => {
             {t('button1', { fallback: 'Programs' })}
           </Button>
         </Link>
-        <Link href="/contact" className="max-md:w-1/2">
+        <Link href="/contacts" className="max-md:w-1/2">
           <Button
             variant="light"
             className="w-[200px] items-center justify-center border-1 border-white px-3 text-center max-md:w-full"

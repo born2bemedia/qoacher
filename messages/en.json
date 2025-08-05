@@ -148,6 +148,34 @@
     "needExtraSupport": "Need Extra Support?",
     "needExtraSupportDescription": "Don’t hesitate to contact us. We’re available 24/7 to help you choose the right service and take the next step with confidence."
   },
+  "contactMain": {
+    "title": "Personal Growth Starts <br/>with a Single Step",
+    "description": "Questions. Guidance. Next steps. We’re here when you’re ready.",
+    "otherWays": "Other Ways to Contact Us",
+    "forBusinessCorrespondence": "For Business Correspondence:",
+    "forBusinessCorrespondenceDescription": "Registration address here",
+    "officeLocation": "Office Location:",
+    "officeLocationDescription": "Office address here",
+    "formTitle": "Send Us a Message"
+  },
+  "contactsBanner": {
+    "title": "Because Life Shouldn’t Run You",
+    "text1": "Because Life Shouldn’t Run You",
+    "text2": "At Qoacher, we believe personal change is possible — with the right structure, tools, and support. "
+  },
+  "practicalTools": {
+    "title1": "Self-Improvement Articles",
+    "description1": "Actionable guides and exercises, for free.",
+    "buttonText1": "Explore Free Guides",
+    "title2": "Step-by-Step Email Programs",
+    "description2": "No calls, no pressure — just structured help to get you started.",
+    "buttonText2": "Browse Programs",
+    "title3": "Complete Coaching Packages",
+    "description3": "Explore ongoing support systems tailored to you.",
+    "buttonText3": "View Coaching Packages",
+    "title": "Practical Tools While You Wait",
+    "subtitle": "If you’re not ready for 1-on-1 coaching yet, here’s what you can explore today:"
+  },
   "whyYouNeed": {
     "without1": "Repeating cycles of effort followed by burnout and quitting",
     "without2": "Years lost to vague goals and inconsistent action",

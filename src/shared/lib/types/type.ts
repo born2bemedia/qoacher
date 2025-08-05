@@ -10,8 +10,8 @@ export type Package = {
   title: string;
   whoItsFor: string;
   includes: string[];
-  separately: string;
-  price: string;
+  separately: number;
+  price: number;
 };
 
 export type Program = {
@@ -19,5 +19,5 @@ export type Program = {
   title: string;
   description: string;
   includes: string[];
-  price: string;
+  price: number;
 };

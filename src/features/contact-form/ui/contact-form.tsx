@@ -13,16 +13,20 @@ import { TextField } from '@/shared/ui/components/atoms/text-field';
 import { ContactFormSchema } from '../schema/schemas';
 
 const ThankYouDialog = dynamic(
-  () => import('./thank-you-dialog').then(mod => mod.ThankYouDialog),
+  () => import('./thank-you-dialog').then((mod) => mod.ThankYouDialog),
   {
     ssr: false,
-  },
+  }
 );
 
 export const ContactForm = ({
   layoutClassName,
+  fieldClassName,
+  buttonClassName,
 }: {
   layoutClassName?: string;
+  fieldClassName?: string;
+  buttonClassName?: string;
 }) => {
   const t = useTranslations('contactForm');
   const { registerContent, setIsOpen } = useDialogStore();
@@ -37,7 +41,7 @@ export const ContactForm = ({
     validators: {
       onChange: ContactFormSchema(),
     },
-    onSubmit: data => {
+    onSubmit: (data) => {
       console.log(data);
 
       registerContent({
@@ -50,15 +54,15 @@ export const ContactForm = ({
 
   return (
     <form
-      onSubmit={e => {
+      onSubmit={(e) => {
         e.preventDefault();
         e.stopPropagation();
-        handleSubmit().catch(err => console.error(err));
+        handleSubmit().catch((err) => console.error(err));
       }}
       className={cn('flex flex-col gap-6', layoutClassName)}
     >
       <Field name="name">
-        {field => {
+        {(field) => {
           console.log('Name errors:', field.state.meta.errors);
           return (
             <TextField
@@ -66,14 +70,15 @@ export const ContactForm = ({
               placeholder={t('name', { fallback: 'Name' })}
               value={String(field.state.value)}
               onBlur={field.handleBlur}
-              onChange={e => field.handleChange(e.target.value)}
-              hint={field.state.meta.errors.map(err => err?.message).join(', ')}
+              onChange={(e) => field.handleChange(e.target.value)}
+              hint={field.state.meta.errors.map((err) => err?.message).join(', ')}
+              className={fieldClassName}
             />
           );
         }}
       </Field>
       <Field name="phone">
-        {field => {
+        {(field) => {
           console.log('Phone errors:', field.state.meta.errors);
           return (
             <TextField
@@ -81,14 +86,15 @@ export const ContactForm = ({
               placeholder={t('phone', { fallback: 'Phone' })}
               value={String(field.state.value)}
               onBlur={field.handleBlur}
-              onChange={e => field.handleChange(e.target.value)}
-              hint={field.state.meta.errors.map(err => err?.message).join(', ')}
+              onChange={(e) => field.handleChange(e.target.value)}
+              hint={field.state.meta.errors.map((err) => err?.message).join(', ')}
+              className={fieldClassName}
             />
           );
         }}
       </Field>
       <Field name="email">
-        {field => {
+        {(field) => {
           console.log('Email errors:', field.state.meta.errors);
           return (
             <TextField
@@ -96,14 +102,15 @@ export const ContactForm = ({
               placeholder={t('email', { fallback: 'Email' })}
               value={String(field.state.value)}
               onBlur={field.handleBlur}
-              onChange={e => field.handleChange(e.target.value)}
-              hint={field.state.meta.errors.map(err => err?.message).join(', ')}
+              onChange={(e) => field.handleChange(e.target.value)}
+              hint={field.state.meta.errors.map((err) => err?.message).join(', ')}
+              className={fieldClassName}
             />
           );
         }}
       </Field>
       <Field name="message">
-        {field => {
+        {(field) => {
           console.log('Message errors:', field.state.meta.errors);
           return (
             <TextArea
@@ -111,15 +118,16 @@ export const ContactForm = ({
               placeholder={t('message', { fallback: 'Message' })}
               value={String(field.state.value)}
               onBlur={field.handleBlur}
-              onChange={e => field.handleChange(e.target.value)}
-              hint={field.state.meta.errors.map(err => err?.message).join(', ')}
+              onChange={(e) => field.handleChange(e.target.value)}
+              hint={field.state.meta.errors.map((err) => err?.message).join(', ')}
+              className={fieldClassName}
             />
           );
         }}
       </Field>
-      <Subscribe selector={state => [state.canSubmit, state.isSubmitting]}>
+      <Subscribe selector={(state) => [state.canSubmit, state.isSubmitting]}>
         {([canSubmit, isSubmitting]) => (
-          <Button type="submit" fullWidth disabled={!canSubmit}>
+          <Button type="submit" fullWidth disabled={!canSubmit} className={buttonClassName}>
             {isSubmitting
               ? t('sending', { fallback: 'Sending...' })
               : t('send', { fallback: 'Send' })}
