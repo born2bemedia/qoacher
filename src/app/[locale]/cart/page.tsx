@@ -1,9 +1,5 @@
-import { EmptyCart } from '@/features/cart/ui/empty-cart';
+import { CartContainer } from './components/cart-container';
 
 export default function CartPage() {
-  return (
-    <main>
-      <EmptyCart />
-    </main>
-  );
+  return <CartContainer />;
 }

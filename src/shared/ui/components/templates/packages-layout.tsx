@@ -2,6 +2,8 @@
 
 import { useTranslations } from 'next-intl';
 
+import { addToCart } from '@/features/cart/api/add-to-cart';
+
 import type { Package } from '@/shared/lib/types/type';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { Title } from '@/shared/ui/components/atoms/title';
@@ -24,7 +26,10 @@ export const PackagesLayout = ({ packages }: { packages: Package[] }) => {
   return (
     <SectionLayout className="gap-12">
       <FadeIn className="mx-auto flex w-full flex-col gap-3 text-center max-md:w-full">
-        <Title as="h2" className="text-center uppercase text-[32px] mb-20 max-md:text-[24px] max-md:mb-12">
+        <Title
+          as="h2"
+          className="text-center uppercase text-[32px] mb-20 max-md:text-[24px] max-md:mb-12"
+        >
           {t('description', {
             fallback:
               'This happens. One service won’t fix it all — that’s why we built discounted packages for the biggest challenges.',
@@ -85,7 +90,7 @@ export const PackagesLayout = ({ packages }: { packages: Package[] }) => {
                   <Title className="text-[24px]">{priceFormatted(pack.price)}</Title>
                 </div>
               </div>
-              <Button className="w-full text-center justify-center">
+              <Button className="w-full text-center justify-center" onClick={() => addToCart(pack)}>
                 {t('order', {
                   fallback: 'Order Now',
                 })}

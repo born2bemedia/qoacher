@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 
+import { ContactFrame } from '@/features/contact-form/ui/contact-frame';
+
 import { Button } from '@/shared/ui/components/atoms/button';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { Title } from '@/shared/ui/components/atoms/title';
@@ -9,8 +11,6 @@ import { BoxesIcon } from '@/shared/ui/icons/fill/boxes';
 import { CartIcon } from '@/shared/ui/icons/fill/cart';
 import { GearIcon } from '@/shared/ui/icons/fill/gear';
 import { TodoIcon } from '@/shared/ui/icons/fill/todo';
-
-import { ExtraSupport } from './extra-support';
 
 const getButton = () => [
   {
@@ -53,7 +53,11 @@ export const EmptyCart = () => {
           ))}
         </div>
       </section>
-      <ExtraSupport />
+      <ContactFrame
+        title="Need Extra Support?"
+        description="Don’t hesitate to contact us. We’re available 24/7 to help you move forward, overcome obstacles, and choose the right path for your growth."
+        imgUrl="/images/cart/form.jpg"
+      />
     </section>
   );
 };
