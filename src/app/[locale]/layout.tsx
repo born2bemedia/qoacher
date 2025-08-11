@@ -6,6 +6,7 @@ import { Toaster } from 'sonner';
 
 import { cn } from '@/shared/lib/utils';
 import { Dialog } from '@/shared/ui/components/atoms/dialog';
+import { Preloader } from '@/shared/ui/components/molecules/preloader';
 import { CookieConsent } from '@/shared/ui/components/organisms/cookie-consent';
 import { Footer } from '@/shared/ui/components/organisms/footer';
 import { Header } from '@/shared/ui/components/organisms/header';
@@ -45,6 +46,7 @@ export default function RootLayout({
           <Dialog />
           <CookieConsent />
           <Toaster />
+          <Preloader />
         </NextIntlClientProvider>
       </body>
     </html>
