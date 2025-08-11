@@ -1,19 +1,21 @@
 'use client';
 
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 
 import { useForm } from '@/shared/lib/forms';
-import { notifySuccess, notifyWarning } from '@/shared/lib/utils/notify';
+import { notifyWarning } from '@/shared/lib/utils/notify';
 import { Button } from '@/shared/ui/components/atoms/button';
+import { useDialogStore } from '@/shared/ui/components/atoms/dialog';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { TextField } from '@/shared/ui/components/atoms/text-field';
+import { WaitMessageIcon } from '@/shared/ui/icons/fill/wait-message';
 
 import { registerUser } from '../api/register-user';
 import { registrationSchema } from '../model/schemas/registration.schema';
+import { RegistrationSuccess } from './registration-success';
 
 export const RegistrationForm = () => {
-  const router = useRouter();
+  const { registerContent, setIsOpen, registerIcon } = useDialogStore();
 
   const { Field, Subscribe, handleSubmit } = useForm({
     defaultValues: {
@@ -35,8 +37,12 @@ export const RegistrationForm = () => {
       });
 
       if (success) {
-        notifySuccess('Account created successfully');
-        router.push('/account');
+        registerContent({
+          title: 'Account created!',
+          content: <RegistrationSuccess />,
+        });
+        registerIcon(<WaitMessageIcon />);
+        setIsOpen(true);
       } else {
         notifyWarning('Something went wrong — please refresh and try again');
       }

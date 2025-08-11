@@ -1,7 +1,6 @@
 'use server';
 
 import type { RegistrationSchema } from '../model/schemas/registration.schema';
-import { signInUser } from './sign-in-user';
 
 export async function registerUser(userDTO: Omit<RegistrationSchema, 'confirmPassword'>) {
   const res = await fetch(`${process.env.SERVER_URL}/api/users`, {
@@ -14,7 +13,7 @@ export async function registerUser(userDTO: Omit<RegistrationSchema, 'confirmPas
   const result = await res.json();
 
   if (!result.errors) {
-    return await signInUser({ email: userDTO.email, password: userDTO.password });
+    return { success: true };
   } else {
     return { success: false, user: null };
   }
