@@ -2,6 +2,8 @@
 
 import { useTranslations } from 'next-intl';
 
+import { addToCart } from '@/features/cart/api/add-to-cart';
+
 import type { Program } from '@/shared/lib/types/type';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { Title } from '@/shared/ui/components/atoms/title';
@@ -54,7 +56,10 @@ export const ProgramsLayout = ({ programs }: { programs: Program[] }) => {
             </div>
             <div className="flex flex-col gap-[40px]">
               <Title className="text-[24px]">{priceFormatted(program.price)}</Title>
-              <Button className="w-full text-center justify-center">
+              <Button
+                className="w-full text-center justify-center"
+                onClick={() => addToCart(program)}
+              >
                 {t('joinProgram', {
                   fallback: 'Join Program',
                 })}

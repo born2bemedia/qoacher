@@ -9,16 +9,18 @@ import { FadeIn } from '@/shared/ui/components/templates/fade-in';
 import { SectionLayout } from '@/shared/ui/components/templates/section-layout';
 
 const ContactForm = dynamic(
-  () => import('@/features/contact-form/ui').then(mod => mod.ContactForm),
-  { ssr: false },
+  () => import('@/features/contact-form/ui').then((mod) => mod.ContactForm),
+  { ssr: false }
 );
 
 export const ContactFrame = ({
   title,
   description,
+  imgUrl = '/images/home/leafs.jpg',
 }: {
   title: string;
   description: string;
+  imgUrl?: string;
 }) => {
   return (
     <SectionLayout className="gap-12">
@@ -32,7 +34,7 @@ export const ContactFrame = ({
         <ContactForm layoutClassName="w-1/2 max-md:w-full" />
         <Image
           className="h-full w-1/2 object-cover max-md:h-[494px] max-md:w-full"
-          src="/images/home/leafs.jpg"
+          src={imgUrl}
           alt="leafs"
           width={543}
           height={494}
