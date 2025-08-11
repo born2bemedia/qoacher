@@ -29,6 +29,7 @@ const textVariants = cva('transition duration-300 ease-in-out', {
       dark: 'text-black',
       light: 'text-white',
       danger: 'text-danger',
+      gray: 'text-[#6B6B6B]',
     },
     zIndex: {
       0: 'z-0',
@@ -57,9 +58,5 @@ export const Text = ({
   zIndex,
   className,
 }: { children: React.ReactNode; className?: string } & TextVariants) => {
-  return (
-    <p className={cn(textVariants({ size, weight, color, zIndex }), className)}>
-      {children}
-    </p>
-  );
+  return <p className={cn(textVariants({ size, weight, color, zIndex }), className)}>{children}</p>;
 };

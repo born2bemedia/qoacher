@@ -11,7 +11,7 @@ const titleVariants = cva('transition duration-300 ease-in-out font-ledger', {
       lg: 'text-lg',
       xl: 'text-xl',
       '2xl': 'text-2xl',
-      '3xl': 'text-3xl',
+      '3xl': 'text-[32px]',
       '4xl': 'text-4xl',
       '5xl': 'text-5xl max-md:text-3xl',
     },
@@ -61,11 +61,7 @@ export const Title = ({
 
   return (
     <Tag
-      className={cn(
-        titleVariants({ color, weight, size, zIndex }),
-        'leading-[120%]',
-        className,
-      )}
+      className={cn(titleVariants({ color, weight, size, zIndex }), 'leading-[120%]', className)}
     >
       {children}
     </Tag>

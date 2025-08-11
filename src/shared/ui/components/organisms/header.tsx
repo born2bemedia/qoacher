@@ -13,13 +13,9 @@ import { Text } from '@/shared/ui/components/atoms/text';
 import { BasketIcon } from '@/shared/ui/icons/fill';
 import { ChevronDown } from '@/shared/ui/icons/outline';
 
-
-const BurgerMenu = dynamic(
-  () => import('./burger-menu').then(mod => mod.BurgerMenu),
-  {
-    ssr: false,
-  },
-);
+const BurgerMenu = dynamic(() => import('./burger-menu').then((mod) => mod.BurgerMenu), {
+  ssr: false,
+});
 
 export const Header = () => {
   const pathname = usePathname();
@@ -30,7 +26,7 @@ export const Header = () => {
       <section className="flex items-center gap-16">
         <Image src="/logo.svg" alt="logo" width={134} height={30} />
         <ul className="flex items-center gap-6 max-lg:hidden">
-          {Navigation().map(item =>
+          {Navigation().map((item) =>
             item.list ? (
               <Dropdown
                 pathname={pathname}
@@ -41,7 +37,7 @@ export const Header = () => {
                     <ChevronDown />
                   </button>
                 }
-                values={item.list.map(v => ({
+                values={item.list.map((v) => ({
                   label: <Link href={v.href}>{v.label}</Link>,
                   value: v.href,
                 }))}
@@ -50,13 +46,15 @@ export const Header = () => {
               <Link key={item.label} href={item.href}>
                 <Text>{item.label}</Text>
               </Link>
-            ),
+            )
           )}
         </ul>
       </section>
       <section className="flex items-center gap-6 max-lg:hidden">
         <BasketIcon />
-        <Button>{t('signIn', { fallback: 'Sign in' })}</Button>
+        <Link href="/sign-in">
+          <Button>{t('signIn', { fallback: 'Sign in' })}</Button>
+        </Link>
       </section>
       <BurgerMenu />
     </header>
