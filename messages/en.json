@@ -731,5 +731,10 @@
       "copy": "Copy",
       "copied": "Copied to clipboard"
     }
+  },
+  "langSwitcher": {
+    "en": "English",
+    "de": "German",
+    "it": "Italian"
   }
 }
