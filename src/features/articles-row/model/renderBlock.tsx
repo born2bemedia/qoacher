@@ -3,7 +3,6 @@ import Link from 'next/link';
 
 import { Title } from '@/shared/ui/components/atoms/title';
 
-// Types for Payload CMS rich text blocks
 export type RichTextChild = {
   type: 'link' | 'autolink' | 'text';
   text?: string;

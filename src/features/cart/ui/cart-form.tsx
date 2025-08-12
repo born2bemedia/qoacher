@@ -13,9 +13,11 @@ import { notifySuccess, notifyWarning } from '@/shared/lib/utils/notify';
 import { Button } from '@/shared/ui/components/atoms/button';
 import { Checkbox } from '@/shared/ui/components/atoms/checkbox';
 import { Divider } from '@/shared/ui/components/atoms/divider';
+import { PhoneField } from '@/shared/ui/components/atoms/phone-field';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { TextField } from '@/shared/ui/components/atoms/text-field';
 import { Title } from '@/shared/ui/components/atoms/title';
+import { CountryAutocomplete } from '@/shared/ui/components/molecules/country-autocomplete';
 import { FormRow } from '@/shared/ui/components/molecules/form-row';
 
 import { clearCart } from '../api/clear-cart';
@@ -177,13 +179,10 @@ export const CartForm = () => {
               </Field>
               <Field name="country">
                 {(field) => (
-                  <TextField
-                    type="text"
+                  <CountryAutocomplete
                     placeholder={t('country', { fallback: 'Country/Region' })}
-                    name={field.name}
-                    value={String(field.state.value)}
-                    onBlur={field.handleBlur}
-                    onChange={(e) => field.handleChange(e.target.value)}
+                    initialValue={String(field.state.value)}
+                    onChange={(value) => field.handleChange(value)}
                     hint={field.state.meta.errors.map((error) => error?.message).join(', ')}
                   />
                 )}
@@ -205,13 +204,12 @@ export const CartForm = () => {
               </Field>
               <Field name="phone">
                 {(field) => (
-                  <TextField
-                    type="text"
+                  <PhoneField
                     placeholder={t('phone', { fallback: 'Phone Number' })}
                     name={field.name}
                     value={String(field.state.value)}
                     onBlur={field.handleBlur}
-                    onChange={(e) => field.handleChange(e.target.value)}
+                    onChange={(value) => field.handleChange(value)}
                     hint={field.state.meta.errors.map((error) => error?.message).join(', ')}
                   />
                 )}
