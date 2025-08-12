@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 import { useForm } from '@/shared/lib/forms';
 import { notifySuccess, notifyWarning } from '@/shared/lib/utils/notify';
@@ -15,6 +16,8 @@ import { signInSchema } from '../model/schemas/sign-in.schema';
 export const SignInForm = () => {
   const router = useRouter();
 
+  const t = useTranslations('signIn');
+
   const { Field, Subscribe, handleSubmit } = useForm({
     defaultValues: {
       email: '',
@@ -27,10 +30,12 @@ export const SignInForm = () => {
       const { success } = await signInUser(data.value);
 
       if (success) {
-        notifySuccess('Login successful');
+        notifySuccess(t('success', { fallback: 'Login successful' }));
         router.push('/account');
       } else {
-        notifyWarning('Something went wrong — please refresh and try again');
+        notifyWarning(
+          t('warning', { fallback: 'Something went wrong — please refresh and try again' })
+        );
       }
     },
   });
@@ -47,7 +52,7 @@ export const SignInForm = () => {
       <Field name="email">
         {(field) => (
           <TextField
-            placeholder="Email"
+            placeholder={t('fields.email', { fallback: 'Email' })}
             type="email"
             name={field.name}
             value={String(field.state.value)}
@@ -60,7 +65,7 @@ export const SignInForm = () => {
       <Field name="password">
         {(field) => (
           <TextField
-            placeholder="Password"
+            placeholder={t('fields.password', { fallback: 'Password' })}
             type="password"
             name={field.name}
             value={String(field.state.value)}
@@ -74,14 +79,16 @@ export const SignInForm = () => {
         <Subscribe selector={(state) => [state.canSubmit, state.isSubmitting]}>
           {([canSubmit, isSubmitting]) => (
             <Button type="submit" disabled={!canSubmit} className="justify-center" fullWidth>
-              {isSubmitting ? 'Signing in...' : 'Sign In'}
+              {isSubmitting
+                ? t('fields.signingIn', { fallback: 'Signing in...' })
+                : t('fields.signIn', { fallback: 'Sign In' })}
             </Button>
           )}
         </Subscribe>
         <Text color="gray" className="text-center">
-          Don’t have an account?{' '}
+          {t('fields.dontHaveAccount', { fallback: 'Don’t have an account?' })}{' '}
           <Link href="/registration" className="text-black underline">
-            Create
+            {t('fields.createAccount', { fallback: 'Create' })}
           </Link>
         </Text>
       </div>

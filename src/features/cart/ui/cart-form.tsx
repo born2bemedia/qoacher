@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 import { getCart } from '@/features/cart/api/get-cart';
 import { cartSchema } from '@/features/cart/model/cart.schema';
@@ -22,6 +23,8 @@ import { makeOrder } from '../api/make-order';
 export const CartForm = () => {
   const user = useUser();
   const router = useRouter();
+
+  const t = useTranslations('cart');
 
   const cart = getCart();
 
@@ -50,11 +53,13 @@ export const CartForm = () => {
       const res = await makeOrder({ billing: data.value, products: cart, user, totalPrice });
 
       if (res?.message === 'Order successfully created.') {
-        notifySuccess('Order successfully created. Please proceed to payment.');
+        notifySuccess(
+          t('success', { fallback: 'Order successfully created. Please proceed to payment.' })
+        );
         router.push('/payment');
       } else {
         console.error(res);
-        notifyWarning('Something went wrong, please try again.');
+        notifyWarning(t('warning', { fallback: 'Something went wrong, please try again.' }));
       }
     },
   });
@@ -71,7 +76,7 @@ export const CartForm = () => {
       <section className="w-1/2 max-lg:w-full border border-[rgba(128,128,128,0.15)] flex flex-col gap-6 p-6">
         <div className="flex flex-col gap-6 pb-6">
           <Title size="2xl" color="dark" className="uppercase">
-            Your Choice
+            {t('title', { fallback: 'Your Choice' })}
           </Title>
           {cart.map((item: { title: string; price: number; id: string }) => (
             <CartItem key={item.id} item={item} />
@@ -80,13 +85,13 @@ export const CartForm = () => {
         <section className="flex flex-col gap-10 pt-6">
           <div className="flex flex-col gap-5">
             <Title size="2xl" color="dark" className="uppercase">
-              Personal Details
+              {t('personalDetails', { fallback: 'Personal Details' })}
             </Title>
             <FormRow>
               <Field name="firstName">
                 {(field) => (
                   <TextField
-                    placeholder="First Name"
+                    placeholder={t('firstName', { fallback: 'First Name' })}
                     name={field.name}
                     value={String(field.state.value)}
                     onBlur={field.handleBlur}
@@ -98,7 +103,7 @@ export const CartForm = () => {
               <Field name="lastName">
                 {(field) => (
                   <TextField
-                    placeholder="Last Name"
+                    placeholder={t('lastName', { fallback: 'Last Name' })}
                     name={field.name}
                     value={String(field.state.value)}
                     onBlur={field.handleBlur}
@@ -112,7 +117,7 @@ export const CartForm = () => {
               {(field) => (
                 <TextField
                   type="email"
-                  placeholder="Email"
+                  placeholder={t('email', { fallback: 'Email' })}
                   name={field.name}
                   value={String(field.state.value)}
                   onBlur={field.handleBlur}
@@ -124,14 +129,14 @@ export const CartForm = () => {
           </div>
           <div className="flex flex-col gap-5">
             <Title size="2xl" color="dark" className="uppercase">
-              Your Address
+              {t('yourAddress', { fallback: 'Your Address' })}
             </Title>
             <FormRow>
               <Field name="street">
                 {(field) => (
                   <TextField
                     type="text"
-                    placeholder="Address Line 1"
+                    placeholder={t('addressLine1', { fallback: 'Address Line 1' })}
                     name={field.name}
                     value={String(field.state.value)}
                     onBlur={field.handleBlur}
@@ -144,7 +149,7 @@ export const CartForm = () => {
                 {(field) => (
                   <TextField
                     type="text"
-                    placeholder="Address Line 2"
+                    placeholder={t('addressLine2', { fallback: 'Address Line 2' })}
                     name={field.name}
                     value={String(field.state.value)}
                     onBlur={field.handleBlur}
@@ -159,7 +164,7 @@ export const CartForm = () => {
                 {(field) => (
                   <TextField
                     type="text"
-                    placeholder="City"
+                    placeholder={t('city', { fallback: 'City' })}
                     name={field.name}
                     value={String(field.state.value)}
                     onBlur={field.handleBlur}
@@ -172,7 +177,7 @@ export const CartForm = () => {
                 {(field) => (
                   <TextField
                     type="text"
-                    placeholder="Country/Region"
+                    placeholder={t('country', { fallback: 'Country/Region' })}
                     name={field.name}
                     value={String(field.state.value)}
                     onBlur={field.handleBlur}
@@ -187,7 +192,7 @@ export const CartForm = () => {
                 {(field) => (
                   <TextField
                     type="text"
-                    placeholder="ZIP"
+                    placeholder={t('zip', { fallback: 'ZIP' })}
                     name={field.name}
                     value={String(field.state.value)}
                     onBlur={field.handleBlur}
@@ -200,7 +205,7 @@ export const CartForm = () => {
                 {(field) => (
                   <TextField
                     type="text"
-                    placeholder="Phone Number"
+                    placeholder={t('phone', { fallback: 'Phone Number' })}
                     name={field.name}
                     value={String(field.state.value)}
                     onBlur={field.handleBlur}
@@ -213,14 +218,14 @@ export const CartForm = () => {
           </div>
           <div className="flex flex-col gap-5">
             <Title size="2xl" color="dark" className="uppercase">
-              Payment Method
+              {t('paymentMethod', { fallback: 'Payment Method' })}
             </Title>
-            <Text color="gray">Wire Transfer</Text>
+            <Text color="gray">{t('wireTransfer', { fallback: 'Wire Transfer' })}</Text>
           </div>
         </section>
       </section>
       <section className="w-1/2 max-lg:w-full sticky max-lg:relative max-lg:top-0 top-24 h-max p-6 border border-[rgba(128,128,128,0.15)] flex flex-col gap-10">
-        <Title size="2xl">Order Summary</Title>
+        <Title size="2xl">{t('orderSummary', { fallback: 'Order Summary' })}</Title>
         <section className="flex flex-col gap-5">
           {cart.map((item: { title: string; price: number; id: string }) => (
             <div key={item.id} className="flex items-center justify-between">
@@ -232,7 +237,7 @@ export const CartForm = () => {
         <Divider />
         <div className="flex items-center justify-between">
           <Text size="lg" weight={500}>
-            Total
+            {t('total', { fallback: 'Total' })}
           </Text>
           <Text size="lg" weight={500}>
             €{totalPrice}
@@ -245,9 +250,9 @@ export const CartForm = () => {
                 name={field.name}
                 label={
                   <>
-                    I have read and agree to the website{' '}
+                    {t('isAgreeTerms.0', { fallback: 'I have read and agree to the website' })}{' '}
                     <Link href="/terms-of-use" className="underline">
-                      Terms of Use
+                      {t('isAgreeTerms.1', { fallback: 'Terms of Use' })}
                     </Link>
                   </>
                 }
@@ -263,9 +268,9 @@ export const CartForm = () => {
                 name={field.name}
                 label={
                   <>
-                    I have read and agree to the{' '}
+                    {t('isAgreeRefund.0', { fallback: 'I have read and agree to the' })}{' '}
                     <Link href="/refund-policy" className="underline">
-                      Refund Policy
+                      {t('isAgreeRefund.1', { fallback: 'Refund Policy' })}
                     </Link>
                   </>
                 }
@@ -279,7 +284,9 @@ export const CartForm = () => {
         <Subscribe selector={(state) => [state.canSubmit, state.isSubmitting]}>
           {([canSubmit, isSubmitting]) => (
             <Button type="submit" disabled={!canSubmit} fullWidth>
-              {isSubmitting ? 'Ordering...' : 'Order Now'}
+              {isSubmitting
+                ? t('ordering', { fallback: 'Ordering...' })
+                : t('orderNow', { fallback: 'Order Now' })}
             </Button>
           )}
         </Subscribe>

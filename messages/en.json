@@ -634,5 +634,85 @@
   "programsLayout": {
     "whatsInside": "What’s Inside",
     "joinProgram": "Join Program"
+  },
+  "registration": {
+    "title": "Create an account",
+    "description": "Every big change starts small. This is yours.",
+    "success": {
+      "title": "Account created!",
+      "description": "Registration successful. You can now sign in to your account.",
+      "continue": "Continue",
+      "warning": "Something went wrong — please refresh and try again"
+    },
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "agree": {
+        "0": "By creating an account, you agree to our",
+        "1": "Terms of Use",
+        "2": "and",
+        "3": "Privacy Policy"
+      },
+      "createAccount": "Create Account",
+      "creating": "Creating...",
+      "alreadyHaveAccount": "Already have an account?",
+      "signIn": "Sign In!"
+    }
+  },
+  "signIn": {
+    "title": "Sign In to Your Account",
+    "description": "Small steps. Real shifts. It starts here.",
+    "success": "Login successful",
+    "warning": "Something went wrong — please refresh and try again",
+    "fields": {
+      "email": "Email",
+      "password": "Password",
+      "signIn": "Sign In",
+      "signingIn": "Signing in...",
+      "dontHaveAccount": "Don’t have an account?",
+      "createAccount": "Create"
+    }
+  },
+  "emptyCart": {
+    "title": "The Cart Is Empty",
+    "description": "Here’s how you can start your way forward:",
+    "needExtraSupport": "Need Extra Support?",
+    "needExtraSupportDescription": "Don’t hesitate to contact us. We’re available 24/7 to help you move forward, overcome obstacles, and choose the right path for your growth.",
+    "services": "Services",
+    "packages": "Packages",
+    "programs": "Programs"
+  },
+  "cart": {
+    "success": "Order successfully created. Please proceed to payment.",
+    "warning": "Something went wrong, please try again.",
+    "title": "Your Choice",
+    "personalDetails": "Personal Details",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "yourAddress": "Your Address",
+    "addressLine1": "Address Line 1",
+    "addressLine2": "Address Line 2",
+    "city": "City",
+    "country": "Country/Region",
+    "zip": "ZIP",
+    "phone": "Phone",
+    "paymentMethod": "Payment Method",
+    "wireTransfer": "Wire Transfer",
+    "orderSummary": "Order Summary",
+    "total": "Total",
+    "isAgreeTerms": {
+      "0": "I have read and agree to the website",
+      "1": "Terms of Use"
+    },
+    "isAgreeRefund": {
+      "0": "I have read and agree to the",
+      "1": "Refund Policy"
+    },
+    "orderNow": "Order Now",
+    "ordering": "Ordering..."
   }
 }
