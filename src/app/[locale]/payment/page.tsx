@@ -1,3 +1,10 @@
+import { Hero, PaymentContent } from './components';
+
 export default function PaymentPage() {
-  return <div>Payment</div>;
+  return (
+    <main>
+      <Hero />
+      <PaymentContent />
+    </main>
+  );
 }

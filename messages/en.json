@@ -714,5 +714,22 @@
     },
     "orderNow": "Order Now",
     "ordering": "Ordering..."
+  },
+  "payment": {
+    "hero": {
+      "title": "Thank You for Your Order",
+      "description": "You’re one step away from your major life challenge. Complete your payment to activate your order."
+    },
+    "paymentDetails": {
+      "title": "To complete your purchase, please make a bank transfer using the details below. Include the payment reference exactly as shown to ensure your order is processed without delays.",
+      "subtitle": "Pay via Bank Transfer",
+      "recipient": "Recipient",
+      "recipientAddress": "Recipient Address",
+      "bankName": "Bank Name",
+      "reference": "Reference (Mandatory)",
+      "referenceDescription": "Enter the reference exactly as shown above when making your payment.",
+      "copy": "Copy",
+      "copied": "Copied to clipboard"
+    }
   }
 }
