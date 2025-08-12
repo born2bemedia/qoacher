@@ -57,6 +57,17 @@ export const Text = ({
   color,
   zIndex,
   className,
-}: { children: React.ReactNode; className?: string } & TextVariants) => {
-  return <p className={cn(textVariants({ size, weight, color, zIndex }), className)}>{children}</p>;
+  uppercase = false,
+}: { children: React.ReactNode; className?: string; uppercase?: boolean } & TextVariants) => {
+  return (
+    <p
+      className={cn(
+        textVariants({ size, weight, color, zIndex }),
+        className,
+        uppercase && 'uppercase'
+      )}
+    >
+      {children}
+    </p>
+  );
 };

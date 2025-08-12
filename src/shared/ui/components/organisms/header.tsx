@@ -13,6 +13,8 @@ import { Text } from '@/shared/ui/components/atoms/text';
 import { BasketIcon } from '@/shared/ui/icons/fill';
 import { ChevronDown } from '@/shared/ui/icons/outline';
 
+import { LangSwitcher } from '../molecules/lang-switcher';
+
 const BurgerMenu = dynamic(() => import('./burger-menu').then((mod) => mod.BurgerMenu), {
   ssr: false,
 });
@@ -53,7 +55,10 @@ export const Header = () => {
         </ul>
       </section>
       <section className="flex items-center gap-6 max-lg:hidden">
-        <BasketIcon />
+        <Link href="/cart">
+          <BasketIcon />
+        </Link>
+        <LangSwitcher />
         <Link href="/sign-in">
           <Button>{t('signIn', { fallback: 'Sign in' })}</Button>
         </Link>
