@@ -7,6 +7,7 @@ import { useForm } from '@/shared/lib/forms';
 import { cn } from '@/shared/lib/utils';
 import { Button } from '@/shared/ui/components/atoms/button';
 import { useDialogStore } from '@/shared/ui/components/atoms/dialog';
+import { PhoneField } from '@/shared/ui/components/atoms/phone-field';
 import { TextArea } from '@/shared/ui/components/atoms/text-area';
 import { TextField } from '@/shared/ui/components/atoms/text-field';
 
@@ -76,12 +77,12 @@ export const ContactForm = ({
       </Field>
       <Field name="phone">
         {(field) => (
-          <TextField
+          <PhoneField
             name={field.name}
             placeholder={t('phone', { fallback: 'Phone' })}
             value={String(field.state.value)}
             onBlur={field.handleBlur}
-            onChange={(e) => field.handleChange(e.target.value)}
+            onChange={(value) => field.handleChange(value)}
             hint={field.state.meta.errors.map((err) => err?.message).join(', ')}
             className={fieldClassName}
           />
