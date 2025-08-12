@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 import { useForm } from '@/shared/lib/forms';
 import { notifyWarning } from '@/shared/lib/utils/notify';
@@ -15,6 +16,8 @@ import { registrationSchema } from '../model/schemas/registration.schema';
 import { RegistrationSuccess } from './registration-success';
 
 export const RegistrationForm = () => {
+  const t = useTranslations('registration');
+
   const { registerContent, setIsOpen, registerIcon } = useDialogStore();
 
   const { Field, Subscribe, handleSubmit } = useForm({
@@ -38,13 +41,15 @@ export const RegistrationForm = () => {
 
       if (success) {
         registerContent({
-          title: 'Account created!',
+          title: t('success.title', { fallback: 'Account created!' }),
           content: <RegistrationSuccess />,
         });
         registerIcon(<WaitMessageIcon />);
         setIsOpen(true);
       } else {
-        notifyWarning('Something went wrong — please refresh and try again');
+        notifyWarning(
+          t('success.warning', { fallback: 'Something went wrong — please refresh and try again' })
+        );
       }
     },
   });
@@ -61,7 +66,7 @@ export const RegistrationForm = () => {
       <Field name="firstName">
         {(field) => (
           <TextField
-            placeholder="First Name"
+            placeholder={t('fields.firstName', { fallback: 'First Name' })}
             name={field.name}
             value={String(field.state.value)}
             onBlur={field.handleBlur}
@@ -73,7 +78,7 @@ export const RegistrationForm = () => {
       <Field name="lastName">
         {(field) => (
           <TextField
-            placeholder="Last Name"
+            placeholder={t('fields.lastName', { fallback: 'Last Name' })}
             name={field.name}
             value={String(field.state.value)}
             onBlur={field.handleBlur}
@@ -85,7 +90,7 @@ export const RegistrationForm = () => {
       <Field name="email">
         {(field) => (
           <TextField
-            placeholder="Email"
+            placeholder={t('fields.email', { fallback: 'Email' })}
             type="email"
             name={field.name}
             value={String(field.state.value)}
@@ -98,7 +103,7 @@ export const RegistrationForm = () => {
       <Field name="password">
         {(field) => (
           <TextField
-            placeholder="Password"
+            placeholder={t('fields.password', { fallback: 'Password' })}
             type="password"
             name={field.name}
             value={String(field.state.value)}
@@ -111,7 +116,7 @@ export const RegistrationForm = () => {
       <Field name="confirmPassword">
         {(field) => (
           <TextField
-            placeholder="Confirm Password"
+            placeholder={t('fields.confirmPassword', { fallback: 'Confirm Password' })}
             type="password"
             name={field.name}
             value={String(field.state.value)}
@@ -122,13 +127,13 @@ export const RegistrationForm = () => {
         )}
       </Field>
       <Text className="text-center" color="gray">
-        By creating an account, you agree to our{' '}
+        {t('fields.agree.0', { fallback: 'By creating an account, you agree to our' })}{' '}
         <Link className="underline" href="/terms-of-use">
-          Terms of Use
+          {t('fields.agree.1', { fallback: 'Terms of Use' })}
         </Link>{' '}
-        and{' '}
+        {t('fields.agree.2', { fallback: 'and' })}{' '}
         <Link className="underline" href="/privacy-policy">
-          Privacy Policy
+          {t('fields.agree.3', { fallback: 'Privacy Policy' })}
         </Link>
         .
       </Text>
@@ -136,14 +141,16 @@ export const RegistrationForm = () => {
         <Subscribe selector={(state) => [state.canSubmit, state.isSubmitting]}>
           {([canSubmit, isSubmitting]) => (
             <Button type="submit" disabled={!canSubmit} className="justify-center" fullWidth>
-              {isSubmitting ? 'Creating...' : 'Create Account'}
+              {isSubmitting
+                ? t('fields.creating', { fallback: 'Creating...' })
+                : t('fields.createAccount', { fallback: 'Create Account' })}
             </Button>
           )}
         </Subscribe>
         <Text color="gray" className="text-center">
-          Already have an account?{' '}
+          {t('fields.alreadyHaveAccount', { fallback: 'Already have an account?' })}{' '}
           <Link href="/sign-in" className="text-black underline">
-            Sign In!
+            {t('fields.signIn', { fallback: 'Sign In!' })}
           </Link>
         </Text>
       </div>

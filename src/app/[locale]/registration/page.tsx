@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { getTranslations } from 'next-intl/server';
 
 import { RegistrationForm } from '@/features/auth/ui/registration-form';
 
@@ -6,7 +7,9 @@ import { Divider } from '@/shared/ui/components/atoms/divider';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { Title } from '@/shared/ui/components/atoms/title';
 
-export default function RegistrationPage() {
+export default async function RegistrationPage() {
+  const t = await getTranslations('registration');
+
   return (
     <main className="flex items-center max-lg:flex-col max-lg:items-start">
       <Image
@@ -20,9 +23,11 @@ export default function RegistrationPage() {
       <section className="w-1/2 max-lg:w-full px-[165px] flex flex-col gap-12 max-lg:py-8 max-lg:px-4">
         <div className="flex flex-col gap-3 text-center">
           <Title size="3xl" weight={400}>
-            Create an account
+            {t('title', { fallback: 'Create an account' })}
           </Title>
-          <Text color="gray">Every big change starts small. This is yours.</Text>
+          <Text color="gray">
+            {t('description', { fallback: 'Every big change starts small. This is yours.' })}
+          </Text>
         </div>
         <Divider />
         <RegistrationForm />
