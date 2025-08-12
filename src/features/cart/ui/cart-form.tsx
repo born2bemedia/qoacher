@@ -18,6 +18,7 @@ import { TextField } from '@/shared/ui/components/atoms/text-field';
 import { Title } from '@/shared/ui/components/atoms/title';
 import { FormRow } from '@/shared/ui/components/molecules/form-row';
 
+import { clearCart } from '../api/clear-cart';
 import { makeOrder } from '../api/make-order';
 
 export const CartForm = () => {
@@ -56,6 +57,7 @@ export const CartForm = () => {
         notifySuccess(
           t('success', { fallback: 'Order successfully created. Please proceed to payment.' })
         );
+        clearCart();
         router.push('/payment');
       } else {
         console.error(res);
