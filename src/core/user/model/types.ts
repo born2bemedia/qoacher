@@ -1,6 +1,7 @@
 export type User = {
   id: number;
   address: string;
+  addressLine2: string;
   city: string;
   collection: string;
   country: string;

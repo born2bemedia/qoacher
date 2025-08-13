@@ -10,8 +10,8 @@ export const registrationBody = ({ username }: { username: string }) => {
         <div class="wrapper">
           <div class="main">
             <p style="font-size: 24px; color: #000;">Hi ${username},</p>
-            <p class="text">Your Qoacher account has been successfully created. You can now access your dashboard anytime to:</p>
-            <p class="text">– View your active programs <br />– Download invoices <br />– Update your information</p>
+            <p class="text" style="color: #000;">Your Qoacher account has been successfully created. You can now access your dashboard anytime to:</p>
+            <p class="text" style="color: #000;">– View your active programs <br />– Download invoices <br />– Update your information</p>
             <a href="https://qoacher.com/sign-in" style="text-decoration: none; color: #000;">
               <button
                     style="
@@ -35,8 +35,8 @@ export const registrationBody = ({ username }: { username: string }) => {
                   "
               ><img style="margin-right: 8px;" src="https://qoacher.com/images/email/acc.png" alt="full-logo" width="18" height="18" /> Your Account</button>
             </a>
-            <p class="text" style="margin-top: 40px;">Whenever you’re ready to take your next step — we’ll be here.</p>
-            <p class="text" style="margin-top: 40px;">See you inside, <br /> <span style="font-size: 16px;">The Qoacher Team</span></p>
+            <p class="text" style="color: #000; margin-top: 40px;">Whenever you’re ready to take your next step — we’ll be here.</p>
+            <p class="text" style="color: #000; margin-top: 40px;">See you inside, <br /> <span style="font-size: 16px;">The Qoacher Team</span></p>
           </div>
         </div>
         <div>

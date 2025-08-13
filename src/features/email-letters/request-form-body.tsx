@@ -10,11 +10,11 @@ export const requestFormBody = ({ username }: { username: string }) => {
         <div class="wrapper">
           <div class="main">
             <p style="font-size: 24px; color: #000;">Hi ${username},</p>
-            <p class="text">Thank you for reaching out. Your message has been received, and a member of our team will get back to you shortly.</p>
-            <p class="text">In the meantime, feel free to explore our <a href="https://qoacher.com/self-improvement" style="font-weight: 600; color: #000; text-decoration: none;">Self Improvement</a> section — it’s full of practical guides and tools you can start using right away: <br />Explore Self Improvement</p>
-            <p class="text">If your request is urgent, you can also contact us directly at <strong style="font-weight: 600;">our email</strong>.</p>
-            <p class="text">Thank you for connecting with us.</p>
-            <p class="text" style="margin-top: 40px;"><span style="font-size: 16px;">The Coacher Team</span> <br /> Helping you take back control, one step at a time.</p>
+            <p class="text" style="color: #000;">Thank you for reaching out. Your message has been received, and a member of our team will get back to you shortly.</p>
+            <p class="text" style="color: #000;">In the meantime, feel free to explore our <a href="https://qoacher.com/self-improvement" style="font-weight: 600; color: #000; text-decoration: none;">Self Improvement</a> section — it’s full of practical guides and tools you can start using right away: <br />Explore Self Improvement</p>
+            <p class="text" style="color: #000;">If your request is urgent, you can also contact us directly at <strong style="font-weight: 600;">our email</strong>.</p>
+            <p class="text" style="color: #000;">Thank you for connecting with us.</p>
+            <p class="text" style="color: #000; margin-top: 40px;"><span style="font-size: 16px;">The Coacher Team</span> <br /> Helping you take back control, one step at a time.</p>
           </div>
         </div>
         <div>
