@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 
 import { PolicySection } from '@/features/policies/ui/polict-section';
@@ -122,7 +121,7 @@ export default async function PrivacyPolicy() {
         <Text>{t('6.text.1')}</Text>
         <Text>{t('6.text.2')}</Text>
       </PolicySection>
-      <PolicySection heading={t('7.title')}>
+      {/* <PolicySection heading={t('7.title')}>
         <Text>{t('7.text.0')}</Text>
         <List
           values={[
@@ -139,7 +138,7 @@ export default async function PrivacyPolicy() {
           </Link>
         </Text>
         <Text>{t('7.text.2')}</Text>
-      </PolicySection>
+      </PolicySection> */}
     </PolicyLayout>
   );
 }

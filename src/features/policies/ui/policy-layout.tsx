@@ -12,7 +12,7 @@ export const PolicyLayout = ({
 }: {
   children: React.ReactNode;
   title: string;
-  updateType: 'lastUpdate' | 'effectiveDate' | 'effective';
+  updateType?: 'lastUpdate' | 'effectiveDate' | 'effective';
 }) => {
   const t = useTranslations('policies');
 

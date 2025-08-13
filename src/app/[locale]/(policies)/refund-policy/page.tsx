@@ -62,14 +62,14 @@ export default async function RefundPolicy() {
       </PolicySection>
       <PolicySection heading={t('3.title')}>
         <Text>{t('3.text.0')}</Text>
-        <List
+        {/* <List
           values={[
             '[Insert Registered Company Name]',
             '[Insert Business Address]',
             'Email: [Insert Contact Email]',
             'Phone: [Insert Phone Number]',
           ]}
-        />
+        /> */}
         <Text>
           {t('3.text.1')}
           <br />{' '}

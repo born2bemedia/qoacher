@@ -741,6 +741,8 @@
     "lastUpdate": "Last Updated:",
     "effective": "Effective:",
     "effectiveDate": "Effective date:",
+    "type": "Type",
+    "purpose": "Purpose",
     "termsOfUse": {
       "title": "Terms of Use",
       "0": {
@@ -873,7 +875,7 @@
       "11": {
         "title": "Modification, Discontinuation, and Termination",
         "text": {
-          "0": "Qoacher reserves the right to update, modify, suspend, or permanently discontinue any part of the website or the services offered on it at any time, with or without prior notice. This includes the right to change or remove any content, materials, programs, or features. We are not liable to you or to any third party for any changes or interruptions in access or availability. ",
+          "0": "Qoacher reserves the right to update, modify, suspend, or permanently discontinue any part of the website or the services offered on it at any time, with or without prior notice. This includes the right to change or remove any content, materials, programs, or features. We are not liable to you or to any third party for any changes or interruptions in access or availability.",
           "1": "Qoacher may also terminate or restrict your access to the website or services at its sole discretion, especially in cases of violation of these Terms or misuse of the platform. Such termination may occur without prior notice. We reserve the right to delete any data or associated account information at the time of termination. No refunds will be provided for terminated access due to a breach of these Terms, and no further charges will be applied in such cases."
         }
       },
@@ -1120,6 +1122,79 @@
         "0": "If you have any questions, requests, or concerns regarding this Privacy Policy or how your data is handled, please contact us using any of the methods below:",
         "1": "You may also contact us via any official communication method listed on our website:",
         "2": "We are available to respond to inquiries during standard business hours. Please ensure you include your full name and a clear description of your request or concern so we can assist you effectively."
+      }
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "0": {
+      "text": {
+        "0": "Fueling your journey. Not tracking your life.",
+        "1": "Welcome to Qoacher. Just like you, we like things that work fast, feel personal, and support real progress. That’s precisely how we approach Cookies — those small data pieces that help our website remember you, run smoother, and give you a better experience every time you return.",
+        "2": "This Cookie Policy explains how and why we use them — and how you stay in complete control."
+      }
+    },
+    "1": {
+      "title": "What are Cookies",
+      "text": {
+        "0": "Cookies are tiny data files that your browser stores when you visit a website. They don’t track your private life — they just help the site recognize you, load faster, and remember what matters to you (like your preferences, form entries, or language). Some are temporary (gone when you close your browser), others stick around to keep things efficient for your next visit.",
+        "1": "At Qoacher, we use them not to spy — but to serve. No shady ads. No third-party tracking networks. Just pure experience enhancement."
+      }
+    },
+    "2": {
+      "title": "Why We Use Cookies",
+      "text": {
+        "0": "We use cookies to:",
+        "1": "We don’t sell your data. We don’t hand it off to ad networks. We don’t use cookies to follow you around the internet. Because… gross."
+      },
+      "list": {
+        "0": "Speed up your experience",
+        "1": " – Faster page loads, smoother flow.",
+        "2": "Remember your preferences",
+        "3": " – So you don’t have to start over every time.",
+        "4": "Understand what works",
+        "5": " – We analyze traffic patterns (anonymously) to improve what matters.",
+        "6": "Keep things relevant",
+        "7": " – Like showing you the coaching program or resource you were last exploring."
+      }
+    },
+    "3": {
+      "title": "Your Choices",
+      "text": "Want to manage or disable cookies? You can do it anytime through your browser settings. Just a heads up — disabling cookies might make parts of our website work a bit slower or less smoothly."
+    },
+    "4": {
+      "title": "We Keep It Transparent",
+      "text": "We may occasionally update this Cookie Policy if our use of cookies changes — or if we find a better, more privacy-friendly solution. When we do, you’ll see the updated version right here."
+    },
+    "5": {
+      "title": "Final Word?",
+      "text": {
+        "0": "Cookies at Qoacher are here to enhance, not interfere. Our mission is to help you move forward with clarity, confidence, and speed — not to slow you down with digital noise.",
+        "1": "If you have any questions about how we use cookies or how your data is handled, contact us at:"
+      }
+    },
+    "6": {
+      "title": "Types of Cookies We Use",
+      "text": {
+        "0": "Here’s a quick breakdown:"
+      },
+      "table": {
+        "0": {
+          "type": "Essential Cookies",
+          "purpose": "These keep the site running. Without them, core features (like form submissions) won’t work."
+        },
+        "1": {
+          "type": "Performance Cookies",
+          "purpose": "They help us understand which pages are performing best and where users get stuck. It’s all anonymous and helps us improve."
+        },
+        "2": {
+          "type": "Preference Cookies",
+          "purpose": "These remember your choices (like preferred language or content format). Pure convenience."
+        },
+        "3": {
+          "type": "No Third-Party Ad Cookies",
+          "purpose": "We don’t use advertising cookies. You won’t see “relevant offers” following you around after visiting us. We find that annoying too."
+        }
       }
     }
   }
