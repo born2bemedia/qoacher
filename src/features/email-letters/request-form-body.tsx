@@ -5,7 +5,7 @@ export const requestFormBody = ({ username }: { username: string }) => {
     body: `
       <div style="width: 595px; margin: 0 auto;">
         <header class="header">
-          <img src="https://qoacher.com/email/header.png" alt="full-logo" width="595" height="130" />
+          <img src="https://qoacher.com/images/email/header.png" alt="full-logo" width="595" height="130" />
         </header>
         <div class="wrapper">
           <div class="main">
@@ -18,7 +18,7 @@ export const requestFormBody = ({ username }: { username: string }) => {
           </div>
         </div>
         <div>
-          <img src="https://qoacher.com/email/footer.png" alt="full-logo" width="595" height="130" />
+          <img src="https://qoacher.com/images/email/footer.png" alt="full-logo" width="595" height="130" />
         </div>
       </div>
     `,
