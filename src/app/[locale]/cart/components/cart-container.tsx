@@ -6,10 +6,13 @@ import { getCart } from '@/features/cart/api/get-cart';
 import { CartForm } from '@/features/cart/ui/cart-form';
 import { EmptyCart } from '@/features/cart/ui/empty-cart';
 
+import { useUser } from '@/shared/lib/hooks/use-user';
+
 export const CartContainer = () => {
   const [cart, setCart] = useState([]);
+  const user = useUser();
 
   useEffect(() => void setCart(getCart()), []);
 
-  return !cart.length ? <EmptyCart /> : <CartForm />;
+  return !cart.length ? <EmptyCart /> : <CartForm user={user} />;
 };
