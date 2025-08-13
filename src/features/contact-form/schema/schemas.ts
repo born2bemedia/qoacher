@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 
-import { isPhoneValid, v } from '@/shared/lib/forms';
+import { v } from '@/shared/lib/forms';
 
 export const ContactFormSchema = () => {
   const t = useTranslations('contactForm');
