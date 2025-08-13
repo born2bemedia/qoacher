@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { ContactFrame } from '@/features/contact-form/ui/contact-frame';
@@ -11,6 +12,25 @@ import { Products } from '@/shared/ui/components/templates/products';
 
 import { WantToGear } from './components/want-to-gear';
 import { WhyYouNeed } from './components/why-you-need';
+
+export const metadata: Metadata = {
+  title: 'Personal Coaching | Qoacher',
+  description:
+    'Explore personal coaching to overcome stress, restore balance, build confidence, and create lasting positive change in your life. ',
+  openGraph: {
+    title: 'Personal Coaching | Qoacher',
+    description:
+      'Explore personal coaching to overcome stress, restore balance, build confidence, and create lasting positive change in your life. ',
+    images: ['https://qoacher.com/meta.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Personal Coaching | Qoacher',
+    description:
+      'Explore personal coaching to overcome stress, restore balance, build confidence, and create lasting positive change in your life. ',
+    images: ['https://qoacher.com/meta.jpg'],
+  },
+};
 
 export default async function PersonalCoachingPage() {
   const t = await getTranslations('personalCoaching');

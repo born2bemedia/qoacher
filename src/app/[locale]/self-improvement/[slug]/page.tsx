@@ -1,8 +1,38 @@
+import type { Metadata } from 'next';
+
 import { getArticleBySlug } from '@/features/articles-row/model/get-articles';
 
 import { ArticleContent } from '../components/article-content';
 import { ArticleHero } from '../components/article-hero';
 import { WantToGear } from '../components/want-to-gear';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{
+    slug: string;
+    locale: string;
+  }>;
+}): Promise<Metadata> {
+  const { slug, locale } = await params;
+  const data = await getArticleBySlug(slug, locale);
+
+  return {
+    title: data.seo_title,
+    description: data.set_description,
+    openGraph: {
+      title: data.seo_title,
+      description: data.set_description,
+      images: ['https://qoacher.com/meta.jpg'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: data.seo_title,
+      description: data.set_description,
+      images: ['https://qoacher.com/meta.jpg'],
+    },
+  };
+}
 
 export default async function SelfImprovementPage({
   params,
@@ -11,6 +41,8 @@ export default async function SelfImprovementPage({
 }) {
   const { slug, locale } = await params;
   const article = await getArticleBySlug(slug, locale);
+
+  console.log(article);
 
   return (
     <>

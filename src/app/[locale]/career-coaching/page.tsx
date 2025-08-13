@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { CareerDirectionPlanningProducts } from '@/features/career-coaching/career-direction-planning';
@@ -11,6 +12,25 @@ import { Products } from '@/shared/ui/components/templates/products';
 
 import { WantToGear } from './components/want-to-gear';
 import { WhyYouNeed } from './components/why-you-need';
+
+export const metadata: Metadata = {
+  title: 'Career Coaching | Qoacher',
+  description:
+    'Discover career coaching designed to help you change direction, advance in your field, and achieve professional goals with clarity and confidence. ',
+  openGraph: {
+    title: 'Career Coaching | Qoacher',
+    description:
+      'Discover career coaching designed to help you change direction, advance in your field, and achieve professional goals with clarity and confidence. ',
+    images: ['https://qoacher.com/meta.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Career Coaching | Qoacher',
+    description:
+      'Discover career coaching designed to help you change direction, advance in your field, and achieve professional goals with clarity and confidence. ',
+    images: ['https://qoacher.com/meta.jpg'],
+  },
+};
 
 export default async function CareerCoachingPage() {
   const t = await getTranslations('careerCoaching');

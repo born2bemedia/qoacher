@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { ContactFrame } from '@/features/contact-form/ui/contact-frame';
@@ -5,20 +6,36 @@ import { ServicePreview } from '@/features/services/ui/service-preview';
 
 import { Hero } from '@/shared/ui/components/organisms/hero';
 
+export const metadata: Metadata = {
+  title: 'Life Coaching Services | Qoacher',
+  description:
+    'Explore coaching solutions to improve your career, personal life, relationships, and long-term growth with tailored guidance from experienced professionals.',
+  openGraph: {
+    title: 'Life Coaching Services | Qoacher',
+    description:
+      'Explore coaching solutions to improve your career, personal life, relationships, and long-term growth with tailored guidance from experienced professionals.',
+    images: ['https://qoacher.com/meta.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Life Coaching Services | Qoacher',
+    description:
+      'Explore coaching solutions to improve your career, personal life, relationships, and long-term growth with tailored guidance from experienced professionals.',
+    images: ['https://qoacher.com/meta.jpg'],
+  },
+};
+
 export default async function ServicesPage() {
   const t = await getTranslations('services');
 
   return (
     <main>
       <Hero
-        title={
-          t('chooseTheCoaching', {
-            fallback: 'Choose the Coaching <br /> That Fits Your Situation',
-          })
-        }
+        title={t('chooseTheCoaching', {
+          fallback: 'Choose the Coaching <br /> That Fits Your Situation',
+        })}
         description={t('careerPersonalLifeRelationshipsLongTermGrowth', {
-          fallback:
-            'Career. Personal life. Relationships. Long-term growth.',
+          fallback: 'Career. Personal life. Relationships. Long-term growth.',
         })}
         imgUrl="/images/services/hero.jpg"
       />
@@ -28,7 +45,7 @@ export default async function ServicesPage() {
         })}
         text={t('careerCoachingDescription', {
           fallback:
-            "If you’re stuck, lost, or thinking about changing direction, we help you make clear decisions, prepare for the next step, and take control of your work life.",
+            'If you’re stuck, lost, or thinking about changing direction, we help you make clear decisions, prepare for the next step, and take control of your work life.',
         })}
         buttonUrl="/career-coaching"
         imgUrl="/images/services/1.png"
@@ -62,7 +79,7 @@ export default async function ServicesPage() {
         })}
         text={t('growthAndLongTermPlanningDescription', {
           fallback:
-            'For those who want structure over time. We help you build habits, maintain progress, and stay aligned with where you\'re going.',
+            "For those who want structure over time. We help you build habits, maintain progress, and stay aligned with where you're going.",
         })}
         buttonUrl="/growth-and-long-term-planning"
         imgUrl="/images/services/4.png"
