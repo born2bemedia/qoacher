@@ -736,5 +736,466 @@
     "en": "English",
     "de": "German",
     "it": "Italian"
+  },
+  "policies": {
+    "lastUpdate": "Last Updated:",
+    "effective": "Effective:",
+    "effectiveDate": "Effective date:",
+    "type": "Type",
+    "purpose": "Purpose",
+    "termsOfUse": {
+      "title": "Terms of Use",
+      "0": {
+        "text": {
+          "0": "Welcome to Qoacher. These Terms of Use (\"Terms\") govern your access to and use of our website, email-based coaching programs, digital content, and any related services provided through or in connection with Qoacher (collectively, the \"Site\"). Qoacher is a brand operated by",
+          "1": "a company registered under number",
+          "2": "with its registered address at"
+        }
+      },
+      "1": {
+        "title": "Acceptance of Terms",
+        "text": {
+          "0": "By accessing or using the Site, you confirm that you have read, understood, and agree to be legally bound by these Terms, along with our",
+          "1": "Privacy Policy",
+          "2": "and any other terms or guidelines we may reference. If you do not accept these terms, you may not use our services. These Terms apply to all visitors and users, regardless of whether you make a purchase or access free content."
+        }
+      },
+      "2": {
+        "title": "Privacy and Data Handling",
+        "text": {
+          "0": "We encourage you to review our",
+          "1": "Privacy Policy",
+          "2": "before using the Site. It explains how we collect, use, and store your personal information. If there's any inconsistency between these Terms and the Privacy Policy, the Privacy Policy will apply."
+        }
+      },
+      "3": {
+        "title": "Who Our Services Are For",
+        "text": {
+          "0": "Our content and services are designed for individuals aged 18 and older. While some topics may be relevant to younger audiences, Qoacher does not market or deliver services to users under 18.",
+          "1": "If you are under 18, you may only use the Site under the supervision of a parent or guardian. We do not knowingly collect personal information from children under 13. If you believe a minor has submitted information to us, please contact us at",
+          "2": "so we can address the issue.",
+          "3": "Ownership and Use of Content",
+          "4": "All content made available through the Site, including but not limited to text, graphics, branding elements, downloadable materials, and course content (collectively, \"Content\"), is the property of",
+          "5": "or its partners and is protected under applicable copyright, trademark, and intellectual property laws.",
+          "6": "Using our Site does not grant you ownership or license rights in any Content unless explicitly stated. You may view or download parts of the Site for your personal and non-commercial use only, provided that:",
+          "7": "Any use beyond the above requires our prior written consent. We reserve all rights not explicitly granted in these Terms. "
+        },
+        "list": {
+          "0": "You do not modify the content in any way",
+          "1": "You retain all copyright and proprietary notices",
+          "2": "You do not distribute, republish, or transmit the content elsewhere, online or offline"
+        }
+      },
+      "4": {
+        "title": "Trademarks",
+        "text": {
+          "0": "The name Qoacher, our logo, service names, visual elements, and all branding found across our website and communications are the exclusive property of",
+          "1": "whether registered or unregistered (“Qoacher Marks”). Any use, reproduction, or display of these marks without our prior written approval is strictly prohibited.",
+          "2": "References to third-party trademarks, service marks, logos, or brand names on the Site belong to their respective owners. You may not use, imitate, or reference them without express written consent from the rightful owner. Unauthorized use of the Qoacher Marks or any third-party brand assets displayed on the Site is a violation of intellectual property rights and is not allowed under any circumstances.",
+          "3": "Feedback and Suggestions",
+          "4": "Any feedback, ideas, suggestions, or content you submit to us about Qoacher—whether through the website, email, or any other channel—becomes the sole and unrestricted property o",
+          "5": "By submitting feedback, you grant us full rights to use, modify, publish, or incorporate it into our services or communications without limitation and compensation or credit. Please only share suggestions with us if you’re comfortable with this."
+        }
+      },
+      "5": {
+        "title": "Your Responsibilities",
+        "text": {
+          "0": "By using Qoacher, you agree to provide accurate, up-to-date information whenever requested, including during registration or payment. You are responsible for keeping your contact details current and ensuring that any image or information you provide (such as a profile picture) is lawfully used and does not infringe upon third-party rights.",
+          "1": "If you create an account, you are solely responsible for keeping your login credentials confidential and secure. All activity under your account—whether authorized or not—remains your responsibility. If you suspect any unauthorized use, you should update your password immediately.",
+          "2": "You agree to use the Site lawfully and respectfully. You may not introduce harmful code (such as viruses, worms, or trojans), interfere with the platform’s normal operations, or engage in scraping, tampering, or unauthorized access to protected content.",
+          "3": "Violation of these Terms may result in restricted access, account termination, or legal action."
+        }
+      },
+      "6": {
+        "title": "Coaching, Guidance, and Informational Content",
+        "text": {
+          "0": "All articles, programs, and guidance provided on the Qoacher website — including content from our coaches — are intended solely for informational and educational purposes. While we offer structured coaching programs, practical suggestions, and professional perspectives on topics such as career change, personal growth, and communication,",
+          "1": "none of this content should be interpreted as a directive, obligation, or guaranteed outcome.",
+          "2": "Qoacher does not offer legal, medical, psychological, tax, or financial advice. Any decision to change your career, life direction, habits, or relationships — including when, how, or whether to change at all — remains entirely your responsibility.",
+          "3": "You are encouraged to use your judgment and, where appropriate, consult licensed professionals before acting on any suggestions received through our site or during coaching sessions.",
+          "4": "By using our services, you acknowledge and agree that:",
+          "5": "Coaching at Qoacher is designed to support you — not to decide for you. The change is yours to define, and yours alone to make."
+        },
+        "list": {
+          "0": "All coaching and materials are provided “as is” and without warranties of any kind, either express or implied.",
+          "1": "Qoacher and its representatives make no guarantees about the accuracy, applicability, or results of any advice or information shared.",
+          "2": "You assume full responsibility for how you interpret and apply what you learn through Qoacher.",
+          "3": "Qoacher disclaims all liability for any loss, consequence, or dissatisfaction arising from the use of its content or services, including any decision you make based on coaching conversations or program participation."
+        }
+      },
+      "7": {
+        "title": "External Links and Third-Party Content",
+        "text": {
+          "0": "The Qoacher website may contain links to external websites for informational or reference purposes only. These links are provided as a convenience to users and do not imply any affiliation, endorsement, or partnership with the operators of those sites.",
+          "1": "Qoacher does not collaborate with, promote, or rely on third-party businesses or service providers for the delivery of our coaching programs, sessions, or support.",
+          "2": "We are not responsible for the content, accuracy, or availability of any external websites, nor for any products, services, or advice offered on those platforms. Accessing such third-party sites is at your discretion and subject to their terms and privacy policies.",
+          "3": "Qoacher assumes no liability for any loss, damage, or issues that may arise from your use of, or reliance on, third-party content linked from our website."
+        }
+      },
+      "8": {
+        "title": "Fees and Payments",
+        "text": {
+          "0": "All fees for services offered by Qoacher must be paid in full in advance. Payments are non-refundable under any circumstances.",
+          "1": "All charges are",
+          "2": "one-time payments.",
+          "3": "Qoacher does",
+          "4": "not",
+          "5": "offer subscriptions, recurring billing, or automated renewals. If you require further support, follow-up consultations, or wish to continue your coaching journey, you must place a new order through our website.",
+          "6": "If your payment method is declined for any reason, you remain responsible for any outstanding amounts. Qoacher reserves the right to seek payment through any valid replacement card issued to you or take appropriate collection measures. In such cases, you agree to cover all reasonable costs of collection, including legal fees.",
+          "7": "Failure to complete payment may result in immediate suspension or termination of access to our services."
+        }
+      },
+      "9": {
+        "title": "Disclaimers",
+        "text": {
+          "0": "Qoacher provides all content, coaching services, materials, and recommendations on an",
+          "1": "\"as is\"",
+          "2": "and",
+          "3": "\"as available\"",
+          "4": "basis. We make no express or implied warranties of any kind regarding the accuracy, completeness, usefulness, or results of the content or services provided on or through this website.",
+          "5": "Coaching sessions and any informational materials (including guides and website content) are meant to",
+          "6": "support reflection, awareness, and personal decision-making.",
+          "7": "However, the final responsibility for your choices, actions, and changes lies entirely with you.",
+          "8": "Qoacher does not guarantee outcomes and does not provide medical, psychological, legal, or financial advice. Coaching is not a substitute for therapy, legal counsel, or financial planning. You are encouraged to seek the appropriate licensed professionals where necessary.",
+          "9": "We do not guarantee that our website or services will operate without interruption, errors, or harmful components such as viruses. Your use of the site is entirely at your own risk."
+        }
+      },
+      "10": {
+        "title": "Limitation of Liability",
+        "text": {
+          "0": "To the maximum extent permitted by law, Qoacher, its founders, affiliates, team members, and service providers are",
+          "1": "not liable",
+          "2": "for any direct, indirect, incidental, special, punitive, or consequential damages arising out of your use of the site, services, or coaching materials.",
+          "3": "This includes, without limitation, loss of income, emotional distress, delay of results, loss of business opportunity, data loss, or third-party claims. By using this site, you accept full responsibility for your actions and decisions resulting from any coaching or guidance received.",
+          "4": "In the event any part of this limitation is deemed unenforceable, Qoacher's total liability shall not exceed the total amount you paid for services in the",
+          "5": "12 months before",
+          "6": "the event giving rise to the claim."
+        }
+      },
+      "11": {
+        "title": "Modification, Discontinuation, and Termination",
+        "text": {
+          "0": "Qoacher reserves the right to update, modify, suspend, or permanently discontinue any part of the website or the services offered on it at any time, with or without prior notice. This includes the right to change or remove any content, materials, programs, or features. We are not liable to you or to any third party for any changes or interruptions in access or availability.",
+          "1": "Qoacher may also terminate or restrict your access to the website or services at its sole discretion, especially in cases of violation of these Terms or misuse of the platform. Such termination may occur without prior notice. We reserve the right to delete any data or associated account information at the time of termination. No refunds will be provided for terminated access due to a breach of these Terms, and no further charges will be applied in such cases."
+        }
+      },
+      "12": {
+        "title": "Waiver",
+        "text": {
+          "0": "If Qoacher does not immediately enforce any provision of these Terms, it does not mean that we waive the right to enforce it in the future. Any waiver of rights or obligations under these Terms must be explicitly made in writing. A one-time waiver does not extend to future breaches or similar situations unless expressly stated."
+        }
+      },
+      "13": {
+        "title": "Severability",
+        "text": {
+          "0": "If any provision of these Terms is determined to be invalid or unenforceable by a court of competent jurisdiction, the remaining provisions will continue in full force and effect. Where possible, the affected provision will be modified to reflect its original intent within the limits of the law."
+        }
+      },
+      "14": {
+        "title": "Governing Law, Jurisdiction, and Venue",
+        "text": {
+          "0": "These Terms shall be governed by and interpreted in accordance with the laws of",
+          "1": "[Insert Governing Jurisdiction],",
+          "2": "without regard to conflict-of-law rules. Any disputes arising from your use of this site or these Terms will be resolved exclusively in the courts of",
+          "3": "[Insert Venue and Jurisdiction],",
+          "4": "unless otherwise required by law. Qoacher may also initiate legal proceedings in any other jurisdiction if we believe a violation originated outside the primary venue."
+        }
+      },
+      "15": {
+        "title": "Indemnity",
+        "text": {
+          "0": "By using this website, you agree to indemnify and hold harmless Qoacher, its owners, team members, affiliates, and service providers from any claims, losses, damages, or legal expenses resulting from your misuse of the site or breach of these Terms. We reserve the right to manage and defend any such claims directly, and you agree to fully cooperate with us during the process."
+        }
+      },
+      "16": {
+        "title": "Changes to These Terms",
+        "text": {
+          "0": "These Terms of Use may be updated from time to time to reflect changes in legal requirements or service structure. The updated version will be posted on this page with a new effective date. Continued use of the site after changes have been published signifies your agreement to be bound by the revised Terms. If you do not agree with the revised Terms, you must stop using the site and services."
+        }
+      },
+      "17": {
+        "title": "Entire Agreement",
+        "text": {
+          "0": "These Terms constitute the entire agreement between you and Qoacher regarding your use of the site and services. Any prior or contemporaneous agreements, whether written or oral, are superseded by these Terms."
+        }
+      },
+      "18": {
+        "title": "Questions",
+        "text": {
+          "0": "If you have questions about these Terms of Use or would like to get in touch with us, please contact us at:"
+        }
+      }
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "0": {
+      "text": {
+        "0": "Qoacher is a brand operated by",
+        "1": "a company registered under number",
+        "2": "with its registered address at",
+        "3": "(“Qoacher,” “we,” “our,” or “us”). This Privacy Policy (“Policy”) outlines how we collect, use, store, and protect your data when you engage with our website, coaching programs, digital resources, and any related services (collectively, the “Site”).",
+        "4": "We are committed to handling your personal information responsibly and transparently. This Policy explains our data practices in a clear and accessible way, so you can feel confident using our services.",
+        "5": "This Policy covers the following:",
+        "6": "This Policy also includes provisions relevant to users in specific regions where local laws apply.",
+        "7": "Information We Collect",
+        "8": "When you visit or interact with the Qoacher website or access any of our coaching content or related services (collectively, the “Site”), certain information may be collected automatically, while other information may be provided voluntarily by you. This section outlines what we may collect and how that information may be used.",
+        "9": "Automatically Collected Data",
+        "10": "Each time you access the Site, we may collect technical and usage data to understand better how our services are being used. This may include:",
+        "11": "This information is used solely to help us improve our content, optimize the user experience, and ensure the website functions as intended.",
+        "12": "Information You Provide Voluntarily",
+        "13": "In the course of interacting with Qoacher, you may choose to submit personal information through contact forms, service request forms, email communications, or coaching interactions.",
+        "14": "This information may include:",
+        "15": "We do not collect sensitive personal information unless it is voluntarily submitted in the context of a coaching engagement, and even then, it is used only to understand your needs and respond accordingly.",
+        "16": "How We Use This Information",
+        "17": "We may use the information we collect—automatically or directly from you—for the following purposes:",
+        "18": "Qoacher does",
+        "19": "not",
+        "20": "sell, rent, or share your personal data with external partners, advertisers, or third parties. All interactions remain strictly between you and our team.",
+        "21": "If you no longer wish to receive informational updates or communications from Qoacher, you can opt out at any time by using the unsubscribe link included in any of our emails."
+      },
+      "list": {
+        "0": "What personal information we may collect when you visit or interact with our Site;",
+        "1": "How we use this information and who, if anyone, we may share it with;",
+        "2": "What choices and rights you have about your personal data;",
+        "3": "How we safeguard the information you provide; and",
+        "4": "How to update or correct your information.",
+        "5": "Your IP address, internet service provider, and general device data",
+        "6": "Browser type, operating system, and language preferences",
+        "7": "Pages visited, time spent on each page, and referring/exit websites",
+        "8": "Interactions with specific elements on our Site",
+        "9": "General geographic location based on IP",
+        "10": "Cookies and similar technologies (e.g., pixel tags or web beacons) used for functional and performance monitoring",
+        "11": "Data related to the performance and security of the Site",
+        "12": "Your name, email address, and contact details",
+        "13": "Information shared when requesting coaching or submitting a question",
+        "14": "Details provided in surveys or questionnaires (where applicable)",
+        "15": "Any additional information you choose to provide when communicating with our team",
+        "16": "To operate, maintain, and improve the Site",
+        "17": "To personalize your experience with our coaching materials",
+        "18": "To respond to inquiries and provide the support you request",
+        "19": "To understand how users engage with our content and identify areas for improvement",
+        "20": "To communicate updates, insights, or relevant service-related messages",
+        "21": "To maintain the security, performance, and stability of the Site",
+        "22": "To manage internal analytics and service improvements"
+      }
+    },
+    "1": {
+      "title": "Sharing of Information",
+      "text": {
+        "0": "Qoacher does",
+        "1": "not",
+        "2": "engage in selling, renting, or otherwise distributing your personal data to third parties for commercial purposes.",
+        "3": "We operate independently and do",
+        "4": "not",
+        "5": "rely on external service providers for coaching delivery or customer interaction. All services are provided directly by the Qoacher team. However, in the limited context of operating and maintaining our website or processing payments, we may work with certain technical vendors who support the backend infrastructure of our digital services. In such cases, the following principles apply:",
+        "6": "We may also retain the right to disclose personal data where required by law, legal process, or government request. This includes cases where we believe in good faith that such disclosure is necessary to:",
+        "7": "In the unlikely event of a business transition, such as a merger, acquisition, or sale of assets, user data may be part of the transferred assets. Should such a transfer occur, your data will remain subject to the commitments outlined in this Privacy Policy unless you are informed otherwise and allowed to review changes.",
+        "8": "Qoacher retains personal data only for as long as it is relevant and necessary for the purposes for which it was collected. When deciding how long to keep your data, we take into account:",
+        "9": "Where complete deletion is not required or appropriate, your data may be de-identified to remove any direct personal identifiers."
+      },
+      "list": {
+        "0": "These providers may access only the data strictly required to perform their assigned tasks (such as secure payment processing or website hosting).",
+        "1": "They are contractually obligated to handle your data confidentially and in compliance with applicable data protection laws.",
+        "2": "No provider is permitted to use your data for their purposes.",
+        "3": "Fulfill a legal obligation or comply with legal proceedings",
+        "4": "Protect the rights, safety, or property of Qoacher, our users, or the public",
+        "5": "Detect or prevent fraud or other potentially unlawful activity",
+        "6": "The nature of our interaction and the duration of service delivery",
+        "7": "Any legal or regulatory requirements to retain specific types of records",
+        "8": "The need to maintain records for accountability, internal analysis, or dispute resolution"
+      }
+    },
+    "2": {
+      "title": "Do Not Track",
+      "text": "Some web browsers offer a \"Do Not Track\" (DNT) feature, which allows users to signal that they prefer not to be tracked across websites. At this time, there is no consistent standard for how DNT signals should be interpreted. Therefore, our website does not currently respond to DNT signals or similar mechanisms. Regardless of your browser settings, specific data about your usage may still be collected by this Privacy Policy to ensure the functionality and performance of our services."
+    },
+    "3": {
+      "title": "Cookies",
+      "text": {
+        "0": "Cookies are small data files that are stored by your web browser on your device when you visit a website. Qoacher uses cookies to help improve the performance of our site, analyze usage patterns, remember user preferences, and provide a smoother and more personalized experience.",
+        "1": "Cookies can be either:",
+        "2": "We may use cookies to remember your previous activity on our site, store preferences, track the pages you visit, or help identify returning visitors. These cookies do not typically contain personally identifiable information, but may be linked to information you provide.",
+        "3": "You can choose whether to accept or reject cookies through your browser settings. Most browsers allow you to:",
+        "4": "Please be aware that disabling cookies may affect the functionality of certain features on our website.",
+        "5": "Qoacher does not set third-party cookies and does not use third-party advertising or behavioral tracking tools."
+      },
+      "list": {
+        "0": "Session cookies, ",
+        "1": "which are temporary and expire once you close your browser; or",
+        "2": "Persistent cookies, ",
+        "3": "Persistent cookies, which remain on your device until you delete them or they expire automatically.",
+        "5": "Block all cookies",
+        "6": "Accept cookies only from specific sites",
+        "7": "Delete cookies on browser closure"
+      }
+    },
+    "4": {
+      "title": "Security",
+      "text": {
+        "0": "Qoacher takes your privacy seriously and implements reasonable administrative, technical, and physical measures to protect your personal data from unauthorized access, alteration, or misuse. This includes secure data handling practices and encryption technologies to safeguard the information you provide.",
+        "1": "However, no method of transmission over the internet or method of electronic storage can be guaranteed to be 100% secure. While we do our best to protect your data, we recommend that you use secure connections, avoid sharing sensitive information over public networks, and take appropriate precautions to secure your own devices."
+      }
+    },
+    "5": {
+      "title": "External Websites",
+      "text": {
+        "0": "Our website may occasionally contain links to informational or resource-based third-party websites. These links are provided solely for convenience or reference. Please note that Qoacher does not operate or control the content, privacy policies, or security measures of these external websites.",
+        "1": "When you follow a link to another site, you are subject to that site's privacy practices and terms of use. We encourage you to review the privacy policies of any external websites you visit, as we are not responsible for the handling of your data once you leave our domain."
+      }
+    },
+    "6": {
+      "title": "Changes to the Privacy Policy",
+      "text": {
+        "0": "We may update this Privacy Policy from time to time to reflect changes in our services, legal requirements, or data handling practices. When we make changes, we will revise the \"Last Updated\" date at the bottom of this page and post the updated version on our website.",
+        "1": "If a revision significantly alters how we collect or use your personal information, we will make reasonable efforts to notify you in advance via a notice on our site. We encourage you to review this Policy periodically to stay informed about how we protect your personal data.",
+        "2": "Minor changes that do not materially impact your privacy may be made without specific notification."
+      }
+    },
+    "7": {
+      "title": "Contact Us",
+      "text": {
+        "0": "If you have any questions, requests, or concerns regarding this Privacy Policy or how your data is handled, please contact us using any of the methods below:",
+        "1": "You may also contact us via any official communication method listed on our website:",
+        "2": "We are available to respond to inquiries during standard business hours. Please ensure you include your full name and a clear description of your request or concern so we can assist you effectively."
+      }
+    }
+  },
+  "refundPolicy": {
+    "title": "Refund Policy",
+    "0": {
+      "text": {
+        "0": "At Qoacher, we provide personalized coaching services and digital programs that begin processing immediately upon purchase. Due to the nature of our work — including time-based access, content delivery, and human effort —",
+        "1": " all services are non-refundable.",
+        "2": "By placing an order, you confirm your understanding that",
+        "3": "refunds will not be issued under any circumstance related to dissatisfaction, personal expectations, or perceived outcomes."
+      }
+    },
+    "1": {
+      "title": "Non-Refundable Services",
+      "text": {
+        "0": "Qoacher does",
+        "1": "not offer refunds",
+        "2": "for any of the following reasons:",
+        "3": "Once a service is purchased, the allocation of time, system access, and human preparation begins — making the service non-reversible."
+      },
+      "list": {
+        "0": "You believe the service did not meet your personal or professional expectations",
+        "1": "You decide not to complete or engage with the coaching program",
+        "2": "You change your mind after payment",
+        "3": "You misunderstood the scope, purpose, or style of the service",
+        "4": "You no longer wish to participate for any reason, including personal or scheduling issues"
+      }
+    },
+    "2": {
+      "title": "Refunds for Technical Errors",
+      "text": {
+        "0": "Refunds are",
+        "1": "only possible in the rare event of a proven technical mistake",
+        "2": "related to the payment process. Because Qoacher services are initiated after receiving payment via",
+        "3": "manual wire transfer,",
+        "4": "users are responsible for ensuring the accuracy of the payment.",
+        "5": "Refunds",
+        "6": "will not",
+        "7": "be issued for errors arising from:",
+        "8": "All refund requests related to technical errors",
+        "9": "must be submitted within 7 calendar days",
+        "10": "of the payment date and include full transaction proof."
+      },
+      "list": {
+        "0": "Duplicate payment",
+        "1": "was made for the same service (confirmed by matching amount, date, and reference)",
+        "2": "Incorrect recipient details were provided by us",
+        "3": "resulting in your funds being misrouted or not delivered",
+        "4": "You were instructed to pay for a service you did not request,",
+        "5": "due to a documented miscommunication or technical error on our side",
+        "6": "Payment confirmation was not recognized",
+        "7": "due to a system failure on our end, despite funds being received",
+        "8": "Mistakes in the amount, reference, or account number entered by the user",
+        "9": "Payments sent to incorrect accounts not provided by Qoacher",
+        "10": "Delays caused by intermediary banks or currency conversion discrepancies"
+      }
+    },
+    "3": {
+      "title": "Contact Us",
+      "text": {
+        "0": "If you have any questions, requests, or concerns regarding this Privacy Policy or how your data is handled, please contact us using any of the methods below:",
+        "1": "You may also contact us via any official communication method listed on our website:",
+        "2": "We are available to respond to inquiries during standard business hours. Please ensure you include your full name and a clear description of your request or concern so we can assist you effectively."
+      }
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "0": {
+      "text": {
+        "0": "Fueling your journey. Not tracking your life.",
+        "1": "Welcome to Qoacher. Just like you, we like things that work fast, feel personal, and support real progress. That’s precisely how we approach Cookies — those small data pieces that help our website remember you, run smoother, and give you a better experience every time you return.",
+        "2": "This Cookie Policy explains how and why we use them — and how you stay in complete control."
+      }
+    },
+    "1": {
+      "title": "What are Cookies",
+      "text": {
+        "0": "Cookies are tiny data files that your browser stores when you visit a website. They don’t track your private life — they just help the site recognize you, load faster, and remember what matters to you (like your preferences, form entries, or language). Some are temporary (gone when you close your browser), others stick around to keep things efficient for your next visit.",
+        "1": "At Qoacher, we use them not to spy — but to serve. No shady ads. No third-party tracking networks. Just pure experience enhancement."
+      }
+    },
+    "2": {
+      "title": "Why We Use Cookies",
+      "text": {
+        "0": "We use cookies to:",
+        "1": "We don’t sell your data. We don’t hand it off to ad networks. We don’t use cookies to follow you around the internet. Because… gross."
+      },
+      "list": {
+        "0": "Speed up your experience",
+        "1": " – Faster page loads, smoother flow.",
+        "2": "Remember your preferences",
+        "3": " – So you don’t have to start over every time.",
+        "4": "Understand what works",
+        "5": " – We analyze traffic patterns (anonymously) to improve what matters.",
+        "6": "Keep things relevant",
+        "7": " – Like showing you the coaching program or resource you were last exploring."
+      }
+    },
+    "3": {
+      "title": "Your Choices",
+      "text": "Want to manage or disable cookies? You can do it anytime through your browser settings. Just a heads up — disabling cookies might make parts of our website work a bit slower or less smoothly."
+    },
+    "4": {
+      "title": "We Keep It Transparent",
+      "text": "We may occasionally update this Cookie Policy if our use of cookies changes — or if we find a better, more privacy-friendly solution. When we do, you’ll see the updated version right here."
+    },
+    "5": {
+      "title": "Final Word?",
+      "text": {
+        "0": "Cookies at Qoacher are here to enhance, not interfere. Our mission is to help you move forward with clarity, confidence, and speed — not to slow you down with digital noise.",
+        "1": "If you have any questions about how we use cookies or how your data is handled, contact us at:"
+      }
+    },
+    "6": {
+      "title": "Types of Cookies We Use",
+      "text": {
+        "0": "Here’s a quick breakdown:"
+      },
+      "table": {
+        "0": {
+          "type": "Essential Cookies",
+          "purpose": "These keep the site running. Without them, core features (like form submissions) won’t work."
+        },
+        "1": {
+          "type": "Performance Cookies",
+          "purpose": "They help us understand which pages are performing best and where users get stuck. It’s all anonymous and helps us improve."
+        },
+        "2": {
+          "type": "Preference Cookies",
+          "purpose": "These remember your choices (like preferred language or content format). Pure convenience."
+        },
+        "3": {
+          "type": "No Third-Party Ad Cookies",
+          "purpose": "We don’t use advertising cookies. You won’t see “relevant offers” following you around after visiting us. We find that annoying too."
+        }
+      }
+    }
   }
 }
