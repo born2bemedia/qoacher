@@ -30,6 +30,7 @@ const textVariants = cva('transition duration-300 ease-in-out', {
       light: 'text-white',
       danger: 'text-danger',
       gray: 'text-[#6B6B6B]',
+      success: 'text-[#32B13B]',
     },
     zIndex: {
       0: 'z-0',

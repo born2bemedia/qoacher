@@ -7,12 +7,14 @@ import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
 import { Navigation } from '@/shared/config/navigation';
+import { useUser } from '@/shared/lib/hooks/use-user';
 import { Button } from '@/shared/ui/components/atoms/button';
 import { Dropdown } from '@/shared/ui/components/atoms/dropdown';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { BasketIcon } from '@/shared/ui/icons/fill';
 import { ChevronDown } from '@/shared/ui/icons/outline';
 
+import { UserIcon } from '../../icons/fill/user';
 import { LangSwitcher } from '../molecules/lang-switcher';
 
 const BurgerMenu = dynamic(() => import('./burger-menu').then((mod) => mod.BurgerMenu), {
@@ -22,6 +24,8 @@ const BurgerMenu = dynamic(() => import('./burger-menu').then((mod) => mod.Burge
 export const Header = () => {
   const pathname = usePathname();
   const t = useTranslations('header');
+
+  const user = useUser();
 
   return (
     <header className="border-light-gray sticky top-0 z-50 flex items-center justify-between border-b bg-white px-[100px] py-3 max-md:px-4 max-md:py-3">
@@ -59,9 +63,18 @@ export const Header = () => {
           <BasketIcon />
         </Link>
         <LangSwitcher />
-        <Link href="/sign-in">
-          <Button>{t('signIn', { fallback: 'Sign in' })}</Button>
-        </Link>
+        {user ? (
+          <Link href="/account">
+            <Button>
+              <UserIcon />
+              {user.firstName}
+            </Button>
+          </Link>
+        ) : (
+          <Link href="/sign-in">
+            <Button>{t('signIn', { fallback: 'Sign in' })}</Button>
+          </Link>
+        )}
       </section>
       <BurgerMenu />
     </header>

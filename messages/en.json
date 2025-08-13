@@ -1197,5 +1197,28 @@
         }
       }
     }
+  },
+  "tabs": {
+    "main": "Main",
+    "orders": "Orders",
+    "yourData": "Your Date",
+    "documents": "Documents",
+    "logOut": "Log Out"
+  },
+  "dashboard": {
+    "yourAccount": "Your Account",
+    "yourRecentOrders": "Your recent orders",
+    "description": "Programs. Packages. Progress. Everything in one place to move you forward.",
+    "allOrders": "All Orders",
+    "services": "Services",
+    "packages": "Packages",
+    "programs": "Programs",
+    "columns": {
+      "orderId": "Order ID",
+      "service": "Service",
+      "price": "Price",
+      "date": "Order date",
+      "orderStatus": "Status"
+    }
   }
 }

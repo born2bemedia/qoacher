@@ -12,11 +12,11 @@ import 'react-international-phone/style.css';
 import { Text } from './text';
 
 const phoneFieldVariants = cva(
-  '!p-4 transition-all !border !rounded-none !text-sm !font-thin !text-[#6B6B6B] duration-300 !w-full !h-full ease-in-out focus:outline-none',
+  '!p-4 transition-all !rounded-none !text-sm !font-thin !text-[#6B6B6B] duration-300 !w-full !h-full ease-in-out focus:outline-none',
   {
     variants: {
       variant: {
-        primary: '!border-[#808080] !bg-white',
+        primary: '!border !border-[#323232] !bg-transparent',
       },
       intent: {
         primary: '',
@@ -65,7 +65,7 @@ export const PhoneField = ({
         countries={defaultCountries.filter(([, iso2]) => !excludedCountries.includes(iso2))}
         countrySelectorStyleProps={{
           buttonClassName: cn(
-            '!h-full bg-white !border !border-[#808080] !rounded-none !pr-3 !pl-2.5'
+            '!h-full !bg-transparent !border !border-[#323232] !rounded-none !pr-3 !pl-2.5'
           ),
           dropdownStyleProps: {
             className: '!outline-none',
