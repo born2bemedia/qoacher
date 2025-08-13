@@ -58,7 +58,7 @@ export const requestFormBody = ({ username }: { username: string }) => {
        
       .text {
         margin-top: 20px;
-        color: #000;
+        color: #000 !important;
         font-size: 14px;
       }
       
