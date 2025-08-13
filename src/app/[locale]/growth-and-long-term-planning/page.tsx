@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { ContactFrame } from '@/features/contact-form/ui/contact-frame';
@@ -11,6 +12,25 @@ import { Products } from '@/shared/ui/components/templates/products';
 
 import { WantToGear } from './components/want-to-gear';
 import { WhyYouNeed } from './components/why-you-need';
+
+export const metadata: Metadata = {
+  title: 'Growth and Long-Term Planning Coaching | Qoacher',
+  description:
+    'Explore coaching programs that help you set clear goals, build sustainable habits, and create a long-term plan for lasting personal growth. ',
+  openGraph: {
+    title: 'Growth and Long-Term Planning Coaching | Qoacher',
+    description:
+      'Explore coaching programs that help you set clear goals, build sustainable habits, and create a long-term plan for lasting personal growth. ',
+    images: ['https://qoacher.com/meta.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Growth and Long-Term Planning Coaching | Qoacher',
+    description:
+      'Explore coaching programs that help you set clear goals, build sustainable habits, and create a long-term plan for lasting personal growth. ',
+    images: ['https://qoacher.com/meta.jpg'],
+  },
+};
 
 export default async function GrowthAndLongTermPlanningPage() {
   const t = await getTranslations('growthAndLongTermPlanning');

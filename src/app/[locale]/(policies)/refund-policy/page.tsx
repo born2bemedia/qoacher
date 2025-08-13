@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 
@@ -6,6 +7,21 @@ import { PolicyLayout } from '@/features/policies/ui/policy-layout';
 
 import { List } from '@/shared/ui/components/atoms/list';
 import { Text } from '@/shared/ui/components/atoms/text';
+
+export const metadata: Metadata = {
+  title: 'Refund Policy | Qoacher',
+  openGraph: {
+    title: 'Refund Policy | Qoacher',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Refund Policy | Qoacher',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function RefundPolicy() {
   const t = await getTranslations('refundPolicy');

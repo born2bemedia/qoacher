@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
 
@@ -7,6 +8,21 @@ import { PolicyLayout } from '@/features/policies/ui/policy-layout';
 import { List } from '@/shared/ui/components/atoms/list';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { Title } from '@/shared/ui/components/atoms/title';
+
+export const metadata: Metadata = {
+  title: 'Terms of Use | Qoacher',
+  openGraph: {
+    title: 'Terms of Use | Qoacher',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms of Use | Qoacher',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function TermsOfUse() {
   const t = await getTranslations('policies.termsOfUse');

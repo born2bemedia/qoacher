@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import {
@@ -13,6 +14,25 @@ import { Products } from '@/shared/ui/components/templates/products';
 
 import { WantToGear } from './components/want-to-gear';
 import { WhyYouNeed } from './components/why-you-need';
+
+export const metadata: Metadata = {
+  title: 'Communication and Relationship Coaching | Qoacher',
+  description:
+    'Discover communication and relationship coaching to build stronger connections, resolve conflicts, and create lasting positive change in your relationships. ',
+  openGraph: {
+    title: 'Communication and Relationship Coaching | Qoacher',
+    description:
+      'Discover communication and relationship coaching to build stronger connections, resolve conflicts, and create lasting positive change in your relationships. ',
+    images: ['https://qoacher.com/meta.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Communication and Relationship Coaching | Qoacher',
+    description:
+      'Discover communication and relationship coaching to build stronger connections, resolve conflicts, and create lasting positive change in your relationships. ',
+    images: ['https://qoacher.com/meta.jpg'],
+  },
+};
 
 export default async function CommunicationAndRelationshipCoachingPage() {
   const t = await getTranslations('communicationAndRelationshipCoaching');

@@ -3,7 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['localhost', 'qoacher-cms.vercel.app'],
+    domains: ['localhost', 'qoacher-cms.vercel.app', 'cms.qoacher.com'],
   },
 };
 

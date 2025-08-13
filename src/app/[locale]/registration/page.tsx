@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 
@@ -6,6 +7,21 @@ import { RegistrationForm } from '@/features/auth/ui/registration-form';
 import { Divider } from '@/shared/ui/components/atoms/divider';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { Title } from '@/shared/ui/components/atoms/title';
+
+export const metadata: Metadata = {
+  title: 'Registration | Qoacher',
+  openGraph: {
+    title: 'Registration | Qoacher',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Registration | Qoacher',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function RegistrationPage() {
   const t = await getTranslations('registration');

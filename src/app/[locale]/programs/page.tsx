@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { ContactFrame } from '@/features/contact-form/ui/contact-frame';
@@ -7,6 +8,25 @@ import { Hero } from '@/shared/ui/components/organisms/hero';
 import { ProgramsLayout } from '@/shared/ui/components/templates/programs-layout';
 
 import { HowToStart, WhatOffers } from './components';
+
+export const metadata: Metadata = {
+  title: 'Life Coaching Programs | Qoacher',
+  description:
+    'Explore life coaching programs designed to address complex challenges with complete, multi-service solutions. ',
+  openGraph: {
+    title: 'Life Coaching Programs | Qoacher',
+    description:
+      'Explore life coaching programs designed to address complex challenges with complete, multi-service solutions. ',
+    images: ['https://qoacher.com/meta.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Life Coaching Programs | Qoacher',
+    description:
+      'Explore life coaching programs designed to address complex challenges with complete, multi-service solutions. ',
+    images: ['https://qoacher.com/meta.jpg'],
+  },
+};
 
 export default async function ProgramsPage() {
   const t = await getTranslations('programs');

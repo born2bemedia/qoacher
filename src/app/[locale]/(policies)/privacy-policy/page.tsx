@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { PolicySection } from '@/features/policies/ui/polict-section';
@@ -6,6 +7,21 @@ import { PolicyLayout } from '@/features/policies/ui/policy-layout';
 import { List } from '@/shared/ui/components/atoms/list';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { Title } from '@/shared/ui/components/atoms/title';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy | Qoacher',
+  openGraph: {
+    title: 'Privacy Policy | Qoacher',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy | Qoacher',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function PrivacyPolicy() {
   const t = await getTranslations('privacyPolicy');

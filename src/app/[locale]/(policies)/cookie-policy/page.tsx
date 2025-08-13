@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { PolicySection } from '@/features/policies/ui/polict-section';
@@ -7,6 +8,21 @@ import { PolicyTable } from '@/features/policies/ui/policy-table';
 import { List } from '@/shared/ui/components/atoms/list';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { Title } from '@/shared/ui/components/atoms/title';
+
+export const metadata: Metadata = {
+  title: 'Cookie Policy | Qoacher',
+  openGraph: {
+    title: 'Cookie Policy | Qoacher',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cookie Policy | Qoacher',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function CookiePolicy() {
   const t = await getTranslations('cookiePolicy');
