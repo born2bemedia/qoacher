@@ -13,6 +13,7 @@ export const CountryAutocomplete = ({
   disabled,
   initialValue = '',
   hint,
+  label,
 }: {
   onChange?: (value: string) => void;
   initialValue?: string;
@@ -60,6 +61,7 @@ export const CountryAutocomplete = ({
     <div ref={autocompleteRef} className="relative w-full">
       <TextField
         value={search}
+        label={label}
         disabled={disabled}
         placeholder={placeholder}
         onChange={(e) => {

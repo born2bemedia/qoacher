@@ -1201,7 +1201,7 @@
   "tabs": {
     "main": "Main",
     "orders": "Orders",
-    "yourData": "Your Date",
+    "yourData": "Your Data",
     "documents": "Documents",
     "logOut": "Log Out"
   },
@@ -1256,5 +1256,49 @@
   "noAvailable": {
     "not": "not",
     "available": "available"
+  },
+  "userInfoForm": {
+    "title": "Information about you",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "saving": "Saving...",
+    "save": "Save",
+    "success": "User updated successfully",
+    "error": "Failed to update user. Please try again later."
+  },
+  "userBillingForm": {
+    "title": "Information about your address",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "saving": "Saving...",
+    "save": "Save",
+    "success": "User updated successfully",
+    "error": "Failed to update user. Please try again later.",
+    "fields": {
+      "addressLine1": "Address Line 1",
+      "addressLine2": "Address Line 2",
+      "country": "Country",
+      "city": "City",
+      "zip": "Zip"
+    }
+  },
+  "changePassword": {
+    "title": "Your Password",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "saving": "Saving...",
+    "save": "Save",
+    "fields": {
+      "currentPassword": "Current Password",
+      "newPassword": "New Password"
+    },
+    "success": "Password changed successfully",
+    "error": "Password change failed. Please try again later."
   }
 }

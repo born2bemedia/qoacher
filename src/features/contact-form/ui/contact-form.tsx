@@ -92,6 +92,7 @@ export const ContactForm = ({
             onChange={(value) => field.handleChange(value)}
             hint={field.state.meta.errors.map((err) => err?.message).join(', ')}
             className={fieldClassName}
+            variant="secondary"
           />
         )}
       </Field>
