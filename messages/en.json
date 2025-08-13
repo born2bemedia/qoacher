@@ -1220,5 +1220,41 @@
       "date": "Order date",
       "orderStatus": "Status"
     }
+  },
+  "orderCard": {
+    "orderId": "Order ID",
+    "service": "Service",
+    "price": "Price",
+    "date": "Order date",
+    "invoice": "Invoice",
+    "download": "Download",
+    "reorder": "Reorder",
+    "orderStatus": "Status"
+  },
+  "orders": {
+    "columns": {
+      "orderId": "Order ID",
+      "service": "Service",
+      "price": "Price",
+      "date": "Order date",
+      "orderStatus": "Status",
+      "invoiceUrl": "Invoice",
+      "ordering": "Ordering",
+      "reorder": "Reorder",
+      "download": "Download"
+    },
+    "yourAccount": "Your Account",
+    "allServices": "All Services",
+    "description": "Review your purchases and track what’s next on your journey.",
+    "yourRecentOrders": "Your recent orders",
+    "explore": "Explore other services and solutions",
+    "allOrders": "All Orders",
+    "services": "Services",
+    "packages": "Packages",
+    "programs": "Programs"
+  },
+  "noAvailable": {
+    "not": "not",
+    "available": "available"
   }
 }

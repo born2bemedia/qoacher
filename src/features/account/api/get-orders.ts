@@ -2,10 +2,14 @@
 
 import { cookies } from 'next/headers';
 
-import type { Order } from '../model/types';
+import { SERVER_URL } from '@/shared/config/env';
+
+import type { FullOrder, Order, OriginalOrder } from '../model/types';
 
 export async function getUserOrders(): Promise<{
   dashboardOrders: Order[];
+  fullOrders: FullOrder[];
+  originalOrders: OriginalOrder[];
 }> {
   const cookieInst = await cookies();
 
@@ -23,21 +27,53 @@ export async function getUserOrders(): Promise<{
   );
   const data = await res.json();
 
-  return {
-    dashboardOrders: data.docs.map(
-      (item: {
-        orderNumber: string;
-        items: { productName: string }[];
-        total: number;
-        createdAt: string;
-        status: string;
-      }) => ({
+  const originalOrders = data.docs.map(
+    (item: { items: { productName: string; price: number }[]; orderNumber: string }) =>
+      item.items.map((p) => ({
         orderId: item.orderNumber,
-        service: item.items.map((bot) => bot.productName),
-        price: item.total,
-        orderDate: item.createdAt,
-        orderStatus: item.status,
-      })
-    ),
+        title: p.productName,
+        price: p.price,
+        quantity: 1,
+      }))
+  );
+
+  return {
+    dashboardOrders: data.docs
+      ? data.docs.map(
+          (item: {
+            orderNumber: string;
+            items: { productName: string }[];
+            total: number;
+            createdAt: string;
+            status: string;
+          }) => ({
+            orderId: item.orderNumber,
+            service: item.items.map((bot) => bot.productName),
+            price: item.total,
+            orderDate: item.createdAt,
+            orderStatus: item.status,
+          })
+        )
+      : [],
+    fullOrders: data.docs
+      ? data.docs.map(
+          (item: {
+            orderNumber: string;
+            items: { productName: string }[];
+            total: number;
+            createdAt: string;
+            status: string;
+            invoice: { url: string };
+          }) => ({
+            orderId: item.orderNumber,
+            service: item.items.map((bot) => bot.productName),
+            price: item.total,
+            orderDate: item.createdAt,
+            orderStatus: item.status,
+            invoiceUrl: item.invoice ? `${SERVER_URL}${item.invoice.url}` : null,
+          })
+        )
+      : [],
+    originalOrders: originalOrders.length > 0 ? originalOrders.flat() : [],
   };
 }

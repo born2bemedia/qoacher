@@ -6,4 +6,13 @@ export type Order = {
   status: OrderStatus;
 };
 
+export type FullOrder = Order & { invoiceUrl: string };
+
 export type OrderStatus = 'completed' | 'pending' | 'failed';
+
+export type OriginalOrder = {
+  orderId: string;
+  title: string;
+  price: number;
+  quantity: number;
+};
