@@ -5,12 +5,14 @@ import { useTranslations } from 'next-intl';
 
 import { useForm } from '@/shared/lib/forms';
 import { cn } from '@/shared/lib/utils';
+import { notifyWarning } from '@/shared/lib/utils/notify';
 import { Button } from '@/shared/ui/components/atoms/button';
 import { useDialogStore } from '@/shared/ui/components/atoms/dialog';
 import { PhoneField } from '@/shared/ui/components/atoms/phone-field';
 import { TextArea } from '@/shared/ui/components/atoms/text-area';
 import { TextField } from '@/shared/ui/components/atoms/text-field';
 
+import { sendContactForm } from '../api/send-form';
 import { ContactFormSchema } from '../schema/schemas';
 
 const ThankYouDialog = dynamic(
@@ -42,14 +44,19 @@ export const ContactForm = ({
     validators: {
       onChange: ContactFormSchema(),
     },
-    onSubmit: (data) => {
-      console.log(data);
+    onSubmit: async (data) => {
+      const { success } = await sendContactForm(data.value);
 
       registerContent({
         title: t('success', { fallback: 'Success!' }),
         content: <ThankYouDialog onClose={() => setIsOpen(false)} />,
       });
-      setIsOpen(true);
+
+      if (success) {
+        setIsOpen(true);
+      } else {
+        notifyWarning('Something went wrong. Please try again later.');
+      }
     },
   });
 
