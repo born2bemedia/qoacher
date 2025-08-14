@@ -2,6 +2,8 @@
 
 import { useTranslations } from 'next-intl';
 
+import { useCartStore } from '@/features/cart/model/cart.store';
+
 import { Divider } from '@/shared/ui/components/atoms/divider';
 import { Table } from '@/shared/ui/components/atoms/table';
 import { Text } from '@/shared/ui/components/atoms/text';
@@ -21,7 +23,9 @@ export const Orders = ({
 }) => {
   const t = useTranslations('orders');
 
-  const columns = getOrdersColumns(t, originalOrders);
+  const { setIsCartActive } = useCartStore();
+
+  const columns = getOrdersColumns(t, originalOrders, () => setIsCartActive(true));
 
   return (
     <section className="flex flex-col gap-6">

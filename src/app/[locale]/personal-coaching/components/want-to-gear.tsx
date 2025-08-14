@@ -27,12 +27,11 @@ export const WantToGear = () => {
           }}
         />
       </Text>
-
       <div className="relative z-2 flex justify-center gap-6 max-md:w-full">
         <Link href="/programs">
           <Button
             variant="light"
-            className="w-[200px] items-center justify-center border-1 border-white bg-transparent px-3 text-center text-white max-md:w-1/2"
+            className="w-[200px] items-center justify-center border-1 border-white bg-transparent px-3 text-center text-white max-md:w-full max-md:px-8"
           >
             {t('careerPrograms', { fallback: 'Career Programs' })}
           </Button>
@@ -40,13 +39,12 @@ export const WantToGear = () => {
         <Link href="/packages">
           <Button
             variant="light"
-            className="w-[200px] items-center justify-center border-1 border-white px-3 text-center max-md:w-1/2"
+            className="w-[200px] items-center justify-center border-1 border-white px-3 text-center max-md:w-full max-md:px-8"
           >
             {t('packages', { fallback: 'Packages' })}
           </Button>
         </Link>
       </div>
-
       <div className="absolute inset-0 z-1 bg-black/60"></div>
       <Image
         className="z-0 object-cover"

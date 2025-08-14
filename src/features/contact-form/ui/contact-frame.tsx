@@ -38,6 +38,7 @@ export const ContactFrame = ({
           alt="leafs"
           width={543}
           height={494}
+          unoptimized
         />
       </FadeIn>
     </SectionLayout>

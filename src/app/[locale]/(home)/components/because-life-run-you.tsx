@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/shared/ui/components/atoms/button';
+import { Divider } from '@/shared/ui/components/atoms/divider';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { Title } from '@/shared/ui/components/atoms/title';
 import { FadeIn } from '@/shared/ui/components/templates/fade-in';
@@ -94,10 +95,11 @@ export const BecauseLifeRunYou = () => {
 };
 
 const Card = ({ title, description }: { title: string; description: string }) => (
-  <article className="border-light-gray flex flex-col gap-6 border p-6">
+  <article className="border-light-gray flex flex-col gap-3 border p-6">
     <Title as="h3" size="lg">
       {title}
     </Title>
+    <Divider className="bg-[#E9E9E9]" />
     <Text>{description}</Text>
   </article>
 );

@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 
 import { addToCart } from '@/features/cart/api/add-to-cart';
+import { useCartStore } from '@/features/cart/model/cart.store';
 
 import type { CareerProduct } from '@/shared/lib/types/type';
 import { Text } from '@/shared/ui/components/atoms/text';
@@ -14,6 +15,8 @@ import { Button } from '../atoms/button';
 
 export const Products = ({ title, products }: { title: string; products: CareerProduct[] }) => {
   const t = useTranslations('products');
+
+  const { setIsCartActive } = useCartStore();
 
   const priceFormatted = (price: number) => {
     return price.toLocaleString('en-US', {
@@ -45,7 +48,10 @@ export const Products = ({ title, products }: { title: string; products: CareerP
             </div>
             <Button
               className="w-full text-center justify-center"
-              onClick={() => addToCart(product)}
+              onClick={() => {
+                addToCart(product);
+                setIsCartActive(true);
+              }}
             >
               {t('order', {
                 fallback: 'Order Now',

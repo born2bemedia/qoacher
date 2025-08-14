@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 
 import { addToCart } from '@/features/cart/api/add-to-cart';
+import { useCartStore } from '@/features/cart/model/cart.store';
 
 import type { Program } from '@/shared/lib/types/type';
 import { Text } from '@/shared/ui/components/atoms/text';
@@ -15,6 +16,9 @@ import { Button } from '../atoms/button';
 
 export const ProgramsLayout = ({ programs }: { programs: Program[] }) => {
   const t = useTranslations('programsLayout');
+
+  const { setIsCartActive } = useCartStore();
+
   const priceFormatted = (price: number) => {
     return price.toLocaleString('en-US', {
       style: 'currency',
@@ -58,7 +62,10 @@ export const ProgramsLayout = ({ programs }: { programs: Program[] }) => {
               <Title className="text-[24px]">{priceFormatted(program.price)}</Title>
               <Button
                 className="w-full text-center justify-center"
-                onClick={() => addToCart(program)}
+                onClick={() => {
+                  addToCart(program);
+                  setIsCartActive(true);
+                }}
               >
                 {t('joinProgram', {
                   fallback: 'Join Program',

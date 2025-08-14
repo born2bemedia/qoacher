@@ -16,7 +16,8 @@ import type { FullOrder, OriginalOrder } from './types';
 
 export const getOrdersColumns = (
   t: ReturnType<typeof useTranslations>,
-  originalOrders: OriginalOrder[]
+  originalOrders: OriginalOrder[],
+  setActiveCart: () => void
 ): ColumnDef<FullOrder>[] => [
   {
     accessorKey: 'orderId',
@@ -83,6 +84,7 @@ export const getOrdersColumns = (
             order.forEach((o) => {
               addToCart({ id: o.title, ...o });
             });
+            setActiveCart();
             window.location.href = '/cart';
             notifySuccess('Product added to cart');
           }}

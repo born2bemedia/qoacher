@@ -7,12 +7,15 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
+import { useCartStore } from '@/features/cart/model/cart.store';
+
 import { Navigation } from '@/shared/config/navigation';
 import { cookies } from '@/shared/lib/cookies';
 import { Button } from '@/shared/ui/components/atoms/button';
 import { Dropdown } from '@/shared/ui/components/atoms/dropdown';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { BasketIcon } from '@/shared/ui/icons/fill';
+import { OrderCart } from '@/shared/ui/icons/fill/order-cart';
 import { ChevronDown } from '@/shared/ui/icons/outline';
 
 import { UserIcon } from '../../icons/fill/user';
@@ -28,6 +31,8 @@ export const Header = () => {
   const t = useTranslations('header');
 
   const { user, setUser } = useUser();
+
+  const { isCartActive } = useCartStore();
 
   useEffect(() => {
     const storedUser = cookies.get('user');
@@ -67,9 +72,7 @@ export const Header = () => {
         </ul>
       </section>
       <section className="flex items-center gap-6 max-lg:hidden">
-        <Link href="/cart">
-          <BasketIcon />
-        </Link>
+        <Link href="/cart">{isCartActive ? <OrderCart /> : <BasketIcon />}</Link>
         <LangSwitcher />
         {user ? (
           <Link href="/account">
