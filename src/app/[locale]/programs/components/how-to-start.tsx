@@ -25,8 +25,8 @@ export const HowToStart = () => {
               fallback: 'How to Start',
             })}
           </Title>
-          <div className="flex gap-[96px] max-md:flex-col max-md:gap-8">
-            <div className="flex w-1/2 flex-col gap-6 max-md:w-full">
+          <div className="flex gap-[96px] max-[1150px]:flex-col max-md:gap-8 w-full">
+            <div className="flex w-1/2 flex-col gap-6 max-[1150px]:w-full">
               <Title as="h3" size="2xl">
                 <span
                   dangerouslySetInnerHTML={{
@@ -89,7 +89,7 @@ export const HowToStart = () => {
                     }}
                   />
                 </Text>
-                <Text className="border-b border-[#E9E9E9]">
+                <Text>
                   <b
                     className="font-bold"
                     dangerouslySetInnerHTML={{
@@ -109,7 +109,7 @@ export const HowToStart = () => {
               </div>
             </div>
             <Image
-              className="h-[470px] w-[calc(50% - 48px)] object-cover max-md:w-full max-md:h-[358px]"
+              className="h-[470px] w-1/2 max-[1150px]:w-full object-cover max-md:h-[358px]"
               src="/images/programs/how-to-start.png"
               alt="service"
               width={493}

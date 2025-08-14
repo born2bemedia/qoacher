@@ -16,17 +16,19 @@ export const WhatOffers = () => {
     <>
       <FadeIn>
         <SectionLayout
-          className={cn('items-center flex-row gap-[124px] max-md:flex-col-reverse max-md:gap-8')}
+          className={cn(
+            'items-center flex-row gap-[124px] max-[1150px]:flex-col-reverse max-md:gap-8'
+          )}
         >
           <Image
-            className="h-[470px] w-1/2 object-cover max-md:w-full max-md:h-[358px]"
+            className="h-[470px] w-1/2 object-cover max-[1150px]:w-full max-md:h-[358px]"
             src="/images/programs/what-offers.png"
             alt="service"
             width={493}
             height={470}
             unoptimized
           />
-          <div className="flex w-1/2 flex-col gap-6 max-md:w-full">
+          <div className="flex w-1/2 flex-col gap-6 max-[1150px]:w-full">
             <Title as="h3" size="2xl" className="pb-6 text-[32px] border-b-1 border-[#E9E9E9]">
               <span
                 dangerouslySetInnerHTML={{

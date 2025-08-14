@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/shared/ui/components/atoms/button';
@@ -38,9 +39,11 @@ export const StartSmall = () => {
             })}
           </Text>
         </div>
-        <Button variant="light" className="z-10">
-          {t('learnMore', { fallback: 'Learn More' })}
-        </Button>
+        <Link href="/self-improvement" className="z-10">
+          <Button variant="light" className="z-10">
+            {t('learnMore', { fallback: 'Learn More' })}
+          </Button>
+        </Link>
         <Image
           className="object-cover"
           src="/images/home/banner.png"

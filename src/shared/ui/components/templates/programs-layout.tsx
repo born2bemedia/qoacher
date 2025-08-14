@@ -25,11 +25,11 @@ export const ProgramsLayout = ({ programs }: { programs: Program[] }) => {
 
   return (
     <SectionLayout className="gap-12">
-      <div className="flex flex-wrap gap-6 w-[1110px] mx-auto justify-center max-md:w-full">
+      <div className="w-full grid grid-cols-2 max-lg:grid-cols-1 gap-6 mx-auto justify-center">
         {programs.map((program) => (
           <FadeIn
             key={program.id}
-            className="w-[calc(50%-12px)] max-md:w-full flex flex-col justify-between gap-12 p-6 border-1 border-[#E9E9E9]"
+            className="w-full flex flex-col justify-between gap-12 p-6 border-1 border-[#E9E9E9]"
           >
             <div className="flex flex-col gap-6">
               <Title as="h2" className="text-left text-[32px] ">

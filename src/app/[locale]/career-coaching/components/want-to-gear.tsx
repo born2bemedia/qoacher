@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/shared/ui/components/atoms/button';
@@ -16,11 +17,7 @@ export const WantToGear = () => {
           fallback: 'Want to Go Deer?',
         })}
       </Title>
-      <Text
-        zIndex={2}
-        color="light"
-        className="w-[344px] text-center max-md:w-full"
-      >
+      <Text zIndex={2} color="light" className="w-[344px] text-center max-md:w-full">
         <span
           dangerouslySetInnerHTML={{
             __html: t('wantToGearDescription', {
@@ -32,18 +29,22 @@ export const WantToGear = () => {
       </Text>
 
       <div className="relative z-2 flex justify-center gap-6 max-md:w-full">
-        <Button
-          variant="light"
-          className="w-[200px] items-center justify-center border-1 border-white bg-transparent px-3 text-center text-white max-md:w-1/2"
-        >
-          {t('careerPrograms', { fallback: 'Career Programs' })}
-        </Button>
-        <Button
-          variant="light"
-          className="w-[200px] items-center justify-center border-1 border-white px-3 text-center max-md:w-1/2"
-        >
-          {t('packages', { fallback: 'Packages' })}
-        </Button>
+        <Link href="/programs">
+          <Button
+            variant="light"
+            className="w-[200px] items-center justify-center border-1 border-white bg-transparent px-3 text-center text-white max-md:w-1/2"
+          >
+            {t('careerPrograms', { fallback: 'Career Programs' })}
+          </Button>
+        </Link>
+        <Link href="/packages">
+          <Button
+            variant="light"
+            className="w-[200px] items-center justify-center border-1 border-white px-3 text-center max-md:w-1/2"
+          >
+            {t('packages', { fallback: 'Packages' })}
+          </Button>
+        </Link>
       </div>
 
       <div className="absolute inset-0 z-1 bg-black/60"></div>

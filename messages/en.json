@@ -48,8 +48,8 @@
   "programsThatHelp": {
     "programsThatHelpTitle": "Programs That Help You Start Without the Pressure",
     "programsThatHelpDescription": "Not ready for individual coaching? Start with a program.",
-    "programsThatHelpDescription2": "Our programs are short, structured, and focused on specific topics. You receive step-by-step guidance by email and can request support during the program. It’s a simple way to see how we work — and how much real change is possible.",
-    "checkPackages": "Check Packages"
+    "programsThatHelpDescription2": "Qoacher programs are short, structured, and focused on specific topics. You receive step-by-step guidance by email and can request support during the program. It’s a simple way to see how we work — and how much real change is possible.",
+    "checkPackages": "Check Programs"
   },
   "startSmall": {
     "startSmallTitle": "Start Small. Grow Steady.",
@@ -75,6 +75,7 @@
     "text2": "Emotional resilience",
     "text3": "Communication",
     "text4": "etc:)",
+    "text6": "Long-term growth",
     "text5": "So no matter what area of life is in focus, you’ll work with someone who truly understands it."
   },
   "weHere": {
@@ -91,6 +92,7 @@
     "description": "Clarity. Direction. Strength. The support modern life demands."
   },
   "wantToGear": {
+    "wantToBuild": "Want to Build Lasting Change?",
     "wantToGearTitle": "Want to Go Deer?",
     "wantToGearDescription": "If you&apos;re not ready for individual coaching, try one of our structured career-focused programs. If you already know your needs are broader, explore our complete coaching packages.",
     "careerPrograms": "Programs",
@@ -98,7 +100,7 @@
   },
   "whyYouNeedCoaching": {
     "without1Title": "5–8 years",
-    "without1Description": "There’s no time to think, plan, or choose — only to respond to what’s urgent.",
+    "without1Description": "Average time to make a career shift through trial and error.",
     "without2Title": "6–12 months",
     "without2Description": "Typical job search duration with low response rate.",
     "without3Title": "10–30% salary gap",

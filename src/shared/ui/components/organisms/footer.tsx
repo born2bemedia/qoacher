@@ -19,7 +19,7 @@ export const Footer = () => {
             <div className="flex max-w-[150px] flex-col gap-6 max-md:text-center">
               {FooterNavigation()
                 .slice(0, 4)
-                .map(item => (
+                .map((item) => (
                   <Link key={item.label} href={item.href}>
                     <Text size="sm" weight={300}>
                       {item.label}
@@ -30,7 +30,7 @@ export const Footer = () => {
             <div className="flex max-w-[150px] flex-col gap-6 max-md:text-center">
               {FooterNavigation()
                 .slice(4, 7)
-                .map(item => (
+                .map((item) => (
                   <Link key={item.label} href={item.href}>
                     <Text size="sm" weight={300}>
                       {item.label}
@@ -42,7 +42,7 @@ export const Footer = () => {
           <div className="flex max-w-[150px] flex-col gap-6 max-md:text-center">
             {FooterNavigation()
               .slice(7, 10)
-              .map(item => (
+              .map((item) => (
                 <Link key={item.label} href={item.href}>
                   <Text size="sm" weight={300}>
                     {item.label}
@@ -81,7 +81,7 @@ export const Footer = () => {
       <Divider />
       <section className="flex items-center justify-between max-md:flex-col max-md:gap-8">
         <nav className="flex items-center gap-6 max-md:grid max-md:grid-cols-2 max-md:gap-6">
-          {PolicyNavigation().map(n => (
+          {PolicyNavigation().map((n) => (
             <Link key={n.label} href={n.href}>
               <Text key={n.label} size="sm" weight={300}>
                 {n.label}
@@ -94,7 +94,7 @@ export const Footer = () => {
           {t('allRightsReserved', {
             fallback: 'All rights reserved.',
           })}{' '}
-          Coacher
+          Qoacher
         </Text>
       </section>
     </footer>
