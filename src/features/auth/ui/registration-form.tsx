@@ -1,5 +1,6 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
@@ -13,7 +14,13 @@ import { WaitMessageIcon } from '@/shared/ui/icons/fill/wait-message';
 
 import { registerUser } from '../api/register-user';
 import { registrationSchema } from '../model/schemas/registration.schema';
-import { RegistrationSuccess } from './registration-success';
+
+const RegistrationSuccess = dynamic(
+  () => import('./registration-success').then((mod) => mod.RegistrationSuccess),
+  {
+    ssr: false,
+  }
+);
 
 export const RegistrationForm = () => {
   const t = useTranslations('registration');

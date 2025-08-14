@@ -16,3 +16,11 @@ export type OriginalOrder = {
   price: number;
   quantity: number;
 };
+
+export type Document = {
+  orderId: string;
+  service: string[];
+  date: string;
+  notes: string;
+  docs: { summaryUrl: string; planUrl: string; reportUrl: string; roadmapUrl: string };
+};

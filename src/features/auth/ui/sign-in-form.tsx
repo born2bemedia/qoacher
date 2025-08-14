@@ -12,11 +12,14 @@ import { TextField } from '@/shared/ui/components/atoms/text-field';
 
 import { signInUser } from '../api/sign-in-user';
 import { signInSchema } from '../model/schemas/sign-in.schema';
+import { useUser } from '@/core/user/model/user.store';
 
 export const SignInForm = () => {
   const router = useRouter();
 
   const t = useTranslations('signIn');
+
+  const { setUser } = useUser();
 
   const { Field, Subscribe, handleSubmit } = useForm({
     defaultValues: {
@@ -27,10 +30,11 @@ export const SignInForm = () => {
       onSubmit: signInSchema,
     },
     onSubmit: async (data) => {
-      const { success } = await signInUser(data.value);
+      const { success, user } = await signInUser(data.value);
 
       if (success) {
         notifySuccess(t('success', { fallback: 'Login successful' }));
+        setUser(user);
         router.push('/account');
       } else {
         notifyWarning(

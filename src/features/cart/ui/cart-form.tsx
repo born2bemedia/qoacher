@@ -23,7 +23,7 @@ import { clearCart } from '../api/clear-cart';
 import { makeOrder } from '../api/make-order';
 import type { User } from '@/core/user/model/types';
 
-export const CartForm = ({ user }: { user: User }) => {
+export const CartForm = ({ user }: { user?: User }) => {
   const router = useRouter();
 
   const t = useTranslations('cart');

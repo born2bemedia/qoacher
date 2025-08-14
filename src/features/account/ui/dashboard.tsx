@@ -40,7 +40,7 @@ export const Dashboard = ({ data }: { data: Order[] }) => {
   return (
     <section className="flex w-full flex-col gap-10 p-6 border border-[rgba(128,128,128,0.15)]">
       <div className="flex flex-col gap-3">
-        <Title as="h2" size="2xl">
+        <Title as="h2" size="2xl" uppercase>
           {t('yourAccount', { fallback: 'Your Account' })}
         </Title>
         <span className="opacity-50">
@@ -54,7 +54,7 @@ export const Dashboard = ({ data }: { data: Order[] }) => {
       </div>
       <Divider />
       <div className="flex flex-col gap-6">
-        <Title as="h3" size="xl">
+        <Title as="h3" size="xl" uppercase>
           {t('yourRecentOrders', { fallback: 'Your recent orders' })}
         </Title>
         <div className="max-lg:hidden">

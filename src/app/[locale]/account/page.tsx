@@ -20,13 +20,14 @@ export const metadata: Metadata = {
 };
 
 export default async function AccountPage() {
-  const { dashboardOrders, fullOrders, originalOrders } = await getUserOrders();
+  const { dashboardOrders, fullOrders, originalOrders, documents } = await getUserOrders();
 
   return (
     <AccountContainer
       orders={dashboardOrders.slice(0, 2)}
       fullOrders={fullOrders}
       originalOrders={originalOrders}
+      documents={documents}
     />
   );
 }

@@ -1203,7 +1203,8 @@
     "orders": "Orders",
     "yourData": "Your Data",
     "documents": "Documents",
-    "logOut": "Log Out"
+    "logOut": "Log Out",
+    "warning": "Something went wrong — please refresh and try again."
   },
   "dashboard": {
     "yourAccount": "Your Account",
@@ -1300,5 +1301,26 @@
     },
     "success": "Password changed successfully",
     "error": "Password change failed. Please try again later."
+  },
+  "userData": {
+    "title": "Your Data",
+    "description": "Check, edit, and add your personal information anytime."
+  },
+  "documents": {
+    "title": "Documentation",
+    "description": "All documents related to your services — stored here for easy access anytime.",
+    "yourRecentOrders": "Your recent orders",
+    "columns": {
+      "service": "Service",
+      "date": "Order date",
+      "notes": "Notes",
+      "docs": "Docs"
+    }
+  },
+  "documentCard": {
+    "service": "Service",
+    "date": "Date",
+    "notes": "Notes",
+    "documents": "Documents"
   }
 }

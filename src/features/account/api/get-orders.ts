@@ -4,12 +4,13 @@ import { cookies } from 'next/headers';
 
 import { SERVER_URL } from '@/shared/config/env';
 
-import type { FullOrder, Order, OriginalOrder } from '../model/types';
+import type { Document, FullOrder, Order, OriginalOrder } from '../model/types';
 
 export async function getUserOrders(): Promise<{
   dashboardOrders: Order[];
   fullOrders: FullOrder[];
   originalOrders: OriginalOrder[];
+  documents: Document[];
 }> {
   const cookieInst = await cookies();
 
@@ -75,5 +76,31 @@ export async function getUserOrders(): Promise<{
         )
       : [],
     originalOrders: originalOrders.length > 0 ? originalOrders.flat() : [],
+    documents:
+      data.docs.length > 0
+        ? data.docs.map(
+            (item: {
+              orderNumber: string;
+              items: { productName: string }[];
+              createdAt: string;
+              orderNotes: string;
+              summary: { url: string };
+              plan: { url: string };
+              report: { url: string };
+              roadmap: { url: string };
+            }) => ({
+              orderId: item.orderNumber,
+              service: item.items.map((bot) => bot.productName),
+              date: item.createdAt,
+              notes: item.orderNotes,
+              docs: {
+                summaryUrl: item.summary ? `${SERVER_URL}${item.summary.url}` : null,
+                planUrl: item.plan ? `${SERVER_URL}${item.plan.url}` : null,
+                reportUrl: item.report ? `${SERVER_URL}${item.report.url}` : null,
+                roadmapUrl: item.roadmap ? `${SERVER_URL}${item.roadmap.url}` : null,
+              },
+            })
+          )
+        : [],
   };
 }

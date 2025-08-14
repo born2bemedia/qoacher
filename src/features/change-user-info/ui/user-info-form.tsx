@@ -59,7 +59,7 @@ export const UserInfoForm = ({ user }: { user: User }) => {
       }}
     >
       <div className="flex justify-between max-lg:flex-col max-lg:gap-5">
-        <Title size="xl" as="h3">
+        <Title size="xl" as="h3" uppercase>
           {t('title')}
         </Title>
         <div className="flex items-center gap-4">

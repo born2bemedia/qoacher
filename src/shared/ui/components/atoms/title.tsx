@@ -52,16 +52,23 @@ export const Title = ({
   className,
   zIndex,
   as = 'h1',
+  uppercase = false,
 }: {
   children: ReactNode;
   as?: ElementType;
   className?: string;
+  uppercase?: boolean;
 } & TitleVariants) => {
   const Tag = as as keyof JSX.IntrinsicElements;
 
   return (
     <Tag
-      className={cn(titleVariants({ color, weight, size, zIndex }), 'leading-[120%]', className)}
+      className={cn(
+        titleVariants({ color, weight, size, zIndex }),
+        'leading-[120%]',
+        uppercase && 'uppercase',
+        className
+      )}
     >
       {children}
     </Tag>
