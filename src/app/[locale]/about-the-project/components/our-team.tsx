@@ -54,7 +54,7 @@ export const OurTeam = () => {
               <div className="mb-6 border-b border-[#E9E9E9] pb-6 flex items-center gap-2">
                 <Checkmark />
                 <Text>
-                  {t('text4', {
+                  {t('text6', {
                     fallback: 'Long-term growth',
                   })}
                 </Text>

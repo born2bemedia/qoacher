@@ -42,7 +42,7 @@ export const ContactForm = ({
       message: '',
     },
     validators: {
-      onChange: ContactFormSchema(),
+      onSubmit: ContactFormSchema(),
     },
     onSubmit: async (data) => {
       const { success } = await sendContactForm(data.value);

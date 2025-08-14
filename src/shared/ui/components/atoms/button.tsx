@@ -12,7 +12,7 @@ const buttonVariants = cva(
       variant: {
         dark: 'text-white bg-black border border-black hover:border-jet-black hover:bg-jet-black',
         light:
-          'text-black bg-white border border-black hover:bg-light-gray hover:border-light-gray',
+          'text-black bg-white border border-black hover:bg-light-gray hover:border-light-gray hover:text-black',
         grey: 'text-black bg-light-gray border border-light-gray hover:bg-gray hover:border-gray',
         support:
           'bg-[rgb(0_0_0_/_0.05)] text-black hover:border-[rgb(0_0_0_/_0.1)] hover:bg-[rgb(0_0_0_/_0.1)]',

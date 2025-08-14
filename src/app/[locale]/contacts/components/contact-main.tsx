@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { ContactForm } from '@/features/contact-form/ui';
@@ -9,13 +8,13 @@ import { Text } from '@/shared/ui/components/atoms/text';
 import { Title } from '@/shared/ui/components/atoms/title';
 import { FadeIn } from '@/shared/ui/components/templates/fade-in';
 import { SectionLayout } from '@/shared/ui/components/templates/section-layout';
-import {
-  FacebookIcon,
-  InstagramIcon,
-  LinkedinIcon,
-  XIcon,
-  YoutubeIcon,
-} from '@/shared/ui/icons/fill/socials';
+// import {
+//   FacebookIcon,
+//   InstagramIcon,
+//   LinkedinIcon,
+//   XIcon,
+//   YoutubeIcon,
+// } from '@/shared/ui/icons/fill/socials';
 
 export const ContactMain = () => {
   const t = useTranslations('contactMain');
@@ -71,7 +70,7 @@ export const ContactMain = () => {
             </div>
           </div>
         </FadeIn>
-        <FadeIn className="flex gap-6">
+        {/* <FadeIn className="flex gap-6">
           <Link
             href="#"
             className="w-[52px] h-[52px] flex items-center justify-center border-1 border-[#808080]"
@@ -102,7 +101,7 @@ export const ContactMain = () => {
           >
             <XIcon />
           </Link>
-        </FadeIn>
+        </FadeIn> */}
       </div>
       <div className="w-1/2 pt-[100px] pr-[100px] pb-[100px] pl-[100px] bg-black flex flex-col gap-12 max-md:w-full max-md:px-[16px] max-md:py-[32px]">
         <Title as="h2" size="3xl" className="text-left text-white">

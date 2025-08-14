@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/shared/ui/components/atoms/button';
@@ -17,8 +18,7 @@ export const BecauseLifeRunYou = () => {
         fallback: 'Life moves too fast',
       }),
       description: t('lifeMovesTooFastDescription', {
-        fallback:
-          'People are overwhelmed by constant demands, decisions, and pressure.',
+        fallback: 'People are overwhelmed by constant demands, decisions, and pressure.',
       }),
     },
     {
@@ -26,8 +26,7 @@ export const BecauseLifeRunYou = () => {
         fallback: 'Most feel like they’re just reacting',
       }),
       description: t('mostFeelLikeTheyAreJustReactingDescription', {
-        fallback:
-          'There’s no time to think, plan, or choose — only to respond to what’s urgent.',
+        fallback: 'There’s no time to think, plan, or choose — only to respond to what’s urgent.',
       }),
     },
     {
@@ -35,8 +34,7 @@ export const BecauseLifeRunYou = () => {
         fallback: 'Growth gets pushed aside',
       }),
       description: t('growthGetsPushedAsideDescription', {
-        fallback:
-          'Personal priorities are delayed. Real needs are ignored. Nothing changes.',
+        fallback: 'Personal priorities are delayed. Real needs are ignored. Nothing changes.',
       }),
     },
     {
@@ -53,8 +51,7 @@ export const BecauseLifeRunYou = () => {
         fallback: 'Progress needs a system',
       }),
       description: t('progressNeedsASystemDescription', {
-        fallback:
-          'Without clarity and consistency, motivation fades and problems repeat.',
+        fallback: 'Without clarity and consistency, motivation fades and problems repeat.',
       }),
     },
     {
@@ -62,8 +59,7 @@ export const BecauseLifeRunYou = () => {
         fallback: 'That’s why we built this project',
       }),
       description: t('thatsWhyWeBuiltThisProjectDescription', {
-        fallback:
-          'To help people grow, act, and take control — with expert support at every step.',
+        fallback: 'To help people grow, act, and take control — with expert support at every step.',
       }),
     },
   ];
@@ -84,24 +80,20 @@ export const BecauseLifeRunYou = () => {
         </Text>
       </FadeIn>
       <FadeIn className="grid grid-cols-3 gap-6 max-md:grid-cols-1">
-        {items.map(item => (
+        {items.map((item) => (
           <Card key={item.title} {...item} />
         ))}
       </FadeIn>
-      <FadeIn className="mx-auto">
-        <Button>{t('learnMore', { fallback: 'Learn More' })}</Button>
-      </FadeIn>
+      <Link href="/about-the-project">
+        <FadeIn className="mx-auto">
+          <Button>{t('learnMore', { fallback: 'Learn More' })}</Button>
+        </FadeIn>
+      </Link>
     </SectionLayout>
   );
 };
 
-const Card = ({
-  title,
-  description,
-}: {
-  title: string;
-  description: string;
-}) => (
+const Card = ({ title, description }: { title: string; description: string }) => (
   <article className="border-light-gray flex flex-col gap-6 border p-6">
     <Title as="h3" size="lg">
       {title}

@@ -36,11 +36,11 @@ export const PackagesLayout = ({ packages }: { packages: Package[] }) => {
           })}
         </Title>
       </FadeIn>
-      <div className="flex flex-wrap gap-6 w-[1110px] mx-auto justify-center max-md:w-full">
+      <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-6 w-full mx-auto justify-center">
         {packages.map((pack) => (
           <FadeIn
             key={pack.id}
-            className="w-[calc(50%-12px)] max-md:w-full flex flex-col justify-between gap-12 p-6 border-1 border-[#E9E9E9]"
+            className="w-full flex flex-col justify-between gap-12 p-6 border-1 border-[#E9E9E9]"
           >
             <div className="flex flex-col gap-6">
               <Title

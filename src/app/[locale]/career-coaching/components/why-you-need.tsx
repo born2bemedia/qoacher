@@ -16,8 +16,7 @@ export const WhyYouNeed = () => {
         fallback: '5–8 years',
       }),
       description: t('without1Description', {
-        fallback:
-          'There’s no time to think, plan, or choose — only to respond to what’s urgent.',
+        fallback: 'Average time to make a career shift through trial and error.',
       }),
     },
     {
@@ -25,8 +24,7 @@ export const WhyYouNeed = () => {
         fallback: '6–12 months',
       }),
       description: t('without2Description', {
-        fallback:
-          'Typical job search duration with low response rate.',
+        fallback: 'Typical job search duration with low response rate.',
       }),
     },
     {
@@ -34,8 +32,7 @@ export const WhyYouNeed = () => {
         fallback: '10–30% salary gap',
       }),
       description: t('without3Description', {
-        fallback:
-          'When entering negotiations unprepared.',
+        fallback: 'When entering negotiations unprepared.',
       }),
     },
   ];
@@ -43,32 +40,26 @@ export const WhyYouNeed = () => {
   const withItems = [
     {
       title: t('with1Title', {
-        fallback:
-          '12–18 months',
+        fallback: '12–18 months',
       }),
       description: t('with1Description', {
-        fallback:
-          'With a clear plan and focused support.',
+        fallback: 'With a clear plan and focused support.',
       }),
     },
     {
       title: t('with2Title', {
-        fallback:
-          '2–3 months',
+        fallback: '2–3 months',
       }),
       description: t('with2Description', {
-        fallback:
-          'With targeted applications and a refined profile.',
+        fallback: 'With targeted applications and a refined profile.',
       }),
     },
     {
       title: t('with3Title', {
-        fallback:
-          '10–30% salary increase',
+        fallback: '10–30% salary increase',
       }),
       description: t('with3Description', {
-        fallback:
-          'With structured negotiation coaching.',
+        fallback: 'With structured negotiation coaching.',
       }),
     },
   ];
@@ -84,17 +75,13 @@ export const WhyYouNeed = () => {
       </FadeIn>
       <FadeIn className="mx-auto flex w-[800px] items-center text-center max-md:w-full max-md:flex-col">
         <div className="w-1/2 max-md:w-full border-t-1 border-b-1 border-l-1 border-t-[#E9E9E9] border-b-[#E9E9E9] border-l-[#E9E9E9]">
-          <Title
-            as="h3"
-            size="2xl"
-            className="border-b-1 border-b-[#E9E9E9] p-6 text-left"
-          >
+          <Title as="h3" size="2xl" className="border-b-1 border-b-[#E9E9E9] p-6 text-left">
             {t('without', {
               fallback: 'Yourself',
             })}
           </Title>
           <ul className="p-6">
-            {without.map(item => (
+            {without.map((item) => (
               <li
                 key={item.title}
                 className="border-b-[#E9E9E9] text-left text-[14px] not-last:mb-6 not-last:border-b-1 not-last:pb-6"
@@ -102,9 +89,7 @@ export const WhyYouNeed = () => {
                 <Title as="h4" size="xl" className="text-left mb-3">
                   {item.title}
                 </Title>
-                <Text className="text-left">
-                  {item.description}
-                </Text>
+                <Text className="text-left">{item.description}</Text>
               </li>
             ))}
           </ul>
@@ -120,7 +105,7 @@ export const WhyYouNeed = () => {
             })}
           </Title>
           <ul className="p-6">
-            {withItems.map(item => (
+            {withItems.map((item) => (
               <li
                 key={item.title}
                 className="border-b-[#292929] text-left text-[14px] text-white not-last:mb-12 not-last:border-b-1 not-last:pb-12"
@@ -128,9 +113,7 @@ export const WhyYouNeed = () => {
                 <Title as="h4" size="xl" className="text-left text-white mb-3">
                   {item.title}
                 </Title>
-                <Text className="text-left text-white">
-                  {item.description}
-                </Text>
+                <Text className="text-left text-white">{item.description}</Text>
               </li>
             ))}
           </ul>

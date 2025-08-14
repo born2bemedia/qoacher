@@ -18,7 +18,7 @@ export const ArticlesRow = async () => {
   return (
     <SectionLayout className="gap-12">
       <div className="flex gap-6 flex-wrap">
-        {articles.map((article: Article) => (
+        {articles.reverse().map((article: Article) => (
           <Link
             href={`/self-improvement/${article.slug}`}
             key={article.id}

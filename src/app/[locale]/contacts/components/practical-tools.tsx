@@ -20,7 +20,7 @@ export const PracticalTools = () => {
       description: t('description1', {
         fallback: 'Actionable guides and exercises, for free.',
       }),
-      link: '#',
+      link: '/self-improvement',
       buttonText: t('buttonText1', {
         fallback: 'Explore Free Guides',
       }),

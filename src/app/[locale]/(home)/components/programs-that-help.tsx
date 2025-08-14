@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 import { Button } from '@/shared/ui/components/atoms/button';
@@ -25,8 +26,7 @@ export const ProgramsThatHelp = () => {
             <Text>
               <b className="font-normal">
                 {t('programsThatHelpDescription', {
-                  fallback:
-                    'Not ready for individual coaching? Start with a program.',
+                  fallback: 'Not ready for individual coaching? Start with a program.',
                 })}
               </b>{' '}
               {t('programsThatHelpDescription2', {
@@ -35,7 +35,9 @@ export const ProgramsThatHelp = () => {
               })}
             </Text>
           </section>
-          <Button>{t('checkPackages', { fallback: 'Check Packages' })}</Button>
+          <Link href="/programs">
+            <Button>{t('checkPackages', { fallback: 'Check Packages' })}</Button>
+          </Link>
         </FadeIn>
         <Image
           className="h-[450px] w-1/2 object-cover max-md:w-full"
