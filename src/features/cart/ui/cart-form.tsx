@@ -23,16 +23,14 @@ import { clearCart } from '../api/clear-cart';
 import { makeOrder } from '../api/make-order';
 import type { User } from '@/core/user/model/types';
 
-export const CartForm = ({ user }: { user: User }) => {
+export const CartForm = ({ user }: { user?: User }) => {
   const router = useRouter();
 
   const t = useTranslations('cart');
 
   const cart = getCart();
 
-  const totalPrice = cart
-    .reduce((acc: number, item: { price: number }) => acc + item.price, 0)
-    .toLocaleString();
+  const totalPrice = cart.reduce((acc: number, item: { price: number }) => acc + item.price, 0);
 
   const { Field, Subscribe, handleSubmit } = useForm({
     defaultValues: {
@@ -239,7 +237,7 @@ export const CartForm = ({ user }: { user: User }) => {
             {t('total', { fallback: 'Total' })}
           </Text>
           <Text size="lg" weight={500}>
-            €{totalPrice}
+            €{totalPrice.toLocaleString()}
           </Text>
         </div>
         <div className="flex flex-col gap-3">

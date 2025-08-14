@@ -1,5 +1,9 @@
 import type { Metadata } from 'next';
 
+import { getUserOrders } from '@/features/account/api/get-orders';
+
+import { AccountContainer } from './components';
+
 export const metadata: Metadata = {
   title: 'My Account | Qoacher',
   openGraph: {
@@ -15,6 +19,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AccountPage() {
-  return <div>AccountPage</div>;
+export default async function AccountPage() {
+  const { dashboardOrders, fullOrders, originalOrders, documents } = await getUserOrders();
+
+  return (
+    <AccountContainer
+      orders={dashboardOrders.slice(0, 2)}
+      fullOrders={fullOrders}
+      originalOrders={originalOrders}
+      documents={documents}
+    />
+  );
 }

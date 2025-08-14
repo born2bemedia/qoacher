@@ -1197,5 +1197,130 @@
         }
       }
     }
+  },
+  "tabs": {
+    "main": "Main",
+    "orders": "Orders",
+    "yourData": "Your Data",
+    "documents": "Documents",
+    "logOut": "Log Out",
+    "warning": "Something went wrong — please refresh and try again."
+  },
+  "dashboard": {
+    "yourAccount": "Your Account",
+    "yourRecentOrders": "Your recent orders",
+    "description": "Programs. Packages. Progress. Everything in one place to move you forward.",
+    "allOrders": "All Orders",
+    "services": "Services",
+    "packages": "Packages",
+    "programs": "Programs",
+    "columns": {
+      "orderId": "Order ID",
+      "service": "Service",
+      "price": "Price",
+      "date": "Order date",
+      "orderStatus": "Status"
+    }
+  },
+  "orderCard": {
+    "orderId": "Order ID",
+    "service": "Service",
+    "price": "Price",
+    "date": "Order date",
+    "invoice": "Invoice",
+    "download": "Download",
+    "reorder": "Reorder",
+    "orderStatus": "Status"
+  },
+  "orders": {
+    "columns": {
+      "orderId": "Order ID",
+      "service": "Service",
+      "price": "Price",
+      "date": "Order date",
+      "orderStatus": "Status",
+      "invoiceUrl": "Invoice",
+      "ordering": "Ordering",
+      "reorder": "Reorder",
+      "download": "Download"
+    },
+    "yourAccount": "Your Account",
+    "allServices": "All Services",
+    "description": "Review your purchases and track what’s next on your journey.",
+    "yourRecentOrders": "Your recent orders",
+    "explore": "Explore other services and solutions",
+    "allOrders": "All Orders",
+    "services": "Services",
+    "packages": "Packages",
+    "programs": "Programs"
+  },
+  "noAvailable": {
+    "not": "not",
+    "available": "available"
+  },
+  "userInfoForm": {
+    "title": "Information about you",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "saving": "Saving...",
+    "save": "Save",
+    "success": "User updated successfully",
+    "error": "Failed to update user. Please try again later."
+  },
+  "userBillingForm": {
+    "title": "Information about your address",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "saving": "Saving...",
+    "save": "Save",
+    "success": "User updated successfully",
+    "error": "Failed to update user. Please try again later.",
+    "fields": {
+      "addressLine1": "Address Line 1",
+      "addressLine2": "Address Line 2",
+      "country": "Country",
+      "city": "City",
+      "zip": "Zip"
+    }
+  },
+  "changePassword": {
+    "title": "Your Password",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "saving": "Saving...",
+    "save": "Save",
+    "fields": {
+      "currentPassword": "Current Password",
+      "newPassword": "New Password"
+    },
+    "success": "Password changed successfully",
+    "error": "Password change failed. Please try again later."
+  },
+  "userData": {
+    "title": "Your Data",
+    "description": "Check, edit, and add your personal information anytime."
+  },
+  "documents": {
+    "title": "Documentation",
+    "description": "All documents related to your services — stored here for easy access anytime.",
+    "yourRecentOrders": "Your recent orders",
+    "columns": {
+      "service": "Service",
+      "date": "Order date",
+      "notes": "Notes",
+      "docs": "Docs"
+    }
+  },
+  "documentCard": {
+    "service": "Service",
+    "date": "Date",
+    "notes": "Notes",
+    "documents": "Documents"
   }
 }

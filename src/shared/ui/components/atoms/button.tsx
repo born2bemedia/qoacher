@@ -14,12 +14,14 @@ const buttonVariants = cva(
         light:
           'text-black bg-white border border-black hover:bg-light-gray hover:border-light-gray',
         grey: 'text-black bg-light-gray border border-light-gray hover:bg-gray hover:border-gray',
+        support:
+          'bg-[rgb(0_0_0_/_0.05)] text-black hover:border-[rgb(0_0_0_/_0.1)] hover:bg-[rgb(0_0_0_/_0.1)]',
       },
     },
     defaultVariants: {
       variant: 'dark',
     },
-  },
+  }
 );
 
 export type ButtonVariants = VariantProps<typeof buttonVariants>;
@@ -44,7 +46,7 @@ export const Button = ({
     className={cn(
       buttonVariants({ variant }),
       fullWidth ? 'w-full justify-center' : 'w-max',
-      className,
+      className
     )}
     onClick={onClick}
     type={type}
