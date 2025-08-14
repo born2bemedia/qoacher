@@ -26,26 +26,24 @@ export const BurgerMenu = () => {
 
   return (
     <Root open={isOpen} onOpenChange={setIsOpen}>
-      <Trigger className="hidden max-lg:block">
-        {isOpen ? <CloseIcon /> : <BurgerIcon />}
-      </Trigger>
+      <Trigger className="hidden max-lg:block">{isOpen ? <CloseIcon /> : <BurgerIcon />}</Trigger>
       <Portal>
         <Overlay className="fixed inset-0 top-[55px] animate-[overlayShow_150ms_cubic-bezier(0.16,1,0.3,1)] bg-black/80" />
-        <Content className="fixed top-[55px] max-h-[92vh] w-full transform overflow-y-auto bg-white p-[25px] focus:outline-none">
+        <Content className="fixed top-[55px] z-50 max-h-[92vh] w-full transform overflow-y-auto bg-white p-[25px] focus:outline-none">
           <Title />
           <Description />
           <section className="flex flex-col gap-4 p-6">
             <ul className="flex flex-col gap-4">
-              {Navigation().map(n =>
+              {Navigation().map((n) =>
                 n.list ? (
                   <section key={n.label}>
                     <MenuButton
                       key={n.label}
                       onClick={() =>
-                        setOpenedSubmenus(prev =>
+                        setOpenedSubmenus((prev) =>
                           prev.includes(n.label)
-                            ? prev.filter(label => label !== n.label)
-                            : [...prev, n.label],
+                            ? prev.filter((label) => label !== n.label)
+                            : [...prev, n.label]
                         )
                       }
                     >
@@ -55,8 +53,16 @@ export const BurgerMenu = () => {
                     </MenuButton>
                     {openedSubmenus.includes(n.label) && (
                       <section className="flex flex-col">
-                        {n.list.map(l => (
-                          <Link key={l.label} href={l.href} className="p-4">
+                        {n.list.map((l) => (
+                          <Link
+                            key={l.label}
+                            href={l.href}
+                            className="p-4"
+                            onClick={() => {
+                              setIsOpen(false);
+                              setOpenedSubmenus([]);
+                            }}
+                          >
                             {l.label}
                           </Link>
                         ))}
@@ -64,10 +70,15 @@ export const BurgerMenu = () => {
                     )}
                   </section>
                 ) : (
-                  <Link key={n.label} href={n.href} className="py-4">
+                  <Link
+                    key={n.label}
+                    href={n.href}
+                    className="py-4"
+                    onClick={() => setIsOpen(false)}
+                  >
                     {n.label}
                   </Link>
-                ),
+                )
               )}
             </ul>
             <section className="flex items-center gap-6">

@@ -18,7 +18,7 @@ export const Hero = () => {
             fallback: 'Life Doesn’t Rule You. You Do.',
           })}
         </Title>
-        <Text size="sm">
+        <Text size="xl">
           {t('heroDescription', {
             fallback: 'Personal. Relationships. Career. Emotional well-being.',
           })}

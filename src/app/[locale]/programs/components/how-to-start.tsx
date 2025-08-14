@@ -38,74 +38,94 @@ export const HowToStart = () => {
                 />
               </Title>
               <div className="p-6 border-[#E9E9E9] border-1">
-                <Text className="mb-6 border-b border-[#E9E9E9] pb-6 text-[14px]">
-                  <b
-                    className="font-bold"
-                    dangerouslySetInnerHTML={{
-                      __html: t('text1', {
-                        fallback: 'Choose a program',
-                      }),
-                    }}
-                  />{' '}
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: t('text2', {
-                        fallback: '– pick the topic you need most right now.',
-                      }),
-                    }}
-                  />
-                </Text>
-                <Text className="mb-6 border-b border-[#E9E9E9] pb-6 text-[14px]">
-                  <b
-                    className="font-bold"
-                    dangerouslySetInnerHTML={{
-                      __html: t('text3', {
-                        fallback: 'Pay',
-                      }),
-                    }}
-                  />{' '}
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: t('text4', {
-                        fallback: '– one simple, upfront payment.',
-                      }),
-                    }}
-                  />
-                </Text>
-                <Text className="mb-6 border-b border-[#E9E9E9] pb-6 text-[14px]">
-                  <b
-                    className="font-bold"
-                    dangerouslySetInnerHTML={{
-                      __html: t('text5', {
-                        fallback: 'Get the emails',
-                      }),
-                    }}
-                  />{' '}
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: t('text6', {
-                        fallback: '– lessons land in your inbox, no platforms or logins.',
-                      }),
-                    }}
-                  />
-                </Text>
-                <Text>
-                  <b
-                    className="font-bold"
-                    dangerouslySetInnerHTML={{
-                      __html: t('text7', {
-                        fallback: 'Ask for help anytime',
-                      }),
-                    }}
-                  />{' '}
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: t('text8', {
-                        fallback: '– every email includes a link to reach your coach.',
-                      }),
-                    }}
-                  />
-                </Text>
+                <div className="flex items-center gap-3 mb-6 border-b border-[#E9E9E9] pb-6">
+                  <span className="w-6 h-6 flex items-center justify-center bg-black text-white text-sm font-light">
+                    1
+                  </span>
+                  <Text className="text-[14px]">
+                    <b
+                      className="font-bold"
+                      dangerouslySetInnerHTML={{
+                        __html: t('text1', {
+                          fallback: 'Choose a program',
+                        }),
+                      }}
+                    />{' '}
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: t('text2', {
+                          fallback: '– pick the topic you need most right now.',
+                        }),
+                      }}
+                    />
+                  </Text>
+                </div>
+                <div className="flex items-center gap-3 mb-6 border-b border-[#E9E9E9] pb-6">
+                  <span className="w-6 h-6 flex items-center justify-center bg-black text-white text-sm font-light">
+                    2
+                  </span>
+                  <Text>
+                    <b
+                      className="font-bold"
+                      dangerouslySetInnerHTML={{
+                        __html: t('text3', {
+                          fallback: 'Pay',
+                        }),
+                      }}
+                    />{' '}
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: t('text4', {
+                          fallback: '– one simple, upfront payment.',
+                        }),
+                      }}
+                    />
+                  </Text>
+                </div>
+                <div className="flex items-center gap-3 mb-6 border-b border-[#E9E9E9] pb-6">
+                  <span className="w-6 h-6 flex items-center justify-center bg-black text-white text-sm font-light">
+                    3
+                  </span>
+                  <Text>
+                    <b
+                      className="font-bold"
+                      dangerouslySetInnerHTML={{
+                        __html: t('text5', {
+                          fallback: 'Get the emails',
+                        }),
+                      }}
+                    />{' '}
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: t('text6', {
+                          fallback: '– lessons land in your inbox, no platforms or logins.',
+                        }),
+                      }}
+                    />
+                  </Text>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="w-6 h-6 flex items-center justify-center bg-black text-white text-sm font-light">
+                    4
+                  </span>
+                  <Text>
+                    <b
+                      className="font-bold"
+                      dangerouslySetInnerHTML={{
+                        __html: t('text7', {
+                          fallback: 'Ask for help anytime',
+                        }),
+                      }}
+                    />{' '}
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: t('text8', {
+                          fallback: '– every email includes a link to reach your coach.',
+                        }),
+                      }}
+                    />
+                  </Text>
+                </div>
               </div>
             </div>
             <Image

@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <GoogleAnalytics gaId="G-M2QJY5QBW1" />
       <body className={cn('antialiased', lexend.variable, ledger.variable)}>
         <NextIntlClientProvider>

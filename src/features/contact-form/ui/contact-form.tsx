@@ -1,6 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
+import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
 import { useForm } from '@/shared/lib/forms';
@@ -33,6 +34,8 @@ export const ContactForm = ({
 }) => {
   const t = useTranslations('contactForm');
   const { registerContent, setIsOpen } = useDialogStore();
+
+  const isContactsPage = usePathname().includes('contacts');
 
   const { Field, Subscribe, handleSubmit } = useForm({
     defaultValues: {
@@ -92,7 +95,7 @@ export const ContactForm = ({
             onChange={(value) => field.handleChange(value)}
             hint={field.state.meta.errors.map((err) => err?.message).join(', ')}
             className={fieldClassName}
-            variant="secondary"
+            variant={isContactsPage ? 'secondary' : 'primary'}
           />
         )}
       </Field>

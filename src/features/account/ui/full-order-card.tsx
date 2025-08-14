@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 
 import { addToCart } from '@/features/cart/api/add-to-cart';
+import { useCartStore } from '@/features/cart/model/cart.store';
 
 import { downloadFile } from '@/shared/lib/utils/download-file';
 import { notifySuccess } from '@/shared/lib/utils/notify';
@@ -31,6 +32,8 @@ export const FullOrderCard = ({
   const t = useTranslations('orderCard');
 
   const order = originalOrders.filter((o) => o.orderId === value.orderId);
+
+  const { setIsCartActive } = useCartStore();
 
   return (
     <article className="flex flex-col gap-4 p-6 w-full border border-[rgba(128,128,128,0.15)]">
@@ -78,6 +81,7 @@ export const FullOrderCard = ({
           onClick={() => {
             order.forEach((o) => {
               addToCart({ id: o.title, ...o });
+              setIsCartActive(true);
             });
             window.location.href = '/cart';
             notifySuccess('Product added to cart');
