@@ -1,5 +1,7 @@
 'use client';
 
+import { useState } from 'react';
+import ReCaptcha from 'react-google-recaptcha';
 import dynamic from 'next/dynamic';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
@@ -32,6 +34,8 @@ export const ContactForm = ({
   fieldClassName?: string;
   buttonClassName?: string;
 }) => {
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+
   const t = useTranslations('contactForm');
   const { registerContent, setIsOpen } = useDialogStore();
 
@@ -62,6 +66,8 @@ export const ContactForm = ({
       }
     },
   });
+
+  const onCaptchaHandle = (token: string | null) => setIsCaptchaVerified(!!token);
 
   return (
     <form
@@ -127,13 +133,22 @@ export const ContactForm = ({
       </Field>
       <Subscribe selector={(state) => [state.canSubmit, state.isSubmitting]}>
         {([canSubmit, isSubmitting]) => (
-          <Button type="submit" fullWidth disabled={!canSubmit} className={buttonClassName}>
+          <Button
+            type="submit"
+            fullWidth
+            disabled={!canSubmit || !isCaptchaVerified}
+            className={buttonClassName}
+          >
             {isSubmitting
               ? t('sending', { fallback: 'Sending...' })
               : t('send', { fallback: 'Send' })}
           </Button>
         )}
       </Subscribe>
+      <ReCaptcha
+        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? ''}
+        onChange={onCaptchaHandle}
+      />
     </form>
   );
 };
