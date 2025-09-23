@@ -14,7 +14,7 @@ export const WantToGear = () => {
     <section className="relative flex flex-col items-center justify-center gap-6 px-[48px] py-[96px] max-md:px-[16px] max-md:py-[64px]">
       <Title color="light" size="5xl" zIndex={2} className="text-center">
         {t('wantToGearTitle', {
-          fallback: 'Want to Go Deer?',
+          fallback: 'Want to Go Deeper?',
         })}
       </Title>
       <Text zIndex={2} color="light" className="w-[344px] text-center max-md:w-full">
