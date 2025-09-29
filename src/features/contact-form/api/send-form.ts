@@ -4,7 +4,7 @@ import sgMail from '@sendgrid/mail';
 
 import { requestFormBody } from '@/features/email-letters/request-form-body';
 
-import { ADMIN_EMAIL, FROM_EMAIL, SENDGRID_API_KEY } from '@/shared/config/env';
+import { FROM_EMAIL, SENDGRID_API_KEY } from '@/shared/config/env';
 
 import type { ContactForm } from '../schema/schemas';
 
@@ -15,7 +15,7 @@ export async function sendContactForm(data: ContactForm) {
     sgMail.setApiKey(SENDGRID_API_KEY);
 
     const msg = {
-      to: ADMIN_EMAIL,
+      to: FROM_EMAIL,
       from: FROM_EMAIL,
       subject: `New Contact Request`,
       html: `

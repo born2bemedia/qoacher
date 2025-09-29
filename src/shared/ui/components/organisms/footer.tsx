@@ -18,10 +18,10 @@ export const Footer = () => {
     <footer className="border-light-gray flex flex-col gap-12 border-t px-[100px] py-12 max-md:px-4">
       <section className="flex max-md:items-center justify-between max-md:flex-col max-md:gap-12">
         <section className="flex w-[350px] flex-col gap-6 max-md:w-full max-md:text-center">
-          {/* <Text size="sm" weight={300}>
-            [COMPANY]
-          </Text> */}
           <Image src="/logo.svg" alt="logo" width={136} height={30} />
+          <Text size="sm" weight={300}>
+            Optivida Ltd
+          </Text>
           <Text size="sm" weight={300}>
             {t('companyDescription', {
               fallback:
@@ -130,7 +130,7 @@ export const Footer = () => {
           {t('allRightsReserved', {
             fallback: 'All rights reserved.',
           })}{' '}
-          Qoacher
+          Optivida Ltd
         </Text>
       </section>
     </footer>
