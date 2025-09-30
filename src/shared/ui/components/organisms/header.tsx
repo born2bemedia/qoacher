@@ -3,7 +3,6 @@
 import { useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
@@ -21,6 +20,7 @@ import { ChevronDown } from '@/shared/ui/icons/outline';
 import { UserIcon } from '../../icons/fill/user';
 import { LangSwitcher } from '../molecules/lang-switcher';
 import { useUser } from '@/core/user/model/user.store';
+import { Link } from '@/i18n/navigation';
 
 const BurgerMenu = dynamic(() => import('./burger-menu').then((mod) => mod.BurgerMenu), {
   ssr: false,

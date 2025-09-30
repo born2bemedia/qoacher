@@ -6,11 +6,11 @@ export const PolicyNavigation = () => {
   return [
     {
       label: t('termsOfUse', { fallback: 'Terms of Use' }),
-      href: '/terms-of-service',
+      href: '/terms-of-use',
     },
     {
       label: t('privacyNotice', { fallback: 'Privacy Notice' }),
-      href: '/privacy-notice',
+      href: '/privacy-policy',
     },
     {
       label: t('refundPolicy', { fallback: 'Refund Policy' }),

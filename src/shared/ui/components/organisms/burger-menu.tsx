@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import {
   Content,
@@ -18,6 +17,8 @@ import { Button } from '@/shared/ui/components/atoms/button';
 import { Text } from '@/shared/ui/components/atoms/text';
 import { MenuButton } from '@/shared/ui/components/molecules/menu-button';
 import { BasketIcon, BurgerIcon, CloseIcon } from '@/shared/ui/icons/fill';
+
+import { Link as NavLink } from '@/i18n/navigation';
 
 export const BurgerMenu = () => {
   const t = useTranslations('burgerMenu');
@@ -54,7 +55,7 @@ export const BurgerMenu = () => {
                     {openedSubmenus.includes(n.label) && (
                       <section className="flex flex-col">
                         {n.list.map((l) => (
-                          <Link
+                          <NavLink
                             key={l.label}
                             href={l.href}
                             className="p-4"
@@ -64,33 +65,33 @@ export const BurgerMenu = () => {
                             }}
                           >
                             {l.label}
-                          </Link>
+                          </NavLink>
                         ))}
                       </section>
                     )}
                   </section>
                 ) : (
-                  <Link
+                  <NavLink
                     key={n.label}
                     href={n.href}
                     className="py-4"
                     onClick={() => setIsOpen(false)}
                   >
                     {n.label}
-                  </Link>
+                  </NavLink>
                 )
               )}
             </ul>
             <section className="flex items-center gap-6">
-              <Link href="/cart" className="w-full">
+              <NavLink href="/cart" className="w-full">
                 <Button variant="light" fullWidth>
                   {t('cart', { fallback: 'Cart' })}
                   <BasketIcon />
                 </Button>
-              </Link>
-              <Link href="/sign-in" className="w-full">
+              </NavLink>
+              <NavLink href="/sign-in" className="w-full">
                 <Button fullWidth>{t('signIn', { fallback: 'Sign in' })}</Button>
-              </Link>
+              </NavLink>
             </section>
           </section>
         </Content>
