@@ -10,6 +10,8 @@ import { Title } from '@/shared/ui/components/atoms/title';
 import { FadeIn } from '@/shared/ui/components/templates/fade-in';
 import { SectionLayout } from '@/shared/ui/components/templates/section-layout';
 import { FacebookIcon, InstagramIcon, XIcon } from '@/shared/ui/icons/fill/socials';
+import { MailIcon } from '@/shared/ui/icons/outline/mail';
+import { PhoneIcon } from '@/shared/ui/icons/outline/phone';
 
 export const ContactMain = () => {
   const t = useTranslations('contactMain');
@@ -38,7 +40,25 @@ export const ContactMain = () => {
               fallback: 'Other Ways to Contact Us',
             })}
           </Title>
-          <div className="flex flex-row gap-6 max-md:flex-col">
+          <div className="flex items-center gap-6">
+            <span className="flex max-w-[190px] w-full items-center gap-1.5">
+              <PhoneIcon />
+              <Link href="tel:+447447846750">
+                <Text size="sm" weight={300}>
+                  +447447846750
+                </Text>
+              </Link>
+            </span>
+            <span className="flex max-w-[190px] w-full items-center gap-1.5">
+              <MailIcon />
+              <Link href="mailto:info@qoacher.com">
+                <Text size="sm" weight={300}>
+                  info@qoacher.com
+                </Text>
+              </Link>
+            </span>
+          </div>
+          {/* <div className="flex flex-row gap-6 max-md:flex-col">
             <div className="flex flex-col gap-[6px]">
               <Title className="text-left text-[16px] max-md:text-[16px]">
                 {t('forBusinessCorrespondence', {
@@ -63,7 +83,7 @@ export const ContactMain = () => {
                 })}
               </Text>
             </div>
-          </div>
+          </div> */}
         </FadeIn>
         <FadeIn className="flex gap-6">
           <Link

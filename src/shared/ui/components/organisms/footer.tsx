@@ -8,8 +8,11 @@ import { FooterNavigation } from '@/shared/config/footer-navigation';
 import { PolicyNavigation } from '@/shared/config/policy-navigation';
 import { Divider } from '@/shared/ui/components/atoms/divider';
 import { Text } from '@/shared/ui/components/atoms/text';
+import { FacebookIcon, InstagramIcon, XIcon } from '@/shared/ui/icons/fill/socials';
+import { MailIcon } from '@/shared/ui/icons/outline/mail';
+import { PhoneIcon } from '@/shared/ui/icons/outline/phone';
 
-import { FacebookIcon, InstagramIcon, XIcon } from '../../icons/fill/socials';
+import { Link as NavLink } from '@/i18n/navigation';
 
 export const Footer = () => {
   const t = useTranslations('footer');
@@ -82,47 +85,67 @@ export const Footer = () => {
               {FooterNavigation()
                 .slice(0, 4)
                 .map((item) => (
-                  <Link key={item.label} href={item.href}>
+                  <NavLink key={item.label} href={item.href}>
                     <Text size="sm" weight={300}>
                       {item.label}
                     </Text>
-                  </Link>
+                  </NavLink>
                 ))}
             </div>
             <div className="flex max-w-[150px] flex-col gap-6 max-md:text-center">
               {FooterNavigation()
                 .slice(4, 7)
                 .map((item) => (
-                  <Link key={item.label} href={item.href}>
+                  <NavLink key={item.label} href={item.href}>
                     <Text size="sm" weight={300}>
                       {item.label}
                     </Text>
-                  </Link>
+                  </NavLink>
                 ))}
             </div>
           </section>
-          <div className="flex max-w-[150px] flex-col gap-6 max-md:text-center">
-            {FooterNavigation()
-              .slice(7, 10)
-              .map((item) => (
-                <Link key={item.label} href={item.href}>
+          <section className="flex gap-6">
+            <div className="flex max-w-[150px] flex-col gap-6 max-md:text-center">
+              {FooterNavigation()
+                .slice(7, 10)
+                .map((item) => (
+                  <NavLink key={item.label} href={item.href}>
+                    <Text size="sm" weight={300}>
+                      {item.label}
+                    </Text>
+                  </NavLink>
+                ))}
+            </div>
+            <div className="flex max-w-[150px] flex-col gap-6 max-md:text-center">
+              <span className="flex items-center gap-1.5">
+                <PhoneIcon />
+                <Link href="tel:+447447846750">
                   <Text size="sm" weight={300}>
-                    {item.label}
+                    +447447846750
                   </Text>
                 </Link>
-              ))}
-          </div>
+              </span>
+              <span className="flex items-center gap-1.5">
+                <MailIcon />
+                <Link href="mailto:info@qoacher.com">
+                  <Text size="sm" weight={300}>
+                    info@qoacher.com
+                  </Text>
+                </Link>
+              </span>
+            </div>
+          </section>
         </nav>
       </section>
       <Divider />
       <section className="flex items-center justify-between max-md:flex-col max-md:gap-8">
         <nav className="flex items-center gap-6 max-md:grid max-md:grid-cols-2 max-md:gap-6">
           {PolicyNavigation().map((n) => (
-            <Link key={n.label} href={n.href}>
+            <NavLink key={n.label} href={n.href}>
               <Text key={n.label} size="sm" weight={300}>
                 {n.label}
               </Text>
-            </Link>
+            </NavLink>
           ))}
         </nav>
         <Text size="sm" weight={300}>

@@ -90,18 +90,18 @@ export default async function CookiePolicy() {
       <PolicySection heading={t('4.title')}>
         <Text>{t('4.text')}</Text>
       </PolicySection>
-      {/* <PolicySection heading={t('5.title')}>
+      <PolicySection heading={t('5.title')}>
         <Text>{t('5.text.0')}</Text>
         <Text>{t('5.text.1')}</Text>
         <List
           values={[
-            '[Insert Company Name]',
-            '[Insert Business Address]',
-            '[Insert Contact Email]',
-            '[Insert Phone Number]',
+            'Optivida Ltd',
+            // '[Insert Business Address]',
+            'info@qoacher.com',
+            '+447447846750',
           ]}
         />
-      </PolicySection> */}
+      </PolicySection>
     </PolicyLayout>
   );
 }

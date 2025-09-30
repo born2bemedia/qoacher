@@ -35,11 +35,11 @@ export default async function TermsOfUse() {
             fallback:
               'Welcome to Qoacher. These Terms of Use ("Terms") govern your access to and use of our website, email-based coaching programs, digital content, and any related services provided through or in connection with Qoacher (collectively, the "Site"). Qoacher is a brand operated by',
           })}{' '}
-          <span className="font-bold">[Company Name]</span>{' '}
-          {t('0.text.1', { fallback: 'a company registered under number' })}{' '}
+          <span className="font-bold">Optivida Ltd</span>.
+          {/* {t('0.text.1', { fallback: 'a company registered under number' })}{' '}
           <span className="font-bold">[Registration Number]</span>,{' '}
           {t('0.text.2', { fallback: 'with its registered address at' })}{' '}
-          <span className="font-bold">[Registered Address]</span>.
+          <span className="font-bold">[Registered Address]</span>. */}
         </Text>
       </PolicySection>
       <PolicySection heading={t('1.title')}>
@@ -92,7 +92,7 @@ export default async function TermsOfUse() {
             fallback:
               'All content made available through the Site, including but not limited to text, graphics, branding elements, downloadable materials, and course content (collectively, "Content"), is the property of',
           })}{' '}
-          <span className="font-bold">[Company Legal Name]</span>{' '}
+          <span className="font-bold">Optivida Ltd</span>{' '}
           {t('3.text.5', {
             fallback:
               'or its partners and is protected under applicable copyright, trademark, and intellectual property laws.',
@@ -118,7 +118,7 @@ export default async function TermsOfUse() {
             fallback:
               'The name Qoacher, our logo, service names, visual elements, and all branding found across our website and communications are the exclusive property of',
           })}{' '}
-          <span className="font-bold">[Company Legal Name]</span>{' '}
+          <span className="font-bold">Optivida Ltd</span>{' '}
           {t('4.text.1', {
             fallback:
               'whether registered or unregistered (“Qoacher Marks”). Any use, reproduction, or display of these marks without our prior written approval is strictly prohibited.',
@@ -138,7 +138,7 @@ export default async function TermsOfUse() {
             fallback:
               'Any feedback, ideas, suggestions, or content you submit to us about Qoacher—whether through the website, email, or any other channel—becomes the sole and unrestricted property of',
           })}{' '}
-          <span className="font-bold">[Company Legal Name]</span>.
+          <span className="font-bold">Optivida Ltd</span>.
         </Text>
         <Text>
           {t('4.text.5', {
@@ -283,14 +283,14 @@ export default async function TermsOfUse() {
       </PolicySection>
       <PolicySection heading={t('18.title')}>
         <Text>{t('18.text.0')}</Text>
-        {/* <List
+        <List
           values={[
-            '[Insert Company Name]',
-            '[Insert Company Address]',
-            '[Insert Company Email]',
-            '[Insert Company Phone]',
+            'Optivida Ltd',
+            // '[Insert Company Address]',
+            'info@qoacher.com',
+            '+447447846750',
           ]}
-        /> */}
+        />
       </PolicySection>
     </PolicyLayout>
   );
