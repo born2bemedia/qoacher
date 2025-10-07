@@ -89,7 +89,7 @@ export default async function RefundPolicy() {
         <List
           values={[
             'Optivida Ltd',
-            // '[Insert Business Address]',
+            '2nd Floor College House, 17 King Edwards Road, Ruislip, London, United Kingdom, HA4 7AE',
             'info@qoacher.com',
             '+447447846750',
           ]}

@@ -31,50 +31,44 @@ export const Footer = () => {
                 'Expert support for personal growth, relationships, and career development in today’s demanding world.',
             })}
           </Text>
-          <div className="flex items-center gap-6">
+          <Text size="sm" weight={300}>
+            {t('registeredAddress', {
+              fallback: 'Registered address:',
+            })}
+            <br />
+            2nd Floor College House, 17 King Edwards Road, Ruislip, London, United Kingdom, HA4 7AE
+          </Text>
+          <Text size="sm" weight={300}>
+            {t('registeredNumber', {
+              fallback: 'Registered number:',
+            })}
+            <br />
+            16755428
+          </Text>
+          <Text size="sm" weight={300}>
+            {t('officeAddress', {
+              fallback: 'Office address:',
+            })}
+            <br />
+            Office GI.1.07, 60 Grays Inn Rd, London, United Kingdom, WC1X 8LU
+          </Text>
+          <div className="flex items-center gap-6 max-md:justify-center">
             <Link
               href="https://www.facebook.com/qoachercom/ "
               className="flex items-center justify-center"
             >
               <FacebookIcon />
             </Link>
-            {/* <Link
-            href="#"
-            className="w-[52px] h-[52px] flex items-center justify-center border-1 border-[#808080]"
-          >
-            <YoutubeIcon />
-          </Link> */}
             <Link
               href="https://www.instagram.com/qoacher/"
               className="flex items-center justify-center"
             >
               <InstagramIcon />
             </Link>
-            {/* <Link
-            href="#"
-            className="w-[52px] h-[52px] flex items-center justify-center border-1 border-[#808080]"
-          >
-            <LinkedinIcon />
-          </Link> */}
             <Link href="https://x.com/qoachercom" className="flex items-center justify-center">
               <XIcon />
             </Link>
           </div>
-          {/* <Text size="sm" weight={300}>
-            {t('registeredAddress', {
-              fallback: 'Registered address:',
-            })}
-          </Text>
-          <Text size="sm" weight={300}>
-            {t('registeredNumber', {
-              fallback: 'Registered number:',
-            })}
-          </Text>
-          <Text size="sm" weight={300}>
-            {t('officeAddress', {
-              fallback: 'Office address:',
-            })}
-          </Text> */}
         </section>
         <nav className="flex gap-6 max-md:flex-col max-md:items-center max-md:gap-12 max-md:text-center">
           <section className="flex gap-6">

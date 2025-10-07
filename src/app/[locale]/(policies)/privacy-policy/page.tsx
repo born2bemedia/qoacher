@@ -144,7 +144,7 @@ export default async function PrivacyPolicy() {
         <List
           values={[
             'Optivida Ltd',
-            // '[Insert Registered Company Address]',
+            '2nd Floor College House, 17 King Edwards Road, Ruislip, London, United Kingdom, HA4 7AE',
             'info@qoacher.com',
             '+447447846750',
           ]}

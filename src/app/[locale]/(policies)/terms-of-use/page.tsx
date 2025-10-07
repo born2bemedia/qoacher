@@ -268,12 +268,12 @@ export default async function TermsOfUse() {
       <PolicySection heading={t('13.title')}>
         <Text>{t('13.text.0')}</Text>
       </PolicySection>
-      {/* <PolicySection heading={t('14.title')}>
+      <PolicySection heading={t('14.title')}>
         <Text>
           {t('14.text.0')} <span className="font-bold">{t('14.text.1')}</span> {t('14.text.2')}{' '}
           <span className="font-bold">{t('14.text.3')}</span> {t('14.text.4')}
         </Text>
-      </PolicySection> */}
+      </PolicySection>
       <PolicySection heading={t('15.title')}>
         <Text>{t('15.text.0')}</Text>
       </PolicySection>
@@ -288,7 +288,7 @@ export default async function TermsOfUse() {
         <List
           values={[
             'Optivida Ltd',
-            // '[Insert Company Address]',
+            '2nd Floor College House, 17 King Edwards Road, Ruislip, London, United Kingdom, HA4 7AE',
             'info@qoacher.com',
             '+447447846750',
           ]}
