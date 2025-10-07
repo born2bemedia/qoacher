@@ -26,7 +26,7 @@ export const WhoWeAre = () => {
 
   const text = t('text1', {
     fallback:
-      'Qoacher is a team of 11 professionals with decades of combined experience in psychology, executive coaching, relationship dynamics, and personal development.',
+    'Qoacher is a team of professionals with decades of combined experience in psychology, executive coaching, relationship dynamics, and personal development.',
   });
 
   const { scrollYProgress } = useScroll({

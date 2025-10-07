@@ -84,7 +84,7 @@
     "button2": "Contact Us"
   },
   "aboutTheProjectWhoWeAre": {
-    "text1": "Qoacher is a team of 11 professionals with decades of combined experience in psychology, executive coaching, relationship dynamics, and personal development.",
+    "text1": "Qoacher is a team of professionals with decades of combined experience in psychology, executive coaching, relationship dynamics, and personal development.",
     "title1": "Who We Are"
   },
   "aboutTheProject": {
@@ -795,7 +795,7 @@
           "1": "whether registered or unregistered (“Qoacher Marks”). Any use, reproduction, or display of these marks without our prior written approval is strictly prohibited.",
           "2": "References to third-party trademarks, service marks, logos, or brand names on the Site belong to their respective owners. You may not use, imitate, or reference them without express written consent from the rightful owner. Unauthorized use of the Qoacher Marks or any third-party brand assets displayed on the Site is a violation of intellectual property rights and is not allowed under any circumstances.",
           "3": "Feedback and Suggestions",
-          "4": "Any feedback, ideas, suggestions, or content you submit to us about Qoacher—whether through the website, email, or any other channel—becomes the sole and unrestricted property o",
+          "4": "Any feedback, ideas, suggestions, or content you submit to us about Qoacher—whether through the website, email, or any other channel—becomes the sole and unrestricted property of",
           "5": "By submitting feedback, you grant us full rights to use, modify, publish, or incorporate it into our services or communications without limitation and compensation or credit. Please only share suggestions with us if you’re comfortable with this."
         }
       },
@@ -1121,7 +1121,11 @@
     "3": {
       "title": "Contact Us",
       "text": {
-        "0": "If you have any questions, requests, or concerns regarding this Privacy Policy or how your data is handled, please contact us using any of the methods below:",
+        "0": {
+          "0": "If you have any questions, requests, or concerns regarding this",
+          "1": "Privacy Policy",
+          "2": "or how your data is handled, please contact us using any of the methods below"
+        },
         "1": "You may also contact us via any official communication method listed on our website:",
         "2": "We are available to respond to inquiries during standard business hours. Please ensure you include your full name and a clear description of your request or concern so we can assist you effectively."
       }

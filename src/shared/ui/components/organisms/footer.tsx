@@ -56,10 +56,7 @@ export const Footer = () => {
           >
             <LinkedinIcon />
           </Link> */}
-            <Link
-              href="https://x.com/SocialsSoc95967 "
-              className="flex items-center justify-center"
-            >
+            <Link href="https://x.com/qoachercom" className="flex items-center justify-center">
               <XIcon />
             </Link>
           </div>

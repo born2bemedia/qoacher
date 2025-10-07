@@ -8,6 +8,8 @@ import { PolicyLayout } from '@/features/policies/ui/policy-layout';
 import { List } from '@/shared/ui/components/atoms/list';
 import { Text } from '@/shared/ui/components/atoms/text';
 
+import { Link as NavLink } from '@/i18n/navigation';
+
 export const metadata: Metadata = {
   title: 'Refund Policy | Qoacher',
   openGraph: {
@@ -77,7 +79,13 @@ export default async function RefundPolicy() {
         </Text>
       </PolicySection>
       <PolicySection heading={t('3.title')}>
-        <Text>{t('3.text.0')}</Text>
+        <Text>
+          {t('3.text.0.0')}{' '}
+          <NavLink href="/privacy-policy" className="font-bold underline">
+            {t('3.text.0.1')}
+          </NavLink>{' '}
+          {t('3.text.0.2')}
+        </Text>
         <List
           values={[
             'Optivida Ltd',
