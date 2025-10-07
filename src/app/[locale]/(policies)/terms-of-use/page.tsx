@@ -81,7 +81,9 @@ export default async function TermsOfUse() {
             fallback:
               'If you are under 18, you may only use the Site under the supervision of a parent or guardian. We do not knowingly collect personal information from children under 13. If you believe a minor has submitted information to us, please contact us at',
           })}{' '}
-          <span className="font-bold">[EMAIL]</span>{' '}
+          <Link href="mailto:info@qoacher.com" className="font-bold underline">
+            info@qoacher.com
+          </Link>{' '}
           {t('3.text.2', { fallback: 'so we can address the issue.' })}
         </Text>
         <Title as="h3" size="lg">
@@ -266,12 +268,12 @@ export default async function TermsOfUse() {
       <PolicySection heading={t('13.title')}>
         <Text>{t('13.text.0')}</Text>
       </PolicySection>
-      <PolicySection heading={t('14.title')}>
+      {/* <PolicySection heading={t('14.title')}>
         <Text>
           {t('14.text.0')} <span className="font-bold">{t('14.text.1')}</span> {t('14.text.2')}{' '}
           <span className="font-bold">{t('14.text.3')}</span> {t('14.text.4')}
         </Text>
-      </PolicySection>
+      </PolicySection> */}
       <PolicySection heading={t('15.title')}>
         <Text>{t('15.text.0')}</Text>
       </PolicySection>
