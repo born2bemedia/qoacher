@@ -40,8 +40,8 @@ export const ContactMain = () => {
               fallback: 'Other Ways to Contact Us',
             })}
           </Title>
-          <div className="flex items-center gap-6">
-            <span className="flex max-w-[190px] w-full items-center gap-1.5">
+          <div className="flex items-center justify-between gap-20 max-lg:gap-6">
+            <span className="flex w-1/2 max-md:w-full items-center gap-1.5">
               <PhoneIcon />
               <Link href="tel:+447447846750">
                 <Text size="sm" weight={300}>
@@ -49,7 +49,7 @@ export const ContactMain = () => {
                 </Text>
               </Link>
             </span>
-            <span className="flex max-w-[190px] w-full items-center gap-1.5">
+            <span className="flex w-1/2 max-md:w-full items-center gap-1.5">
               <MailIcon />
               <Link href="mailto:info@qoacher.com">
                 <Text size="sm" weight={300}>
@@ -58,32 +58,50 @@ export const ContactMain = () => {
               </Link>
             </span>
           </div>
-          {/* <div className="flex flex-row gap-6 max-md:flex-col">
-            <div className="flex flex-col gap-[6px]">
+          <div className="flex flex-row gap-20 max-lg:gap-6 justify-between max-md:flex-col">
+            <div className="flex w-1/2 max-md:w-full flex-col gap-[6px]">
               <Title className="text-left text-[16px] max-md:text-[16px]">
                 {t('forBusinessCorrespondence', {
                   fallback: 'For Business Correspondence:',
                 })}
               </Title>
               <Text className="text-left text-[14px]">
-                {t('forBusinessCorrespondenceDescription', {
-                  fallback: 'Registration address here',
-                })}
+                2nd Floor College House, 17 King Edwards Road, Ruislip, London, United Kingdom, HA4
+                7AE
               </Text>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.6616254242003!2d-0.4286821!3d51.574436399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766c5ef9eeaaab%3A0x58f9eeec566a9e8!2sHouse%2C%202nd%20Floor%2C%2017%20King%20Edwards%20Rd%2C%20London%2C%20Ruislip%20HA4%207AE%2C%20UK!5e0!3m2!1sen!2sua!4v1759837065717!5m2!1sen!2sua"
+                width="215"
+                height="180"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="max-md:w-full"
+              />
             </div>
-            <div className="flex flex-col gap-[6px]">
+            <div className="flex w-1/2 max-md:w-full flex-col gap-[6px]">
               <Title className="text-left text-[16px] max-md:text-[16px]">
                 {t('officeLocation', {
                   fallback: 'Office Location:',
                 })}
+                <br />
               </Title>
               <Text className="text-left text-[14px]">
-                {t('officeLocationDescription', {
-                  fallback: 'Office address here',
-                })}
+                Office GI.1.07, 60 Grays Inn Rd, London, United Kingdom, WC1X 8LU
               </Text>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.0!2d-0.119!3d51.521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761aceb1c0ea1f%3A0x0!2s60%20Gray’s%20Inn%20Rd%2C%20London%20WC1X%208LU%2C%20UK!5e0!3m2!1sen!2sua!4v0000000000000"
+                width="215"
+                height="180"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="mt-auto max-md:w-full"
+              />
             </div>
-          </div> */}
+          </div>
         </FadeIn>
         <FadeIn className="flex gap-6">
           <Link
