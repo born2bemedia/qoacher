@@ -31,10 +31,12 @@ export default async function PrivacyPolicy() {
     <PolicyLayout title={t('title')} updateType="effective">
       <PolicySection>
         <Text>
-          {t('0.text.0')} <span className="font-bold">Optivida Ltd</span>.
-          {/* {t('0.text.1')}{' '}
-          <span className="font-bold">[Registration Number]</span>, {t('0.text.2')}{' '}
-          <span className="font-bold">[Registered Address]</span> {t('0.text.3')} */}
+          {t('0.text.0')} <span className="font-bold">Optivida Ltd</span>.{t('0.text.1')}{' '}
+          <span className="font-bold">16755428</span>, {t('0.text.2')}{' '}
+          <span className="font-bold">
+            2nd Floor College House, 17 King Edwards Road, Ruislip, London, United Kingdom, HA4 7AE
+          </span>{' '}
+          {t('0.text.3')}
         </Text>
         <Text>{t('0.text.4')}</Text>
         <Text>{t('0.text.5')}</Text>
@@ -146,7 +148,7 @@ export default async function PrivacyPolicy() {
             'Optivida Ltd',
             '2nd Floor College House, 17 King Edwards Road, Ruislip, London, United Kingdom, HA4 7AE',
             'info@qoacher.com',
-            '+447447846750',
+            '+447460102445',
           ]}
         />
         <Text>
