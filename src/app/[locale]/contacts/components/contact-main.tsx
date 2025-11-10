@@ -43,9 +43,9 @@ export const ContactMain = () => {
           <div className="flex items-center justify-between gap-20 max-lg:gap-6">
             <span className="flex w-1/2 max-md:w-full items-center gap-1.5">
               <PhoneIcon />
-              <Link href="tel:+447447846750">
+              <Link href="tel:+447460102445">
                 <Text size="sm" weight={300}>
-                  +447447846750
+                  +447460102445
                 </Text>
               </Link>
             </span>

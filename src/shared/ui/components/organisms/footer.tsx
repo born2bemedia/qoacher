@@ -110,9 +110,9 @@ export const Footer = () => {
             <div className="flex max-w-[150px] flex-col gap-6 max-md:text-center">
               <span className="flex items-center gap-1.5">
                 <PhoneIcon />
-                <Link href="tel:+447447846750">
+                <Link href="tel:+447460102445">
                   <Text size="sm" weight={300}>
-                    +447447846750
+                    +447460102445
                   </Text>
                 </Link>
               </span>
