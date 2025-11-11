@@ -28,7 +28,7 @@ export default async function PrivacyPolicy() {
   const t = await getTranslations('privacyPolicy');
 
   return (
-    <PolicyLayout title={t('title')} updateType="effective">
+    <PolicyLayout title={t('title')} updateType="lastUpdate">
       <PolicySection>
         <Text>
           {t('0.text.0')} <span className="font-bold">Optivida Ltd</span>.{t('0.text.1')}{' '}
