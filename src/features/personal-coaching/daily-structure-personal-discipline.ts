@@ -10,7 +10,7 @@ export const DailyStructurePersonalDisciplineProducts = async () => {
       description: t('personalSystemDesignDescription', {
         fallback: 'Build a sustainable, tailored system for your time, energy, and commitments.',
       }),
-      price: 5200,
+      price: 1100,
     },
     {
       id: 'habit-overhaul-program',
@@ -18,7 +18,7 @@ export const DailyStructurePersonalDisciplineProducts = async () => {
       description: t('habitOverhaulProgramDescription', {
         fallback: 'Replace harmful or unproductive habits with realistic, high-return routines.',
       }),
-      price: 6000,
+      price: 1600,
     },
     {
       id: 'mental-clutter-clearing',
@@ -26,7 +26,7 @@ export const DailyStructurePersonalDisciplineProducts = async () => {
       description: t('mentalClutterClearingDescription', {
         fallback: 'Sessions to reduce mental overload and restore cognitive clarity.',
       }),
-      price: 4700,
+      price: 900,
     },
     {
       id: 'focus-and-execution-coaching',
@@ -34,23 +34,26 @@ export const DailyStructurePersonalDisciplineProducts = async () => {
       description: t('focusAndExecutionCoachingDescription', {
         fallback: 'Practical coaching to eliminate distractions and follow through on plans.',
       }),
-      price: 5500,
+      price: 1200,
     },
     {
       id: 'self-discipline-rebuild-plan',
       title: t('selfDisciplineRebuildPlan', { fallback: 'Self-Discipline Rebuild Plan' }),
       description: t('selfDisciplineRebuildPlanDescription', {
-        fallback: 'Targeted support to recover self-control after periods of disorganization or avoidance.',
+        fallback:
+          'Targeted support to recover self-control after periods of disorganization or avoidance.',
       }),
-      price: 6100,
+      price: 1500,
     },
     {
       id: 'consistency-strengthening-process',
-      title: t('consistencyStrengtheningProcess', { fallback: 'Consistency Strengthening Process' }),
+      title: t('consistencyStrengtheningProcess', {
+        fallback: 'Consistency Strengthening Process',
+      }),
       description: t('consistencyStrengtheningProcessDescription', {
         fallback: 'Accountability and structure to build momentum and maintain long-term progress.',
       }),
-      price: 5800,
+      price: 1400,
     },
   ];
-}; 
+};

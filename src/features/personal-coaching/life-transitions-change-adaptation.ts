@@ -10,7 +10,7 @@ export const LifeTransitionsChangeAdaptationProducts = async () => {
       description: t('lifeResetStrategyDescription', {
         fallback: 'Full strategic review of your current situation, past decisions, and desired direction.',
       }),
-      price: 6500,
+      price: 2000,
     },
     {
       id: 'adaptation-after-major-change',
@@ -18,7 +18,7 @@ export const LifeTransitionsChangeAdaptationProducts = async () => {
       description: t('adaptationAfterMajorChangeDescription', {
         fallback: 'Support after loss, divorce, relocation, or any high-impact life transition.',
       }),
-      price: 7200,
+      price: 2400,
     },
     {
       id: 'redefining-priorities-coaching',
@@ -26,7 +26,7 @@ export const LifeTransitionsChangeAdaptationProducts = async () => {
       description: t('redefiningPrioritiesCoachingDescription', {
         fallback: 'Work through values conflict and life overload to redefine what matters most.',
       }),
-      price: 4900,
+      price: 1200,
     },
     {
       id: 'emotional-baggage-processing',
@@ -34,7 +34,7 @@ export const LifeTransitionsChangeAdaptationProducts = async () => {
       description: t('emotionalBaggageProcessingDescription', {
         fallback: 'Sessions focused on closure, release, and moving forward with emotional clarity.',
       }),
-      price: 6800,
+      price: 1800,
     },
     {
       id: 'role-reintegration-plan',
@@ -42,7 +42,7 @@ export const LifeTransitionsChangeAdaptationProducts = async () => {
       description: t('roleReintegrationPlanDescription', {
         fallback: 'Support in managing new personal roles (parent, caregiver, leader, etc.) with clarity and stability.',
       }),
-      price: 5600,
+      price: 1400,
     },
     {
       id: 'identity-shift-coaching',
@@ -50,7 +50,7 @@ export const LifeTransitionsChangeAdaptationProducts = async () => {
       description: t('identityShiftCoachingDescription', {
         fallback: 'Guidance for major internal change that affects personal lifestyle, work, or relationships.',
       }),
-      price: 6300,
+      price: 1700,
     },
   ];
 }; 

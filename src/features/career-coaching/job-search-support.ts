@@ -10,7 +10,7 @@ export const JobSearchSupportProducts = async () => {
       description: t('cvCoverLetterReviewDescription', {
         fallback: 'Professional review and optimization for modern job markets.',
       }),
-      price: 3800,
+      price: 400,
     },
     {
       id: 'linkedin-positioning-strategy',
@@ -19,7 +19,7 @@ export const JobSearchSupportProducts = async () => {
         fallback:
           'Strategic profile setup to match career goals and attract the right opportunities.',
       }),
-      price: 4500,
+      price: 650,
     },
     {
       id: 'personal-branding-strategy',
@@ -27,7 +27,7 @@ export const JobSearchSupportProducts = async () => {
       description: t('personalBrandingStrategyDescription', {
         fallback: 'Build a clear message across your documents and platforms.',
       }),
-      price: 6900,
+      price: 1400,
     },
     {
       id: 'job-market-navigation-session',
@@ -35,7 +35,7 @@ export const JobSearchSupportProducts = async () => {
       description: t('jobMarketNavigationSessionDescription', {
         fallback: 'Understand where and how to search based on your profile.',
       }),
-      price: 4200,
+      price: 600,
     },
     {
       id: 'job-application-planning',
@@ -43,7 +43,7 @@ export const JobSearchSupportProducts = async () => {
       description: t('jobApplicationPlanningDescription', {
         fallback: 'Create a structured plan for targeted applications and follow-ups.',
       }),
-      price: 4700,
+      price: 750,
     },
     {
       id: 'hidden-job-market-strategy',
@@ -51,7 +51,7 @@ export const JobSearchSupportProducts = async () => {
       description: t('hiddenJobMarketStrategyDescription', {
         fallback: 'Techniques to access unadvertised roles through outreach and positioning.',
       }),
-      price: 5600,
+      price: 1100,
     },
   ];
 };

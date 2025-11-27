@@ -10,7 +10,7 @@ export const ConflictCommunicationSkillsProducts = async () => {
       description: t('difficultConversationsCoachingDescription', {
         fallback: 'Prepare for and navigate high-stakes conversations at home or work.',
       }),
-      price: 6000,
+      price: 1300,
     },
     {
       id: 'assertive-communication-training',
@@ -18,7 +18,7 @@ export const ConflictCommunicationSkillsProducts = async () => {
       description: t('assertiveCommunicationTrainingDescription', {
         fallback: 'Learn how to speak clearly and directly — without being passive or aggressive.',
       }),
-      price: 5700,
+      price: 1100,
     },
     {
       id: 'emotional-tone-awareness',
@@ -26,7 +26,7 @@ export const ConflictCommunicationSkillsProducts = async () => {
       description: t('emotionalToneAwarenessDescription', {
         fallback: 'Improve how your emotions come across and are understood.',
       }),
-      price: 4900,
+      price: 800,
     },
     {
       id: 'conflict-de-escalation-coaching',
@@ -34,7 +34,7 @@ export const ConflictCommunicationSkillsProducts = async () => {
       description: t('conflictDeEscalationCoachingDescription', {
         fallback: 'Techniques to stay calm and focused during arguments and disagreements.',
       }),
-      price: 5800,
+      price: 1200,
     },
     {
       id: 'listening-skills-development',
@@ -42,7 +42,7 @@ export const ConflictCommunicationSkillsProducts = async () => {
       description: t('listeningSkillsDevelopmentDescription', {
         fallback: 'Build presence, reduce interruption habits, and improve understanding.',
       }),
-      price: 4600,
+      price: 700,
     },
     {
       id: 'reactivity-reduction-plan',
@@ -50,7 +50,7 @@ export const ConflictCommunicationSkillsProducts = async () => {
       description: t('reactivityReductionPlanDescription', {
         fallback: 'Address triggers and reactive behavior that damage conversations and outcomes.',
       }),
-      price: 5300,
+      price: 950,
     },
   ];
 };

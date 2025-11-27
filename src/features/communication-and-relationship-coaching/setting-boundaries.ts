@@ -10,7 +10,7 @@ export const SettingBoundariesProducts = async () => {
       description: t('boundaryAwarenessAssessmentDescription', {
         fallback: 'Identify where your boundaries are missing, unclear, or violated.',
       }),
-      price: 4700,
+      price: 650,
     },
     {
       id: 'saying-no-without-guilt',
@@ -18,7 +18,7 @@ export const SettingBoundariesProducts = async () => {
       description: t('sayingNoWithoutGuiltDescription', {
         fallback: 'Coaching for assertive communication without fear or emotional fallout.',
       }),
-      price: 5300,
+      price: 900,
     },
     {
       id: 'emotional-overextension-recovery',
@@ -26,7 +26,7 @@ export const SettingBoundariesProducts = async () => {
       description: t('emotionalOverextensionRecoveryDescription', {
         fallback: 'Address burnout caused by overgiving or people-pleasing.',
       }),
-      price: 5800,
+      price: 1100,
     },
     {
       id: 'personal-boundary-strategy',
@@ -34,7 +34,7 @@ export const SettingBoundariesProducts = async () => {
       description: t('personalBoundaryStrategyDescription', {
         fallback: 'Define clear boundaries across relationships, work, and family life.',
       }),
-      price: 5600,
+      price: 1100,
     },
     {
       id: 'dealing-with-pushback',
@@ -42,7 +42,7 @@ export const SettingBoundariesProducts = async () => {
       description: t('dealingWithPushbackDescription', {
         fallback: 'Learn how to hold boundaries under pressure, manipulation, or guilt.',
       }),
-      price: 5900,
+      price: 1300,
     },
     {
       id: 'internal-boundary-reinforcement',
@@ -50,7 +50,7 @@ export const SettingBoundariesProducts = async () => {
       description: t('internalBoundaryReinforcementDescription', {
         fallback: 'Work through mental self-overload, overthinking, and poor containment.',
       }),
-      price: 5400,
+      price: 1000,
     },
   ];
 };

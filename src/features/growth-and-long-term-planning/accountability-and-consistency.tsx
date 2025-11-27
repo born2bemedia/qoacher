@@ -10,7 +10,7 @@ export const AccountabilityAndConsistencyProducts = async () => {
       description: t('longTermExecutionCoachingDescription', {
         fallback: 'Support and review sessions to keep momentum and make continuous progress.',
       }),
-      price: 7800,
+      price: 3000,
     },
     {
       id: 'personal-accountability-protocol',
@@ -18,7 +18,7 @@ export const AccountabilityAndConsistencyProducts = async () => {
       description: t('personalAccountabilityProtocolDescription', {
         fallback: 'Create structured check-ins, feedback loops, and scorecards for your goals.',
       }),
-      price: 6200,
+      price: 1800,
     },
     {
       id: 'motivation-maintenance-plan',
@@ -26,23 +26,26 @@ export const AccountabilityAndConsistencyProducts = async () => {
       description: t('motivationMaintenancePlanDescription', {
         fallback: 'Keep your drive alive through mental reframing and deep motivational anchoring.',
       }),
-      price: 6000,
+      price: 1600,
     },
     {
       id: 'procrastination-elimination-system',
-      title: t('procrastinationEliminationSystem', { fallback: 'Procrastination Elimination System' }),
+      title: t('procrastinationEliminationSystem', {
+        fallback: 'Procrastination Elimination System',
+      }),
       description: t('procrastinationEliminationSystemDescription', {
         fallback: 'Root-cause coaching and behavioral correction for chronic avoidance and delay.',
       }),
-      price: 6900,
+      price: 1900,
     },
     {
       id: 'sustainable-goal-management',
       title: t('sustainableGoalManagement', { fallback: 'Sustainable Goal Management' }),
       description: t('sustainableGoalManagementDescription', {
-        fallback: 'Turn large goals into realistic stages with checkpoints, buffers, and review triggers.',
+        fallback:
+          'Turn large goals into realistic stages with checkpoints, buffers, and review triggers.',
       }),
-      price: 7100,
+      price: 2300,
     },
     {
       id: 'high-stakes-goal-accountability',
@@ -50,7 +53,7 @@ export const AccountabilityAndConsistencyProducts = async () => {
       description: t('highStakesGoalAccountabilityDescription', {
         fallback: 'Dedicated coaching to keep you on track with your most critical goals',
       }),
-      price: 7200,
+      price: 2800,
     },
   ];
 };

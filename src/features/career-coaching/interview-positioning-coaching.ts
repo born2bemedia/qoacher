@@ -10,7 +10,7 @@ export const InterviewPositioningCoachingProducts = async () => {
       description: t('mockInterviewFeedbackDescription', {
         fallback: 'Realistic roleplay and tailored feedback to improve your performance.',
       }),
-      price: 5200,
+      price: 900,
     },
     {
       id: 'salary-negotiation-coaching',
@@ -18,7 +18,7 @@ export const InterviewPositioningCoachingProducts = async () => {
       description: t('salaryNegotiationCoachingDescription', {
         fallback: 'Prepare for salary and offer discussions confidently and professionally.',
       }),
-      price: 5800,
+      price: 1000,
     },
     {
       id: 'interview-confidence-building',
@@ -26,7 +26,7 @@ export const InterviewPositioningCoachingProducts = async () => {
       description: t('interviewConfidenceBuildingDescription', {
         fallback: 'Coaching for anxiety reduction, mindset, and presentation under pressure.',
       }),
-      price: 4900,
+      price: 800,
     },
     {
       id: 'executive-interview-prep',
@@ -34,7 +34,7 @@ export const InterviewPositioningCoachingProducts = async () => {
       description: t('executiveInterviewPrepDescription', {
         fallback: 'High-level preparation for senior roles or board positions.',
       }),
-      price: 6300,
+      price: 1400,
     },
     {
       id: 'positioning-statement-development',
@@ -44,7 +44,7 @@ export const InterviewPositioningCoachingProducts = async () => {
       description: t('positioningStatementDevelopmentDescription', {
         fallback: 'Craft a clear, confident career summary for interviews and networking.',
       }),
-      price: 4700,
+      price: 700,
     },
     {
       id: 'offer-evaluation-session',
@@ -52,7 +52,7 @@ export const InterviewPositioningCoachingProducts = async () => {
       description: t('offerEvaluationSessionDescription', {
         fallback: 'Review job offers and assess fit, terms, and negotiation points.',
       }),
-      price: 5100,
+      price: 600,
     },
   ];
 };
