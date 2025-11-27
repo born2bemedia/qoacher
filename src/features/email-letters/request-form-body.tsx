@@ -14,7 +14,7 @@ export const requestFormBody = ({ username }: { username: string }) => {
             <p class="text" style="color: #000;">In the meantime, feel free to explore our <a href="https://qoacher.com/self-improvement" style="font-weight: 600; color: #000; text-decoration: none;">Self Improvement</a> section — it’s full of practical guides and tools you can start using right away: <br />Explore Self Improvement</p>
             <p class="text" style="color: #000;">If your request is urgent, you can also contact us directly at <strong style="font-weight: 600;">our email</strong>.</p>
             <p class="text" style="color: #000;">Thank you for connecting with us.</p>
-            <p class="text" style="color: #000; margin-top: 40px;"><span style="font-size: 16px;">The Coacher Team</span> <br /> Helping you take back control, one step at a time.</p>
+            <p class="text" style="color: #000; margin-top: 40px;"><span style="font-size: 16px;">The Qoacher Team</span> <br /> Helping you take back control, one step at a time.</p>
           </div>
         </div>
         <div>

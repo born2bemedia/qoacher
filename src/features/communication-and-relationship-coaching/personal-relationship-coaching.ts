@@ -11,7 +11,7 @@ export const PersonalRelationshipCoachingProducts = async () => {
         fallback:
           "Identify what's working, what's not, and what you want in your current or future relationships.",
       }),
-      price: 4800,
+      price: 650,
     },
     {
       id: 'dating-readiness-coaching',
@@ -20,7 +20,7 @@ export const PersonalRelationshipCoachingProducts = async () => {
         fallback:
           'Work through emotional baggage, fears, and beliefs before entering or reentering dating.',
       }),
-      price: 5900,
+      price: 900,
     },
     {
       id: 'attachment-style-assessment-support',
@@ -30,7 +30,7 @@ export const PersonalRelationshipCoachingProducts = async () => {
       description: t('attachmentStyleAssessmentSupportDescription', {
         fallback: 'Understand your attachment patterns and how they affect your relationships.',
       }),
-      price: 4600,
+      price: 700,
     },
     {
       id: 'rebuilding-after-breakup-divorce',
@@ -40,7 +40,7 @@ export const PersonalRelationshipCoachingProducts = async () => {
       description: t('rebuildingAfterBreakupDivorceDescription', {
         fallback: 'Structured support for recovery, closure, and moving forward with clarity.',
       }),
-      price: 6200,
+      price: 1200,
     },
     {
       id: 'repeating-pattern-deconstruction',
@@ -49,7 +49,7 @@ export const PersonalRelationshipCoachingProducts = async () => {
         fallback:
           'Identify destructive personal relational cycles and rebuild healthier responses.',
       }),
-      price: 5700,
+      price: 1000,
     },
     {
       id: 'rebuilding-self-trust-toxic-relationships',
@@ -60,7 +60,7 @@ export const PersonalRelationshipCoachingProducts = async () => {
         fallback:
           'Focused support to restore your judgment, boundaries, and emotional independence.',
       }),
-      price: 6400,
+      price: 1400,
     },
   ];
 };

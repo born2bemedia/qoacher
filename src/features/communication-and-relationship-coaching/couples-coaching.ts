@@ -10,7 +10,7 @@ export const CouplesCoachingProducts = async () => {
       description: t('coupleCommunicationAnalysisDescription', {
         fallback: 'Detailed review of how you interact — and what needs to shift.',
       }),
-      price: 5500,
+      price: 900,
     },
     {
       id: 'conflict-resolution-coaching',
@@ -18,7 +18,7 @@ export const CouplesCoachingProducts = async () => {
       description: t('conflictResolutionCoachingDescription', {
         fallback: 'Structure and tools to resolve recurring disagreements without escalation.',
       }),
-      price: 6000,
+      price: 1300,
     },
     {
       id: 'emotional-safety-restoration',
@@ -26,7 +26,7 @@ export const CouplesCoachingProducts = async () => {
       description: t('emotionalSafetyRestorationDescription', {
         fallback: 'Work through emotional distance, criticism, or trust gaps.',
       }),
-      price: 6800,
+      price: 1600,
     },
     {
       id: 'reconnection-plan',
@@ -34,7 +34,7 @@ export const CouplesCoachingProducts = async () => {
       description: t('reconnectionPlanDescription', {
         fallback: 'For desperate couples feeling distant or emotionally disconnected.',
       }),
-      price: 6200,
+      price: 1200,
     },
     {
       id: 'life-stage-transition-coaching',
@@ -42,7 +42,7 @@ export const CouplesCoachingProducts = async () => {
       description: t('lifeStageTransitionCoachingDescription', {
         fallback: 'Support for parenting, relocation, career shifts, or health changes.',
       }),
-      price: 5900,
+      price: 1000,
     },
     {
       id: 'value-alignment-coaching',
@@ -51,7 +51,7 @@ export const CouplesCoachingProducts = async () => {
         fallback:
           'Work through lifestyle, financial, or belief differences to build a stronger foundation.',
       }),
-      price: 6300,
+      price: 1400,
     },
   ];
 };

@@ -8,9 +8,10 @@ export const HabitSystemsAndDailyStructureProducts = async () => {
       id: 'habit-architecture-intensive',
       title: t('habitArchitectureIntensive', { fallback: 'Habit Architecture Intensive' }),
       description: t('habitArchitectureIntensiveDescription', {
-        fallback: 'Build a high-retention habit structure tailored to your lifestyle and long-term goals.',
+        fallback:
+          'Build a high-retention habit structure tailored to your lifestyle and long-term goals.',
       }),
-      price: 6300,
+      price: 1600,
     },
     {
       id: 'daily-routine-engineering',
@@ -18,7 +19,7 @@ export const HabitSystemsAndDailyStructureProducts = async () => {
       description: t('dailyRoutineEngineeringDescription', {
         fallback: 'Design a high-functioning day structure based on your energy and workload.',
       }),
-      price: 5800,
+      price: 1200,
     },
     {
       id: 'morning-evening-protocol-setup',
@@ -26,7 +27,7 @@ export const HabitSystemsAndDailyStructureProducts = async () => {
       description: t('morningEveningProtocolSetupDescription', {
         fallback: 'Develop consistent opening and closing routines to anchor productivity.',
       }),
-      price: 5200,
+      price: 900,
     },
     {
       id: 'time-ownership-strategy',
@@ -34,23 +35,25 @@ export const HabitSystemsAndDailyStructureProducts = async () => {
       description: t('timeOwnershipStrategyDescription', {
         fallback: 'Shift from time pressure to control — structure your day-to-day for clarity.',
       }),
-      price: 6000,
+      price: 1300,
     },
     {
       id: 'distraction-elimination-coaching',
       title: t('distractionEliminationCoaching', { fallback: 'Distraction Elimination Coaching' }),
       description: t('distractionEliminationCoachingDescription', {
-        fallback: 'Target digital, emotional, and behavioral distractions with personalized reduction tools.',
+        fallback:
+          'Target digital, emotional, and behavioral distractions with personalized reduction tools.',
       }),
-      price: 5900,
+      price: 1200,
     },
     {
       id: 'habit-failure-recovery-plan',
       title: t('habitFailureRecoveryPlan', { fallback: 'Habit Failure Recovery Plan' }),
       description: t('habitFailureRecoveryPlanDescription', {
-        fallback: 'Address the causes behind inconsistency, self-sabotage, and unproductive patterns.',
+        fallback:
+          'Address the causes behind inconsistency, self-sabotage, and unproductive patterns.',
       }),
-      price: 6100,
+      price: 1400,
     },
   ];
 };

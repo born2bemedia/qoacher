@@ -10,7 +10,7 @@ export const CareerTransitionsSpecialCasesProducts = async () => {
       description: t('returningToWorkStrategyDescription', {
         fallback: 'Support for parents, caregivers, or individuals returning after a break.',
       }),
-      price: 5000,
+      price: 900,
     },
     {
       id: 'relocation-career-planning',
@@ -18,7 +18,7 @@ export const CareerTransitionsSpecialCasesProducts = async () => {
       description: t('relocationCareerPlanningDescription', {
         fallback: 'Coaching for professionals moving to new countries or regions.',
       }),
-      price: 6800,
+      price: 1300,
     },
     {
       id: 'freelance-self-employment-planning',
@@ -28,7 +28,7 @@ export const CareerTransitionsSpecialCasesProducts = async () => {
       description: t('freelanceSelfEmploymentPlanningDescription', {
         fallback: 'Helping you structure a solo career with income planning and role clarity.',
       }),
-      price: 7300,
+      price: 2200,
     },
     {
       id: 'second-career-planning-50-plus',
@@ -37,7 +37,7 @@ export const CareerTransitionsSpecialCasesProducts = async () => {
         fallback:
           'Strategic planning for late-career changes, phased retirements, or passion projects.',
       }),
-      price: 5900,
+      price: 1200,
     },
     {
       id: 'exit-strategy-coaching',
@@ -45,7 +45,7 @@ export const CareerTransitionsSpecialCasesProducts = async () => {
       description: t('exitStrategyCoachingDescription', {
         fallback: 'Prepare for resignation, role exit, or company closure with professionalism.',
       }),
-      price: 5400,
+      price: 1000,
     },
     {
       id: 'career-clarity-intensive',
@@ -53,7 +53,7 @@ export const CareerTransitionsSpecialCasesProducts = async () => {
       description: t('careerClarityIntensiveDescription', {
         fallback: 'Structured short-term program to explore your options and make a decision.',
       }),
-      price: 8200,
+      price: 2500,
     },
   ];
 };
