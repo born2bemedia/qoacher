@@ -51,7 +51,7 @@ export const getOrdersColumns = (
   },
   {
     accessorKey: 'invoiceUrl',
-    header: () => <Text>{t('columns.invoiceUrl', { fallback: 'Invoice' })}</Text>,
+    header: () => <Text>{t('columns.download', { fallback: 'Download' })}</Text>,
     cell: (info) => {
       const url = info.getValue<string>();
 
