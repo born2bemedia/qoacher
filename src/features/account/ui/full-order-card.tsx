@@ -63,7 +63,7 @@ export const FullOrderCard = ({
       </div>
       <Divider />
       <div className="flex items-center justify-between">
-        <Text color="gray">{t('invoice', { fallback: 'Invoice' })}</Text>
+        <Text color="gray">{t('download', { fallback: 'Download' })}</Text>
         {value.invoiceUrl ? (
           <Button className="px-4" variant="support" onClick={() => downloadFile(value.invoiceUrl)}>
             <DownloadIcon />
