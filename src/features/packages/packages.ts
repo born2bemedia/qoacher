@@ -96,19 +96,19 @@ export const PackagesProducts = async () => {
       }),
       includes: [
         t('identityPurposeDeepDiveIncludes1', {
-          fallback: 'Deep Purpose Exploration – €7,500',
+          fallback: 'Deep Purpose Exploration',
         }),
         t('identityPurposeDeepDiveIncludes2', {
-          fallback: 'Identity Integration Coaching – €6,400',
+          fallback: 'Identity Integration Coaching',
         }),
         t('identityPurposeDeepDiveIncludes3', {
-          fallback: 'Personal Alignment Strategy – €6,800',
+          fallback: 'Personal Alignment Strategy',
         }),
         t('identityPurposeDeepDiveIncludes4', {
-          fallback: 'Emotional Baggage Processing – €6,800',
+          fallback: 'Emotional Baggage Processing',
         }),
         t('identityPurposeDeepDiveIncludes5', {
-          fallback: 'Values-Based Decision Framework – €5,900',
+          fallback: 'Values-Based Decision Framework',
         }),
       ],
       separately: 11200,
