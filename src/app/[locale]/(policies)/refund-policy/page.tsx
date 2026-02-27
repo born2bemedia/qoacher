@@ -29,7 +29,7 @@ export default async function RefundPolicy() {
   const t = await getTranslations('refundPolicy');
 
   return (
-    <PolicyLayout title={t('title')} updateType="lastUpdate">
+    <PolicyLayout title={t('title')}>
       <PolicySection>
         <Text>
           {t('0.text.0')} <span className="font-bold">{t('0.text.1')}</span>

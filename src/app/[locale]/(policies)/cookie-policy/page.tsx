@@ -28,7 +28,7 @@ export default async function CookiePolicy() {
   const t = await getTranslations('cookiePolicy');
 
   return (
-    <PolicyLayout title={t('title')} updateType="lastUpdate">
+    <PolicyLayout title={t('title')}>
       <PolicySection>
         <Title as="h2" size="lg">
           {t('0.text.0')}
