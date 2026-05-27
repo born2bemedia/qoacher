@@ -9,8 +9,6 @@ import { Title } from '@/shared/ui/components/atoms/title';
 import { FadeIn } from '@/shared/ui/components/templates/fade-in';
 import { SectionLayout } from '@/shared/ui/components/templates/section-layout';
 
-import { AffiliateProgramWhoCanJoin } from '@/app/[locale]/affiliate-program/components/who-can-join';
-
 export const AffiliateProgramCriteria = () => {
   const t = useTranslations('affiliateProgramCriteria');
 
