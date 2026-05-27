@@ -23,6 +23,10 @@ const phoneFieldVariants = cva(
         primary: '',
         danger: '',
       },
+      size: {
+        md: '!h-[54px]',
+        lg: '!h-[66px]',
+      },
     },
     defaultVariants: {
       intent: 'primary',
@@ -36,6 +40,7 @@ export type PhoneFieldVariants = VariantProps<typeof phoneFieldVariants>;
 export const PhoneField = ({
   variant = 'primary',
   intent,
+  size = 'md',
   hint,
   label,
   disabled,
@@ -64,11 +69,12 @@ export const PhoneField = ({
             ? country
             : 'us'
         }
-        className={cn('!h-[54px]', intent === 'danger' && '!border !border-[#FF4141]')}
+        className={cn(intent === 'danger' && '!border !border-[#FF4141]')}
         inputClassName={cn(
           phoneFieldVariants({
             variant,
             intent,
+            size,
           })
         )}
         countries={defaultCountries.filter(([, iso2]) => !excludedCountries.includes(iso2))}

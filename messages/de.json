@@ -3,6 +3,183 @@
     "description": "Klarheit. Richtung. Stärke. Die Unterstützung, die das moderne Leben verlangt.",
     "title": "Weil das Leben nicht <br/>darauf warten wird, dass Sie es einholen"
   },
+  "affiliateProgramForm": {
+    "errors": {
+      "nameEmpty": "Bitte geben Sie Ihren Namen ein.",
+      "nameShort": "Bitte geben Sie Ihren vollständigen Namen ein.",
+      "nameInvalid": "Bitte geben Sie einen gültigen Namen ein.",
+      "audienceEmpty": "Bitte geben Sie die Größe Ihres Publikums an.",
+      "audienceInvalidNumber": "Bitte geben Sie eine gültige Zahl ein.",
+      "mediaLinksEmpty": "Bitte geben Sie mindestens einen Medienlink an.",
+      "mediaLinkInvalidUrl": "Bitte geben Sie eine gültige URL ein.",
+      "mediaLinksDuplicate": "Bitte geben Sie unterschiedliche Medienlinks an.",
+      "geoEmpty": "Bitte geben Sie die GEO Ihres Publikums an.",
+      "geoShort": "Bitte geben Sie eine gültige GEO an.",
+      "aboutEmpty": "Bitte geben Sie kurze Informationen über Ihr Medium an.",
+      "aboutShort": "Bitte geben Sie mehr Details über Ihre Medienplattform an."
+    },
+    "submitError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut.",
+    "successTitle": "Erfolgreich!",
+    "successDescription": "Ihre Affiliate-Bewerbung wurde eingereicht.",
+    "successFollowUp": "Unser Team wird Ihre Informationen prüfen und sich in Kürze bei Ihnen melden.",
+    "continue": "Weiter",
+    "title": "Bewerbung für das Qoacher Affiliate-Programm",
+    "placeholderName": "Name",
+    "placeholderAudienceCount": "Publikumsgröße",
+    "placeholderMediaLink1": "Ihr Medienlink 1",
+    "placeholderMediaLink2": "Ihr Medienlink 2",
+    "placeholderMediaLink3": "Ihr Medienlink 3",
+    "placeholderGeo": "GEO",
+    "placeholderAboutMedia": "Über Ihr Medium",
+    "sending": "Wird gesendet...",
+    "apply": "Bewerben"
+  },
+  "coacherForm": {
+    "errors": {
+      "nameEmpty": "Bitte geben Sie Ihren Namen ein.",
+      "nameShort": "Bitte geben Sie Ihren vollständigen Namen ein.",
+      "nameInvalid": "Bitte geben Sie einen gültigen Namen ein.",
+      "yearsEmpty": "Bitte geben Sie Ihre Berufserfahrung in Jahren an.",
+      "yearsInvalid": "Bitte geben Sie eine gültige Zahl ein.",
+      "yearsUnrealistic": "Bitte geben Sie eine realistische Anzahl an Jahren an.",
+      "emailEmpty": "Bitte geben Sie Ihre E-Mail-Adresse an.",
+      "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "phoneEmpty": "Bitte geben Sie Ihre Telefonnummer an.",
+      "phoneTooShort": "Die Telefonnummer ist zu kurz.",
+      "phoneInvalid": "Bitte geben Sie eine gültige Telefonnummer ein.",
+      "expertiseEmpty": "Bitte geben Sie Ihr Fachgebiet an.",
+      "cvOrLinkRequired": "Bitte laden Sie Ihren Lebenslauf hoch oder geben Sie einen Link an.",
+      "cvUnsupportedFormat": "Nicht unterstütztes Dateiformat. Bitte laden Sie nur PDF-, DOC- oder DOCX-Dateien hoch.",
+      "cvTooLarge": "Die Datei ist zu groß. Bitte laden Sie eine kleinere Datei hoch.",
+      "cvLinkInvalidUrl": "Bitte geben Sie eine gültige URL ein."
+    },
+    "submitError": "Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut.",
+    "successTitle": "Erfolgreich!",
+    "successDescription": "Ihre Bewerbung wurde eingereicht.",
+    "successFollowUp": "Unser Team wird Ihr Profil prüfen und sich in Kürze bei Ihnen melden.",
+    "continue": "Weiter",
+    "title": "Qoacher beitreten",
+    "placeholderName": "Name",
+    "placeholderYearsOfExperience": "Jahre Berufserfahrung",
+    "placeholderPhone": "Telefon",
+    "placeholderEmail": "E-Mail",
+    "placeholderAreaOfExpertise": "Fachgebiet",
+    "cvLabel": "Ihr Lebenslauf",
+    "upload": "Hochladen",
+    "or": "Oder",
+    "placeholderLink": "Link",
+    "sending": "Wird gesendet...",
+    "apply": "Bewerben"
+  },
+  "homeLifeStyleBlog": {
+    "title": "Hast du einen Lifestyle-Blog?",
+    "description": "Entdecke das Qoacher Affiliate-Programm.",
+    "linkTitle": "Jetzt ansehen"
+  },
+  "affiliateProgramPageHero": {
+    "title": "Wachse mit Qoacher",
+    "description": "Hast du ein Publikum, das sich für persönliches Wachstum, Karriereentwicklung, Beziehungen oder Selbstverbesserung interessiert?",
+    "descriptionTwo": "Werde Teil des Qoacher Affiliate-Programms!"
+  },
+  "affiliateProgramCriteria": {
+    "activeAudience": "Aktives Publikum oder Community (mind. 5K)",
+    "relevantNiche": "Relevante Inhalte oder Nische",
+    "consistentPublishing": "Regelmäßige Veröffentlichung von Inhalten",
+    "professionalPresence": "Professionelle und vertrauenswürdige Online-Präsenz",
+    "growthOrientedAudience": "Publikum, das sich für Wachstum, Bildung, Karriere oder Lifestyle interessiert",
+    "title": "Qualifikationskriterien"
+  },
+  "affiliateProgramWantJoin": {
+    "title": "Möchtest du beitreten?",
+    "apply": "Jetzt bewerben"
+  },
+  "affiliateProgramWhoCanJoin": {
+    "contentCreators": "Content Creator",
+    "contentCreatorsDescription": "Blogger, Influencer, YouTuber und Podcast-Ersteller.",
+    "mediaPlatforms": "Medienplattformen",
+    "mediaPlatformsDescription": "Websites, Online-Magazine, Communities und Bildungsplattformen.",
+    "coachesEducators": "Coaches & Dozenten",
+    "coachesEducatorsDescription": "Fachleute, die Inhalte zu Selbstverbesserung, Karriere oder Beziehungen teilen.",
+    "communityOwners": "Community-Betreiber",
+    "communityOwnersDescription": "Newsletter-Ersteller, Forenbetreiber und publikumsbasierte Projekte.",
+    "title": "Wer teilnehmen kann"
+  },
+  "affiliateProgramWhyJoin": {
+    "audienceMonetisationTitle": "Zusätzliche Monetarisierung des Publikums",
+    "audienceMonetisationText": "Verdiene durch relevante Empfehlungen und Partnermöglichkeiten.",
+    "platformContentValueTitle": "Wertvolle Inhalte für deine Plattform",
+    "platformContentValueText": "Nutze Expertenmaterialien, Leitfäden und Bildungsressourcen zur Unterstützung deines Publikums.",
+    "flexiblePartnershipTitle": "Flexibles Partnerschaftsmodell",
+    "flexiblePartnershipText": "Bewerbe Qoacher so, wie es zu deiner Plattform und deinem Content-Stil passt.",
+    "longTermCollaborationTitle": "Langfristige Zusammenarbeit",
+    "longTermCollaborationText": "Baue eine dauerhafte Partnerschaft mit einer wachsenden Coaching-Plattform auf.",
+    "title": "Warum Qoacher beitreten"
+  },
+  "areYouCoach": {
+    "title": "Sind Sie ein Trainer?",
+    "description": "Hilf Menschen, ihr Leben zu verbessern! Werde Teil von Qoacher.",
+    "linkTitle": "Sehen Sie, wie"
+  },
+  "becomeACoachPage": {
+    "heroTitle": "Teilen Sie Ihre Erfahrungen.",
+    "heroTitleSecond": "Hilf Menschen, voranzukommen.",
+    "heroDescription": "Sie haben Coaching-Erfahrung und möchten Klarheit, Struktur und Unterstützung für diejenigen bieten, die sie am dringendsten benötigen?",
+    "heroDescriptionTwo": "Tritt Qoacher bei!"
+  },
+  "becomeACoachLifestyle": {
+    "title": "Hast du einen Lifestyle-Blog?",
+    "description": "Siehe das Qoacher-Partnerprogramm.",
+    "checkNow": "Jetzt prüfen"
+  },
+  "becomeACoachLookingFor": {
+    "careerCoaches": "Karrierecoaches",
+    "careerCoachesDescription": "Karriereentwicklung, Burnout, Interviews, Führung.",
+    "personalGrowthCoaches": "Coaches für persönliche Entwicklung",
+    "personalGrowthCoachesDescription": "Stress, Selbstvertrauen, Produktivität, Mindset.",
+    "communicationSpecialists": "Kommunikationsspezialisten",
+    "communicationSpecialistsDescription": "Beziehungen, Grenzen, Konfliktlösung.",
+    "longTermSupportCoaches": "Coaches für langfristige Unterstützung",
+    "longTermSupportCoachesDescription": "Verantwortlichkeit, Planung, Konsistenz, Gewohnheitsaufbau.",
+    "educatorsAndProgramCreators": "Dozenten & Programm-Ersteller",
+    "educatorsAndProgramCreatorsDescription": "Leitfäden, Workshops, strukturierte Lernprogramme.",
+    "title": "Wen wir suchen",
+    "checkOurServices": "Unsere Services ansehen"
+  },
+  "becomeACoachCriteria": {
+    "itemTextOne": "Erfahrung im Coaching oder in der Beratung",
+    "itemTextTwo": "Starke Kommunikationsfähigkeiten",
+    "itemTextThree": "Strukturierter Coaching-Ansatz",
+    "itemTextFour": "Professionelle und kundenorientierte Einstellung",
+    "itemTextFive": "Erfahrung in persönlicher, beruflicher oder Beziehungsunterstützung",
+    "itemTextSix": "Zertifizierungen erforderlich",
+    "title": "Qualifikationskriterien"
+  },
+  "becomeACoachServices": {
+    "itemTitleOne": "Coaching-Sitzungen",
+    "itemTextOne": "Arbeiten Sie eins zu eins mit Klienten.",
+    "itemTitleTwo": "Digitale Programme",
+    "itemTextTwo": "Erstellen Sie strukturierte Selbstlernprogramme.",
+    "itemTitleThree": "Beratungen",
+    "itemTextThree": "Bieten Sie Expertenberatung für spezifische Situationen.",
+    "itemTitleFour": "Bildungsangebote",
+    "itemTextFour": "Bieten Sie Workshops, Lernmaterialien und Unterstützungssitzungen an.",
+    "title": "Mit professionellen Dienstleistungen verdienen"
+  },
+  "becomeACoachWantJoin": {
+    "title": "Möchten Sie beitreten?",
+    "apply": "Bewerben"
+  },
+  "becomeACoachWhyJoin": {
+    "listOneTitleOne": "Flexible Arbeit",
+    "listOneTextOne": "Gestalten Sie Ihren eigenen Zeitplan.",
+    "listOneTitleTwo": "Mehrere Einkommensquellen",
+    "listOneTextTwo": "Verdienen Sie durch Sitzungen, Programme und Beratung.",
+    "listTwoTitleOne": "Langfristiges Wachstum",
+    "listTwoTextOne": "Bauen Sie Ihre professionelle Präsenz mit Qoacher auf.",
+    "listTwoTitleTwo": "Zugang zu Kunden",
+    "listTwoTextTwo": "Verbinden Sie sich mit Nutzern, die aktiv Unterstützung suchen.",
+    "title": "Warum Qoacher beitreten"
+  },
   "aboutTheProjectDetails": {
     "text1": "Das Stressniveau hat sich in den letzten 30 Monaten verdreifacht.",
     "text2": "Die Fähigkeit des Einzelnen, sein eigenes Leben zu beeinflussen, ist seit 2022 um 46 % gesunken.",
@@ -392,7 +569,9 @@
     "packages": "Pakete",
     "personalCoaching": "Persönliches Coaching",
     "programs": "Programme",
-    "selfImprovement": "Selbstverbesserung"
+    "selfImprovement": "Selbstverbesserung",
+    "becomeACoach": "Werden Sie Trainer",
+    "affiliateProgram": "Partnerprogramm"
   },
   "forOngoingWorks": {
     "checkPackages": "Pakete prüfen",

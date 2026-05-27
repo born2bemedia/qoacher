@@ -31,6 +31,14 @@ export const FooterNavigation = () => {
       href: '/self-improvement',
     },
     {
+      label: t('becomeACoach', { fallback: 'Become a coach' }),
+      href: '/become-a-coach',
+    },
+    {
+      label: t('affiliateProgram', { fallback: 'Affiliate Program' }),
+      href: '/affiliate-program',
+    },
+    {
       label: t('aboutTheProject', { fallback: 'About the Project' }),
       href: '/about-the-project',
     },

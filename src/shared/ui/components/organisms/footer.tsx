@@ -85,7 +85,7 @@ export const Footer = () => {
             </div>
             <div className="flex max-w-[150px] flex-col gap-6 max-md:text-center">
               {FooterNavigation()
-                .slice(4, 7)
+                .slice(4, 8)
                 .map((item) => (
                   <NavLink key={item.label} href={item.href}>
                     <Text size="sm" weight={300}>
@@ -98,7 +98,7 @@ export const Footer = () => {
           <section className="flex gap-6">
             <div className="flex max-w-[150px] flex-col gap-6 max-md:text-center">
               {FooterNavigation()
-                .slice(7, 10)
+                .slice(8, 12)
                 .map((item) => (
                   <NavLink key={item.label} href={item.href}>
                     <Text size="sm" weight={300}>

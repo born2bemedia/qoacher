@@ -4,6 +4,8 @@ import { getTranslations } from 'next-intl/server';
 import { Hero } from '@/shared/ui/components/organisms/hero';
 
 import { Details, Diplomas, OurTeam, WeHere, WhoWeAre } from './components';
+import { LifeStyleBlog } from '@/app/[locale]/(home)/components';
+import { AreYouCoach } from '@/app/[locale]/(home)/components';
 
 export const metadata: Metadata = {
   title: 'About Us | Qoacher',
@@ -43,6 +45,8 @@ export default async function AboutTheProjectPage() {
       <OurTeam />
       <Diplomas />
       <WeHere />
+      <AreYouCoach />
+      <LifeStyleBlog />
     </main>
   );
 }

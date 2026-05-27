@@ -6,6 +6,9 @@ import { ServicePreview } from '@/features/services/ui/service-preview';
 
 import { Hero } from '@/shared/ui/components/organisms/hero';
 
+import { LifeStyleBlog } from '@/app/[locale]/(home)/components';
+import { AreYouCoach } from '@/app/[locale]/(home)/components';
+
 export const metadata: Metadata = {
   title: 'Life Coaching Services | Qoacher',
   description:
@@ -94,6 +97,8 @@ export default async function ServicesPage() {
             'Don’t hesitate to reach out. We’re available 24/7 to help you understand your options and find the right coaching for your situation.',
         })}
       />
+      <AreYouCoach />
+      <LifeStyleBlog />
     </main>
   );
 }

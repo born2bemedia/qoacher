@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 
 import {
+  AreYouCoach,
   BecauseLifeRunYou,
   CoachingThatFits,
   ForOngoingWorks,
   Hero,
+  LifeStyleBlog,
   NeedExtraSupport,
   ProgramsThatHelp,
   StartSmall,
@@ -39,6 +41,8 @@ export default function Home() {
       <BecauseLifeRunYou />
       <StartSmall />
       <NeedExtraSupport />
+      <AreYouCoach />
+      <LifeStyleBlog />
     </main>
   );
 }
