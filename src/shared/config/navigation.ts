@@ -49,7 +49,7 @@ export const Navigation = () => {
           href: '/self-improvement',
         },
         {
-          label: t('becomeACoach', { fallback: 'Become a coach' }),
+          label: t('becomeACoach', { fallback: 'Become a Coach' }),
           href: '/become-a-coach',
         },
         {

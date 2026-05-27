@@ -571,7 +571,8 @@
     "programs": "Programme",
     "selfImprovement": "Selbstverbesserung",
     "becomeACoach": "Werden Sie Trainer",
-    "affiliateProgram": "Partnerprogramm"
+    "affiliateProgram": "Partnerprogramm",
+    "services": "Dienstleistungen"
   },
   "forOngoingWorks": {
     "checkPackages": "Pakete prüfen",
@@ -662,7 +663,7 @@
     "programs": "Programme",
     "selfImprovement": "Selbstverbesserung",
     "services": "Dienstleistungen",
-    "becomeACoach": "Werden Sie Trainer",
+    "becomeACoach": "Werden Sie Coach",
     "affiliateProgram": "Partnerprogramm"
   },
   "needExtraSupport": {

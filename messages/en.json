@@ -894,6 +894,7 @@
     "personalCoaching": "Personal Coaching",
     "communicationAndRelationshipCoaching": "Communication and Relationship Coaching",
     "growthAndLongTermPlanning": "Growth and Long-Term Planning",
+    "services": "Services",
     "programs": "Programs",
     "packages": "Packages",
     "selfImprovement": "Self Improvement",
@@ -914,7 +915,7 @@
     "menu": "Menu",
     "aboutTheProject": "About the Project",
     "selfImprovement": "Self Improvement",
-    "becomeACoach": "Become a coach",
+    "becomeACoach": "Become a Coach",
     "affiliateProgram": "Affiliate Program",
     "contacts": "Contacts"
   },

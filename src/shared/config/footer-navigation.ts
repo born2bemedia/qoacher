@@ -24,6 +24,7 @@ export const FooterNavigation = () => {
       }),
       href: '/growth-and-long-term-planning',
     },
+    { label: t('services', { fallback: 'Services' }), href: '/services' },
     { label: t('programs', { fallback: 'Programs' }), href: '/programs' },
     { label: t('packages', { fallback: 'Packages' }), href: '/packages' },
     {
